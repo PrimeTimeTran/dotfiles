@@ -57,7 +57,8 @@ alias ccm="config commit -m "
 alias cpf="config commit --amend "
 alias cpm="config push "
 alias cpf="config push --force"
-
+alias cr="config remote -v"
+alias cl="config log -v"
 
 alias es="expo start"
 alias ea="npm run android"
