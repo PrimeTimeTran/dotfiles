@@ -9,10 +9,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 export EDITOR=nvim
 export VISUAL=nvim
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 ANDROID_HOME=/Users/loi/Library/Android/sdk
 PATH=$ANDROID_HOME/platform-tools:$PATH
@@ -24,8 +24,10 @@ export PATH="$PATH:/Users/loi/flutter/bin"
 
 alias c="clear"
 alias vs="code ."
-alias bp="code ~/.zshrc"
 alias his="history"
+alias rl="omz reload"
+alias reload="omz reload"
+alias bp="code ~/.zshrc"
 
 alias h="cd ~/Desktop"
 alias home="cd ~/Desktop"
@@ -47,16 +49,26 @@ alias gls="git log --stat"
 alias glg="git log --graph"
 alias glc="git log -p "
 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias cs="config status"
+alias ca="config add "
+alias con="config "
+alias ccm="config commit -m "
+alias cpf="config commit --amend "
+alias cpm="config push "
+alias cpf="config push --force"
+
+
 alias es="expo start"
 alias ea="npm run android"
 alias ei="npm run ios"
 
 alias p="python3 "
-alias reload="omz reload"
 
 alias adevices="adb devices"
 alias aemulators="emulator -list-avds"
 alias astart="emulator -avd "
+alias j17='javahome 17.0.6'
 
 search() {
     fc -ln 0 | grep $@ | yank -l 
@@ -74,8 +86,6 @@ javahome() {
   export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
   java -version
 }
-
-alias j17='javahome 17.0.6'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
