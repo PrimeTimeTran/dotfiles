@@ -13,14 +13,15 @@ export EDITOR=nvim
 export VISUAL=nvim
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
+export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/
+export PATH="$PATH:/Users/loi/flutter/bin"
 
 ANDROID_HOME=/Users/loi/Library/Android/sdk
 PATH=$ANDROID_HOME/platform-tools:$PATH
 PATH=$ANDROID_HOME/tools:$PATH
 PATH=$ANDROID_HOME/tools/bin:$PATH
 PATH=$ANDROID_HOME/emulator:$PATH
-
-export PATH="$PATH:/Users/loi/flutter/bin"
 
 alias c="clear"
 alias vs="code ."
@@ -49,10 +50,22 @@ alias gls="git log --stat"
 alias glg="git log --graph"
 alias glc="git log -p "
 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias gpa="git fetch --all"
+
+alias es="expo start"
+alias ea="npm run android"
+alias ei="npm run ios"
+
+alias p="python3 "
+
+alias j17='javahome 17.0.6'
+alias adevices="adb devices"
+alias astart="emulator -avd "
+alias aemulators="emulator -list-avds"
+
 alias con="config "
 alias cs="config status"
-alias cd="config diff"
+alias cond="config diff"
 alias cl="config log -v"
 alias ca="config add "
 alias ccm="config commit -m "
@@ -61,23 +74,11 @@ alias cr="config remote -v"
 alias cpf="config push --force"
 alias camend="config commit --amend "
 
-alias es="expo start"
-alias ea="npm run android"
-alias ei="npm run ios"
-
-alias p="python3 "
-
-alias adevices="adb devices"
-alias aemulators="emulator -list-avds"
-alias astart="emulator -avd "
-alias j17='javahome 17.0.6'
-
 search() {
     fc -ln 0 | grep $@ | yank -l 
 }
 
 newremote() {
-    #do things with parameters like $1 such as
     git remote add origin git@github.com:PrimeTimeTran/"$1".git
     git branch -M main
     git push -u origin main
@@ -89,9 +90,9 @@ javahome() {
   java -version
 }
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/  
+config() {
+  git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
+}
 
 echo "Time flies..."
 echo 'Use it wisely...'
