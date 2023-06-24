@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="dst"
+ZSH_THEME="steeef"
 
 plugins=(
     git
@@ -16,6 +16,7 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/
 export PATH="$PATH:/Users/loi/flutter/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 ANDROID_HOME=/Users/loi/Library/Android/sdk
 PATH=$ANDROID_HOME/platform-tools:$PATH
@@ -23,12 +24,14 @@ PATH=$ANDROID_HOME/tools:$PATH
 PATH=$ANDROID_HOME/tools/bin:$PATH
 PATH=$ANDROID_HOME/emulator:$PATH
 
+alias bp="code ~/.zshrc"
+
 alias c="clear"
 alias vs="code ."
 alias his="history"
 alias rl="omz reload"
 alias reload="omz reload"
-alias bp="code ~/.zshrc"
+alias p="python3 "
 
 alias h="cd ~/Desktop"
 alias home="cd ~/Desktop"
@@ -49,19 +52,9 @@ alias glo="git log --oneline"
 alias gls="git log --stat"
 alias glg="git log --graph"
 alias glc="git log -p "
-
+alias gb="git branch -v"
+alias gcb="git checkout -b"
 alias gpa="git fetch --all"
-
-alias es="expo start"
-alias ea="npm run android"
-alias ei="npm run ios"
-
-alias p="python3 "
-
-alias j17='javahome 17.0.6'
-alias adevices="adb devices"
-alias astart="emulator -avd "
-alias aemulators="emulator -list-avds"
 
 alias con="config "
 alias cs="config status"
@@ -74,6 +67,20 @@ alias cr="config remote -v"
 alias cpf="config push --force"
 alias camend="config commit --amend "
 
+alias es="expo start"
+alias ea="npm run android"
+alias ei="npm run ios"
+alias esdc="npx expo start --dev-client"
+
+
+alias j17='javahome 17.0.6'
+alias javaVersions='/usr/libexec/java_home -V'
+
+alias adevices="adb devices"
+alias astart="emulator -avd "
+alias aemulators="emulator -list-avds"
+alias aconnect="adb connect 192.168.0.13:39463"
+
 search() {
     fc -ln 0 | grep $@ | yank -l 
 }
@@ -85,14 +92,20 @@ newremote() {
 }
 
 javahome() {
-  unset JAVA_HOME 
-  export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
-  java -version
+    unset JAVA_HOME 
+    export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
+    java -version
 }
 
 config() {
-  git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
+    git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
 }
 
 echo "Time flies..."
 echo 'Use it wisely...'
+
+## [Completion] 
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
