@@ -44,7 +44,11 @@ alias ga="git add ."
 alias gs="git status"
 alias gcm="git commit -m "
 alias gpoh="git push origin head"
+
 alias gamend="git commit --amend "
+alias gamendno="gamend --no-verify --no-edit"
+alias ff="ga && gamendno && gp -f"
+
 alias gc="git checkout "
 alias grh="git reset --hard"
 alias gl="git log"
@@ -72,7 +76,6 @@ alias ea="npm run android"
 alias ei="npm run ios"
 alias esdc="npx expo start --dev-client"
 
-
 alias j17='javahome 17.0.6'
 alias javaVersions='/usr/libexec/java_home -V'
 
@@ -97,6 +100,8 @@ javahome() {
     java -version
 }
 
+export JAVA_HOME=$(/usr/libexec/java_home -v "17.0.6");
+
 config() {
     git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
 }
@@ -108,4 +113,6 @@ echo 'Use it wisely...'
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
+
+
 
