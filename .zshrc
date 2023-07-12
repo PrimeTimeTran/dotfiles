@@ -4,11 +4,24 @@ ZSH_THEME="steeef"
 
 plugins=(
     git
+    flutter
     zsh-autosuggestions
+    cd-ls
+    last-working-dir 
+    colored-man-pages
+    alias-tips
 )
 
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/flutter
+
+source /opt/homebrew/share/antigen/antigen.zsh
+source /opt/homebrew/opt/zinit/zinit.zsh
 source $ZSH/oh-my-zsh.sh
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
+ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
+antigen bundle ael-code/zsh-colored-man-pages
+
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -38,6 +51,7 @@ alias h="cd ~/Desktop"
 alias home="cd ~/Desktop"
 alias w="cd ~/Desktop/work"
 alias work="cd ~/Desktop/work"
+alias work="cd ~/Desktop/work/rse"
 
 alias gp="git push"
 alias gpf="git push --force"
@@ -60,6 +74,7 @@ alias glc="git log -p "
 alias gb="git branch -v"
 alias gcb="git checkout -b"
 alias gpa="git fetch --all"
+alias gRv="git remote -v"
 
 alias con="config "
 alias cs="config status"
@@ -84,6 +99,9 @@ alias adevices="adb devices"
 alias astart="emulator -avd "
 alias aemulators="emulator -list-avds"
 alias aconnect="adb connect 192.168.0.13:39463"
+
+
+
 
 search() {
     fc -ln 0 | grep $@ | yank -l 
