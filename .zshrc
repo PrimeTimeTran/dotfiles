@@ -1,6 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="steeef"
+ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
+ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
 
 plugins=(
     git
@@ -12,16 +14,9 @@ plugins=(
     alias-tips
 )
 
-# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
-# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/flutter
-
 source /opt/homebrew/share/antigen/antigen.zsh
 source /opt/homebrew/opt/zinit/zinit.zsh
 source $ZSH/oh-my-zsh.sh
-ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
-ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
-antigen bundle ael-code/zsh-colored-man-pages
-
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -81,6 +76,7 @@ alias cs="config status"
 alias cond="config diff"
 alias cl="config log -v"
 alias ca="config add "
+alias caa="config add -u"
 alias ccm="config commit -m "
 alias cp="config push origin head"
 alias cr="config remote -v"
@@ -99,9 +95,6 @@ alias adevices="adb devices"
 alias astart="emulator -avd "
 alias aemulators="emulator -list-avds"
 alias aconnect="adb connect 192.168.0.13:39463"
-
-
-
 
 search() {
     fc -ln 0 | grep $@ | yank -l 
