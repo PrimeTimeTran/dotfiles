@@ -8,6 +8,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -28,7 +29,7 @@ alias bp="code ~/.zshrc"
 
 alias c="clear"
 alias vs="code ."
-alias his="history"
+alias his="history | cut -c 8-"
 alias rl="omz reload"
 alias reload="omz reload"
 alias p="python3 "
