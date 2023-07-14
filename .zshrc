@@ -37,10 +37,10 @@ alias bp="code ~/.zshrc"
 
 alias c="clear"
 alias vs="code ."
-alias his="history | cut -c 8-"
+alias p="python3 "
 alias rl="omz reload"
 alias reload="omz reload"
-alias p="python3 "
+alias his="history | cut -c 8-"
 
 alias h="cd ~/Desktop"
 alias home="cd ~/Desktop"
@@ -87,6 +87,8 @@ alias es="expo start"
 alias ea="npm run android"
 alias ei="npm run ios"
 alias esdc="npx expo start --dev-client"
+alias esdci="npx expo run:ios "
+alias erdci="npx expo run:ios --scheme 'myAPP - Debug' --configuration 'Debug'"
 
 alias j17='javahome 17.0.6'
 alias javaVersions='/usr/libexec/java_home -V'
