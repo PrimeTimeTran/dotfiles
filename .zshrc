@@ -18,32 +18,11 @@ source /opt/homebrew/share/antigen/antigen.zsh
 source /opt/homebrew/opt/zinit/zinit.zsh
 source $ZSH/oh-my-zsh.sh
 
-search() {
-    fc -ln 0 | grep $@ | yank -l 
-}
-
-newremote() {
-    git remote add origin git@github.com:PrimeTimeTran/"$1".git
-    git branch -M main
-    git push -u origin main
-}
-
-javahome() {
-    unset JAVA_HOME 
-    export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
-    java -version
-}
+source ~/.functions
 
 export JAVA_HOME=$(/usr/libexec/java_home -v "17.0.6");
 
-config() {
-    git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
-}
-
-## [Completion] 
-## Completion scripts setup. Remove the following line to uninstall
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
-## [/Completion]
 
 export EDITOR=nvim
 export VISUAL=nvim

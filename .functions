@@ -1,0 +1,25 @@
+echo "Functions..."
+
+# Download streams
+# ffmpeg -i 'https://www.something.m3u8' -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 file.mp4
+
+search() {
+    fc -ln 0 | grep $@ | yank -l 
+}
+
+newremote() {
+    git remote add origin git@github.com:PrimeTimeTran/"$1".git
+    git branch -M main
+    git push -u origin main
+}
+
+javahome() {
+    unset JAVA_HOME 
+    export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
+    java -version
+}
+
+
+config() {
+    git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
+}
