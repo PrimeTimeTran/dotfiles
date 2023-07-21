@@ -18,6 +18,33 @@ source /opt/homebrew/share/antigen/antigen.zsh
 source /opt/homebrew/opt/zinit/zinit.zsh
 source $ZSH/oh-my-zsh.sh
 
+search() {
+    fc -ln 0 | grep $@ | yank -l 
+}
+
+newremote() {
+    git remote add origin git@github.com:PrimeTimeTran/"$1".git
+    git branch -M main
+    git push -u origin main
+}
+
+javahome() {
+    unset JAVA_HOME 
+    export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
+    java -version
+}
+
+export JAVA_HOME=$(/usr/libexec/java_home -v "17.0.6");
+
+config() {
+    git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
+}
+
+## [Completion] 
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
 export EDITOR=nvim
 export VISUAL=nvim
 export VOLTA_HOME="$HOME/.volta"
@@ -97,36 +124,9 @@ alias adevices="adb devices"
 alias astart="emulator -avd "
 alias aemulators="emulator -list-avds"
 alias aconnect="adb connect 192.168.0.13:39463"
-
-search() {
-    fc -ln 0 | grep $@ | yank -l 
-}
-
-newremote() {
-    git remote add origin git@github.com:PrimeTimeTran/"$1".git
-    git branch -M main
-    git push -u origin main
-}
-
-javahome() {
-    unset JAVA_HOME 
-    export JAVA_HOME=$(/usr/libexec/java_home -v "$1");
-    java -version
-}
-
-export JAVA_HOME=$(/usr/libexec/java_home -v "17.0.6");
-
-config() {
-    git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
-}
+alias esp="emulator -avd Pixel_6_Pro_API_33"
+alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
+alias aemulator="adb -s emulator-5554 shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 
 echo "Time flies..."
 echo 'Use it wisely...'
-
-## [Completion] 
-## Completion scripts setup. Remove the following line to uninstall
-[[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
-## [/Completion]
-
-
-
