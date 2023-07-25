@@ -23,3 +23,7 @@ javahome() {
 config() {
     git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
 }
+
+copydir() {
+  pwd | tr -d "\r\n" | pbcopy
+}

@@ -12,6 +12,9 @@ plugins=(
     last-working-dir 
     colored-man-pages
     alias-tips
+    web-search
+    history
+    jsontools
 )
 
 source /opt/homebrew/share/antigen/antigen.zsh
@@ -46,10 +49,12 @@ alias vs="code ."
 alias p="python3 "
 alias rl="omz reload"
 alias reload="omz reload"
-alias his="history | cut -c 8-"
+# alias his="history | cut -c 8-"
+alias g="google "
+alias cpd="copydir "
 
-alias h="cd ~/Desktop"
-alias home="cd ~/Desktop"
+# alias h="cd ~/Desktop"
+alias home="d ~/Desktop"
 alias w="cd ~/Desktop/work"
 alias work="cd ~/Desktop/work"
 alias work="cd ~/Desktop/work/rse"
