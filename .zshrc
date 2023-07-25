@@ -15,6 +15,7 @@ plugins=(
     web-search
     history
     jsontools
+    macos
 )
 
 source /opt/homebrew/share/antigen/antigen.zsh
