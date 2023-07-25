@@ -60,11 +60,6 @@ alias ga="git add ."
 alias gs="git status"
 alias gcm="git commit -m "
 alias gpoh="git push origin head"
-
-alias gamend="git commit --amend "
-alias gamendno="gamend --no-verify --no-edit"
-alias ff="ga && gamendno && gp -f"
-
 alias gc="git checkout "
 alias grh="git reset --hard"
 alias gl="git log"
@@ -76,6 +71,11 @@ alias gb="git branch -v"
 alias gcb="git checkout -b"
 alias gpa="git fetch --all"
 alias gRv="git remote -v"
+
+alias gamend="git commit --amend "
+alias gamendno="gamend --no-verify --no-edit"
+alias ff="ga && gamendno"
+alias ffp="ga && gamendno && gp -f"
 
 alias con="config "
 alias cs="config status"
@@ -102,10 +102,10 @@ alias javaVersions='/usr/libexec/java_home -V'
 alias adevices="adb devices"
 alias astart="emulator -avd "
 alias aemulators="emulator -list-avds"
-alias aconnect="adb connect 192.168.0.13:39463"
 alias esp="emulator -avd Pixel_6_Pro_API_33"
-alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
+alias aconnect="adb connect 192.168.0.13:39463"
 alias aemulator="adb -s emulator-5554 shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
+alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 
 echo "Time flies..."
 echo 'Use it wisely...'
