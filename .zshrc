@@ -66,17 +66,18 @@ alias gcm="git commit -m "
 alias gp="git push"
 alias gpf="git push --force"
 alias gpoh="git push origin head"
-alias grh="git reset --hard"
-alias gamendno="gamend --no-verify --no-edit"
-alias ff="ga && gamendno"
-alias ffp="ga && gamendno && gp -f"
 
 alias gc="git checkout "
 alias gcb="git checkout -b "
 alias grv="git remote -v"
 alias gb="git branch -v"
-alias gpa="git fetch --all"
+alias gfa="git fetch --all"
+alias grh="git reset --hard"
+
 alias gamend="git commit --amend "
+alias gamendno="gamend --no-verify --no-edit"
+alias ff="ga && gamendno"
+alias ffp="ga && gamendno && gp -f"
 
 alias con="config "
 alias cs="config status"
@@ -96,15 +97,18 @@ alias ei="npm run ios"
 alias esdc="npx expo start --dev-client"
 alias esdci="npx expo run:ios "
 alias erdci="npx expo run:ios --scheme 'myAPP - Debug' --configuration 'Debug'"
+alias esdca="npx expo run:android "
+alias erdca="npx expo run:android --variant developmentDebug"
 
-alias j17='javahome 17.0.6'
-alias javaVersions='/usr/libexec/java_home -V'
+alias jv='java --version'
+alias jvl='/usr/libexec/java_home -V'
+alias jv17='javahome 17.0.6'
 
-alias adevices="adb devices"
-alias astart="emulator -avd "
-alias aemulators="emulator -list-avds"
-alias esp="emulator -avd Pixel_6_Pro_API_33"
-alias aconnect="adb connect 192.168.0.13:39463"
+alias adl="adb devices"
+alias ael="emulator -list-avds"
+alias aes="emulator -avd "
+alias aesp="emulator -avd Pixel_6_Pro_API_33"
+alias ac="adb connect 192.168.0.13:39463"
 alias aemulator="adb -s emulator-5554 shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 
