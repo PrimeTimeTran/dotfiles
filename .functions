@@ -1,7 +1,10 @@
 echo "Functions..."
 
 # Download streams
-# ffmpeg -i 'https://www.something.m3u8' -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 file.mp4
+
+downloadStream() {
+  ffmpeg -i $1 -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 file.mp4
+}
 
 search() {
     fc -ln 0 | grep $@ | yank -l 
@@ -27,3 +30,8 @@ config() {
 copydir() {
   pwd | tr -d "\r\n" | pbcopy
 }
+
+cw() {
+    watchman watch-del "$PWD" ; watchman watch-project "$PWD"
+}
+

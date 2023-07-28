@@ -82,8 +82,8 @@ alias grh="git reset --hard"
 
 alias gamend="git commit --amend "
 alias gamendno="gamend --no-verify --no-edit"
-alias ff="ga && gamendno"
-alias ffp="ga && gamendno && gp -f"
+alias ff="gat && gamendno"
+alias ffp="gat && gamendno && gp -f"
 
 alias con="config "
 alias cs="config status"
@@ -96,6 +96,8 @@ alias cp="config push origin head"
 alias cr="config remote -v"
 alias cpf="config push --force"
 alias camend="config commit --amend "
+
+alias ni="npm install"
 
 alias es="expo start"
 alias ea="npm run android"
@@ -120,3 +122,6 @@ alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell set
 
 echo "Time flies..."
 echo 'Use it wisely...'
+
+
+# https://dash-s1-n10-ca-cdn.eporner.com/hls/v5/8429473-,240,360,480,720,1080,p.mp4.urlset/master.m3u8?hash=AwaQvQTOKPZgb05IbkLzEA&expires=1690476106&ip=2601:346:b80:2ad0:8c7c:4dc8:5852:d632
