@@ -69,7 +69,8 @@ alias gs="git status"
 alias gaa="git add ."
 alias gat="git add -u"
 alias gcm="git commit -m "
-alias gp="git push"
+alias gpus="git push"
+alias gpul="git pull"
 alias gpf="git push --force"
 alias gpoh="git push origin head"
 
@@ -105,8 +106,12 @@ alias ei="npm run ios"
 alias esdc="npx expo start --dev-client"
 alias esdci="npx expo run:ios "
 alias erdci="npx expo run:ios --scheme 'myAPP - Debug' --configuration 'Debug'"
+alias eiarid="npx expo run:ios --scheme 'myAPP - Debug' --configuration 'Debug' --device 00008110-000218C20C0B801E"
 alias esdca="npx expo run:android "
 alias erdca="npx expo run:android --variant developmentDebug"
+
+alias i="ios"
+alias ivd="xcrun xctrace list devices"
 
 alias jv='java --version'
 alias jvl='/usr/libexec/java_home -V'
