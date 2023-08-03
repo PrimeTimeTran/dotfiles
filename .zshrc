@@ -73,6 +73,7 @@ alias gpus="git push"
 alias gpul="git pull"
 alias gpf="git push --force"
 alias gpoh="git push origin head"
+alias gcom="git checkout --ignore-other-worktrees main"
 
 alias gc="git checkout "
 alias gcb="git checkout -b "
@@ -83,8 +84,10 @@ alias grh="git reset --hard"
 
 alias gamend="git commit --amend "
 alias gamendno="gamend --no-verify --no-edit"
-alias ff="gat && gamendno"
-alias ffp="gat && gamendno && gp -f"
+alias ff="gaa && gamendno"
+alias ffp="gaa && gamendno && gpf"
+alias fft="gaa && gamendno"
+alias fftp="gat && gamendno && gp -f"
 
 alias con="config "
 alias cs="config status"
@@ -127,6 +130,3 @@ alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell set
 
 echo "Time flies..."
 echo 'Use it wisely...'
-
-
-# https://dash-s1-n10-ca-cdn.eporner.com/hls/v5/8429473-,240,360,480,720,1080,p.mp4.urlset/master.m3u8?hash=AwaQvQTOKPZgb05IbkLzEA&expires=1690476106&ip=2601:346:b80:2ad0:8c7c:4dc8:5852:d632
