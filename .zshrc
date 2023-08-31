@@ -18,30 +18,30 @@ plugins=(
     macos
 )
 
-source /opt/homebrew/share/antigen/antigen.zsh
-source /opt/homebrew/opt/zinit/zinit.zsh
-source $ZSH/oh-my-zsh.sh
-
 source ~/.functions
-
-export JAVA_HOME=$(/usr/libexec/java_home -v "17.0.6");
+source $ZSH/oh-my-zsh.sh
+source /opt/homebrew/opt/zinit/zinit.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
 
 export EDITOR=nvim
 export VISUAL=nvim
 export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
-export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/
+export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$PATH:/Users/loi/flutter/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/
 
-ANDROID_HOME=/Users/loi/Library/Android/sdk
+export ANDROID_HOME=/Users/loi/Library/Android/sdk
 PATH=$ANDROID_HOME/platform-tools:$PATH
 PATH=$ANDROID_HOME/tools:$PATH
 PATH=$ANDROID_HOME/tools/bin:$PATH
 PATH=$ANDROID_HOME/emulator:$PATH
+
+export JAVA_HOME=$(/usr/libexec/java_home -v "17.0.6");
 
 alias bp="code ~/.zshrc"
 
@@ -50,7 +50,7 @@ alias vs="code ."
 alias p="python3 "
 alias rl="omz reload"
 alias reload="omz reload"
-# alias his="history | cut -c 8-"
+alias his="history | cut -c 8-"
 alias g="google "
 alias cpd="copydir "
 
@@ -130,3 +130,9 @@ alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell set
 
 echo "Time flies..."
 echo 'Use it wisely...'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/loi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/loi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/completion.zsh.inc'; fi
