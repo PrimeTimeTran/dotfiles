@@ -41,7 +41,7 @@ PATH=$ANDROID_HOME/tools:$PATH
 PATH=$ANDROID_HOME/tools/bin:$PATH
 PATH=$ANDROID_HOME/emulator:$PATH
 
-export JAVA_HOME=$(/usr/libexec/java_home -v "17.0.6");
+export JAVA_HOME=$(/usr/libexec/java_home -v "20");
 
 alias bp="code ~/.zshrc"
 
@@ -58,6 +58,7 @@ alias cpd="copydir "
 alias home="d ~/Desktop"
 alias w="cd ~/Desktop/work"
 alias work="cd ~/Desktop/work"
+alias dls="cd ~/Downloads"
 alias work="cd ~/Desktop/work/rse"
 
 alias gl="git log"
@@ -128,6 +129,17 @@ alias ac="adb connect 192.168.0.13:39463"
 alias aemulator="adb -s emulator-5554 shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 
+# Tmux
+# tmux ls 
+# prefix + (ctrl+$)
+
+# One Long
+alias o="cd ~/Desktop/work/onelong"
+alias oc="cd ~/Desktop/work/onelong/code"
+alias oapi="cd ~/Desktop/work/onelong/code/api"
+alias oadmin="cd ~/Desktop/work/onelong/code/admin"
+alias oclient="cd ~/Desktop/work/onelong/code/client"
+
 echo "Time flies..."
 echo 'Use it wisely...'
 
@@ -136,3 +148,11 @@ if [ -f '/Users/loi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/loi/google-
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/loi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+# bun completions
+[ -s "/Users/loi/.bun/_bun" ] && source "/Users/loi/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
