@@ -15,7 +15,6 @@ plugins=(
     jsontools
     macos
 )
-source ~/.paths
 source $ZSH/oh-my-zsh.sh
 source /opt/homebrew/opt/zinit/zinit.zsh
 source /opt/homebrew/share/antigen/antigen.zsh
@@ -63,7 +62,6 @@ export PATH=/Users/loi/flutter/bin:$PATH
 if [ -f '/Users/loi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/loi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/completion.zsh.inc'; fi
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
-
 
 # Aliases
 # General
@@ -184,5 +182,4 @@ alias nb='netlify build'
 alias nfb='netlify functions:build --src netlify/functions'
 alias nd='netlify deploy --prod'
 
-echo "Time flies..."
-echo 'Use it wisely...'
+echo "Time flies... Use it wisely..."
