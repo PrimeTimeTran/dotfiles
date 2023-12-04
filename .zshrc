@@ -1,7 +1,9 @@
-# Setup ZSH
+export ZSH="$HOME/.oh-my-zsh"
+
 ZSH_THEME="steeef"
 ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
 ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
+
 plugins=(
     git
     flutter
@@ -18,6 +20,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source /opt/homebrew/opt/zinit/zinit.zsh
 source /opt/homebrew/share/antigen/antigen.zsh
+
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
 # Setup ZSH
 
