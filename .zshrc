@@ -28,10 +28,10 @@ export PATH=/Library/PostgreSQL/15/bin:$PATH
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/
+export EDITOR="code -w"
 
 # Source user-specific tools or configurations here
 source ~/.functions
-export EDITOR=nvim
 export VISUAL=nvim
 export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
@@ -60,12 +60,18 @@ export PATH="$ANDROID_HOME/emulator:$PATH"
 export PATH=/Users/loi/flutter/bin:$PATH
 # Any other Android/Flutter specific paths can go here
 
+
+# Metasploit
+PATH=$PATH:/opt/metasploit-framework/binexport
+PATH=$PATH:/opt/metasploit-framework/bin
+
 if [ -f '/Users/loi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/loi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/completion.zsh.inc'; fi
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
 
 # Aliases
 # Misc
+echo !! >>~/.bashrc
 
 # General
 alias bp="code ~/.zshrc"
@@ -179,9 +185,10 @@ export JAVA_HOME=$(/usr/libexec/java_home -v "20");
 
 # Nuxt
 alias nuxi='npx nuxi '
-
 alias nb='netlify build'
 alias nfb='netlify functions:build --src netlify/functions'
 alias nd='netlify deploy --prod'
 
 echo "Time flies... Use it wisely..."
+# bun completions
+[ -s "/Users/future/.bun/_bun" ] && source "/Users/future/.bun/_bun"
