@@ -1,14 +1,10 @@
+# Setup ZSH
 export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME="steeef"
-ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
-ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
 
 plugins=(
     git
     flutter
     zsh-autosuggestions
-    cd-ls
     last-working-dir 
     colored-man-pages
     alias-tips
@@ -16,23 +12,26 @@ plugins=(
     history
     jsontools
     macos
+    ls
+    cd-ls
 )
+
+ZSH_THEME="primetimetran"
+ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
+ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
 source $ZSH/oh-my-zsh.sh
-source /opt/homebrew/opt/zinit/zinit.zsh
-source /opt/homebrew/share/antigen/antigen.zsh
 
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
-# Setup ZSH
 
 # Source system-wide tools or configurations here
 export PATH=/Library/PostgreSQL/15/bin:$PATH
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/
+export EDITOR="code -w"
 
 # Source user-specific tools or configurations here
 source ~/.functions
-export EDITOR=nvim
 export VISUAL=nvim
 export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
@@ -41,7 +40,7 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$PATH:$HOME/.maestro/bin
 [ -s "/Users/loi/.bun/_bun" ] && source "/Users/loi/.bun/_bun"
-# Source user-specific tools or configurations here
+# End
 
 # Include any other language managers or related tools here
 eval "$(pyenv init -)"
@@ -52,7 +51,6 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 # Include any other language managers or related tools here
 
-
 # Any other Android/Flutter specific paths can go here
 export ANDROID_HOME="/Users/loi/Library/Android/sdk"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
@@ -62,11 +60,19 @@ export PATH="$ANDROID_HOME/emulator:$PATH"
 export PATH=/Users/loi/flutter/bin:$PATH
 # Any other Android/Flutter specific paths can go here
 
+
+# Metasploit
+PATH=$PATH:/opt/metasploit-framework/binexport
+PATH=$PATH:/opt/metasploit-framework/bin
+
 if [ -f '/Users/loi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/loi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/completion.zsh.inc'; fi
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
 
 # Aliases
+# Misc
+echo !! >>~/.bashrc
+
 # General
 alias bp="code ~/.zshrc"
 alias c="clear"
@@ -78,9 +84,8 @@ alias his="history | cut -c 8-"
 alias g="google "
 alias cpd="copydir "
 alias home="cd ~/Desktop"
-alias w="cd ~/Desktop/work"
 alias dls="cd ~/Downloads"
-alias work="cd ~/Desktop/work"
+alias w="cd ~/Documents/work"
 
 # Git
 alias gl="git log"
@@ -180,9 +185,10 @@ export JAVA_HOME=$(/usr/libexec/java_home -v "20");
 
 # Nuxt
 alias nuxi='npx nuxi '
-
 alias nb='netlify build'
 alias nfb='netlify functions:build --src netlify/functions'
 alias nd='netlify deploy --prod'
 
 echo "Time flies... Use it wisely..."
+# bun completions
+[ -s "/Users/future/.bun/_bun" ] && source "/Users/future/.bun/_bun"
