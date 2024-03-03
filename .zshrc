@@ -58,15 +58,22 @@ export PATH="$ANDROID_HOME/tools:$PATH"
 export PATH="$ANDROID_HOME/tools/bin:$PATH"
 export PATH="$ANDROID_HOME/emulator:$PATH"
 export PATH=/Users/loi/flutter/bin:$PATH
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 # Any other Android/Flutter specific paths can go here
-
 
 # Metasploit
 PATH=$PATH:/opt/metasploit-framework/binexport
 PATH=$PATH:/opt/metasploit-framework/bin
 
-if [ -f '/Users/loi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/Users/loi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/loi/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/future/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/future/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/future/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/future/google-cloud-sdk/completion.zsh.inc'; fi
+# bun completions
+[ -s "/Users/future/.bun/_bun" ] && source "/Users/future/.bun/_bun"
+
+
+
+
+
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
 
 # Aliases
@@ -151,8 +158,7 @@ alias ys="yarn start"
 
 # Bun
 alias bi="bun install"
-alias bd="bun run dev -o"
-alias br="bun run"
+alias brd="bun run dev"
 alias br="bun run"
 
 ## Expo
@@ -189,6 +195,16 @@ alias nb='netlify build'
 alias nfb='netlify functions:build --src netlify/functions'
 alias nd='netlify deploy --prod'
 
+# Misc
+# alias killport="kill $(lsof -t -i:3005)"
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport"
+
+
+# Vim
+alias vimconfig="vi ~/.vim_runtime/my_configs.vim"
+
+# Infosec
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
 echo "Time flies... Use it wisely..."
-# bun completions
-[ -s "/Users/future/.bun/_bun" ] && source "/Users/future/.bun/_bun"
+
