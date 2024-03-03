@@ -70,14 +70,8 @@ if [ -f '/Users/future/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/fu
 # bun completions
 [ -s "/Users/future/.bun/_bun" ] && source "/Users/future/.bun/_bun"
 
-
-
-
-
 [[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
 
-# Aliases
-# Misc
 echo !! >>~/.bashrc
 
 # General
@@ -157,9 +151,9 @@ alias yd="yarn dev"
 alias ys="yarn start"
 
 # Bun
+alias br="bun run"
 alias bi="bun install"
 alias brd="bun run dev"
-alias br="bun run"
 
 ## Expo
 alias es="expo start"
@@ -198,7 +192,6 @@ alias nd='netlify deploy --prod'
 # Misc
 # alias killport="kill $(lsof -t -i:3005)"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport"
-
 
 # Vim
 alias vimconfig="vi ~/.vim_runtime/my_configs.vim"
