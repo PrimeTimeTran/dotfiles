@@ -19,74 +19,66 @@ plugins=(
 ZSH_THEME="primetimetran"
 ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
 ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
-source $ZSH/oh-my-zsh.sh
-
-[[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
-
-# Source system-wide tools or configurations here
-export PATH=/Library/PostgreSQL/15/bin:$PATH
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
-export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/
-export EDITOR="code -w"
-
-# Source user-specific tools or configurations here
 source ~/.functions
-export VISUAL=nvim
-export NVM_DIR="$HOME/.nvm"
-export BUN_INSTALL="$HOME/.bun"
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH=$PATH:$HOME/.maestro/bin
-[ -s "/Users/loi/.bun/_bun" ] && source "/Users/loi/.bun/_bun"
-# End
 
-# Include any other language managers or related tools here
+source $ZSH/oh-my-zsh.sh
+[[ -f /Users/future/.dart-cli-completion/zsh-config.zsh ]] && . /Users/future/.dart-cli-completion/zsh-config.zsh || true
+
+# System-wide tools or configs here
+export EDITOR="code -w"
+export PATH=/Library/PostgreSQL/15/bin:$PATH
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/
+
+# User-specific tools or configs here
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "/Users/future/.bun/_bun" ] && source "/Users/future/.bun/_bun"
+
+# Python
 eval "$(pyenv init -)"
-export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/.pyenv/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-# Include any other language managers or related tools here
 
-# Any other Android/Flutter specific paths can go here
+# Android
 export ANDROID_HOME="/Users/loi/Library/Android/sdk"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
 export PATH="$ANDROID_HOME/tools:$PATH"
 export PATH="$ANDROID_HOME/tools/bin:$PATH"
 export PATH="$ANDROID_HOME/emulator:$PATH"
+
+# Flutter
 export PATH=/Users/loi/flutter/bin:$PATH
+# VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-# Any other Android/Flutter specific paths can go here
+# Infosec
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # Metasploit
 PATH=$PATH:/opt/metasploit-framework/binexport
 PATH=$PATH:/opt/metasploit-framework/bin
 
+# GCP
 if [ -f '/Users/future/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/future/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/future/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/future/google-cloud-sdk/completion.zsh.inc'; fi
-# bun completions
-[ -s "/Users/future/.bun/_bun" ] && source "/Users/future/.bun/_bun"
 
-[[ -f /Users/loi/.dart-cli-completion/zsh-config.zsh ]] && . /Users/loi/.dart-cli-completion/zsh-config.zsh || true
-
-echo !! >>~/.bashrc
-
-# General
-alias bp="code ~/.zshrc"
+# General - Miscellanous
 alias c="clear"
 alias vs="code ."
-alias p="python3 "
-alias rl="omz reload"
-alias reload="omz reload"
-alias his="history | cut -c 8-"
 alias g="google "
+alias p="python3 "
 alias cpd="copydir "
+alias rl="omz reload"
+alias nuxi='npx nuxi '
+alias bp="code ~/.zshrc"
 alias home="cd ~/Desktop"
 alias dls="cd ~/Downloads"
 alias w="cd ~/Documents/work"
+alias his="history | cut -c 8-"
+alias vimconfig="vi ~/.cfg/my_configs.vim"
+
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport"
 
 # Git
 alias gl="git log"
@@ -118,7 +110,7 @@ alias ffp="gaa && gamendno && gpf"
 alias fft="gaa && gamendno"
 alias fftp="gat && gamendno && gp -f"
 
-# Dotfiles
+# Dotfiles/Bare Repo
 alias con="config "
 alias cs="config status"
 alias cond="config diff"
@@ -131,11 +123,8 @@ alias cr="config remote -v"
 alias cpf="config push --force"
 alias camend="config commit --amend "
 
-# Tmux
-# tmux ls 
-# prefix + (ctrl+$)
-
-# NPM
+# Package Managers
+## NPM
 alias np='npm publish'
 alias nr="npm run"
 alias nrd="npm run dev"
@@ -145,12 +134,10 @@ alias nra="npm run android"
 alias nri="npm run ios"
 alias nrg="npm run generate"
 alias ni="npm install"
-
-# Yarn
+## Yarn
 alias yd="yarn dev"
 alias ys="yarn start"
-
-# Bun
+## Bun
 alias br="bun run"
 alias bi="bun install"
 alias brd="bun run dev"
@@ -163,41 +150,29 @@ alias eiarid="npx expo run:ios --scheme 'myAPP - Debug' --configuration 'Debug' 
 alias esdca="npx expo run:android "
 alias erdca="npx expo run:android --variant developmentDebug"
 
-# IOS
+## IOS
 alias i="ios"
 alias ivd="xcrun xctrace list devices"
 
-# Android
+## Android
 alias adl="adb devices"
 alias ael="emulator -list-avds"
 alias aes="emulator -avd "
 alias aesp6="emulator -avd Pixel_6_Pro_API_33"
-alias aesp7="emulator -avd Pixel_6_Pro_API_33"
 alias ac="adb connect 10.0.0.193:43405"
 alias aemulator="adb -s emulator-5554 shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 
-# Java
+## Java
 alias jv='java --version'
-alias jvl='/usr/libexec/java_home -V'
 alias jv17='javahome 17.0.6'
+alias jvl='/usr/libexec/java_home -V'
 export JAVA_HOME=$(/usr/libexec/java_home -v "20");
 
-# Nuxt
-alias nuxi='npx nuxi '
+## Netlify
 alias nb='netlify build'
-alias nfb='netlify functions:build --src netlify/functions'
 alias nd='netlify deploy --prod'
-
-# Misc
-# alias killport="kill $(lsof -t -i:3005)"
-alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport"
-
-# Vim
-alias vimconfig="vi ~/.vim_runtime/my_configs.vim"
-
-# Infosec
-export PATH="/usr/local/opt/openssl/bin:$PATH"
+alias nfb='netlify functions:build --src netlify/functions'
 
 echo "Time flies... Use it wisely..."
 
