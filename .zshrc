@@ -20,7 +20,6 @@ ZSH_THEME="primetimetran"
 ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
 ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
 source ~/.functions
-
 source $ZSH/oh-my-zsh.sh
 [[ -f /Users/future/.dart-cli-completion/zsh-config.zsh ]] && . /Users/future/.dart-cli-completion/zsh-config.zsh || true
 
