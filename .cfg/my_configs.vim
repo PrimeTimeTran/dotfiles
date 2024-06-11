@@ -3,7 +3,7 @@ filetype plugin indent on
 syntax enable
 colorscheme dracula
 set number
-
+set clipboard=unnamed
 " Keep Nerdtree sidebar left when opening files
 let g:NERDTreeWinPos = "left"
 
@@ -55,13 +55,5 @@ cnoremap <C-N> <Down>
 nnoremap <leader>v :.GBrowse!<CR>
 xnoremap <leader>v :'<'>GBrowse!<CR>
 
-
-
-
 " Trying to get preview to work
-Plug 'lervag/vimtex'
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
-set conceallevel=1
-let g:tex_conceal='abdmg'
+set g:tex_conceal='abdmg'

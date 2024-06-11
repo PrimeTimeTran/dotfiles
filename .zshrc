@@ -1,4 +1,8 @@
 # Setup ZSH
+source ~/.paths.zsh
+source ~/.secrets.zsh
+source ~/.functions.zsh
+source $ZSH/oh-my-zsh.sh
 export ZSH="$HOME/.oh-my-zsh"
 
 plugins=(
@@ -19,65 +23,18 @@ plugins=(
 ZSH_THEME="primetimetran"
 ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
 ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
-source ~/.functions
+
 source $ZSH/oh-my-zsh.sh
-[[ -f /Users/future/.dart-cli-completion/zsh-config.zsh ]] && . /Users/future/.dart-cli-completion/zsh-config.zsh || true
 
-# System-wide tools or configs here
-export EDITOR="code -w"
-export PATH=/Library/PostgreSQL/15/bin:$PATH
-export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-export VSToolsPath=/Library/Frameworks/Mono.framework/Versions/Current/lib/mono/xbuild/Microsoft/VisualStudio/v17.0/
-
-# User-specific tools or configs here
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-[ -s "/Users/future/.bun/_bun" ] && source "/Users/future/.bun/_bun"
-
-# Python
-eval "$(pyenv init -)"
-export PATH="$PATH:$HOME/.pyenv/bin"
-export PATH="$PATH":"$HOME/.pub-cache/bin"
-
-# Android
-export ANDROID_HOME="/Users/loi/Library/Android/sdk"
-export PATH="$ANDROID_HOME/platform-tools:$PATH"
-export PATH="$ANDROID_HOME/tools:$PATH"
-export PATH="$ANDROID_HOME/tools/bin:$PATH"
-export PATH="$ANDROID_HOME/emulator:$PATH"
-
-# Flutter
-export PATH=/Users/loi/flutter/bin:$PATH
-# VSCode
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-# Infosec
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-
-# Metasploit
-PATH=$PATH:/opt/metasploit-framework/binexport
-PATH=$PATH:/opt/metasploit-framework/bin
-
-# GCP
-if [ -f '/Users/future/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/future/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/Users/future/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/future/google-cloud-sdk/completion.zsh.inc'; fi
-
-# General - Miscellanous
-alias c="clear"
-alias vs="code ."
-alias g="google "
-alias p="python3 "
-alias cpd="copydir "
-alias rl="omz reload"
-alias nuxi='npx nuxi '
 alias bp="code ~/.zshrc"
-alias home="cd ~/Desktop"
-alias dls="cd ~/Downloads"
-alias w="cd ~/Documents/work"
-alias his="history | cut -c 8-"
-alias vimconfig="vi ~/.cfg/my_configs.vim"
+alias bpath="code ~/Users/future/.paths.zsh"
+alias secrets="code ~/Users/future/.secrets.zsh"
 
-alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport"
+alias dcu="docker compose up"
+alias db="docker build ."
+alias dr="docker run --platform=linux/amd64"
+
+alias pg="postgres"
 
 # Git
 alias gl="git log"
@@ -102,6 +59,7 @@ alias gb="git branch -v"
 alias gfa="git fetch --all"
 alias grh="git reset --hard"
 
+## Git Ammend
 alias gamend="git commit --amend "
 alias gamendno="gamend --no-verify --no-edit"
 alias ff="gaa && gamendno"
@@ -123,7 +81,7 @@ alias cpf="config push --force"
 alias camend="config commit --amend "
 
 # Package Managers
-## NPM
+### NPM
 alias np='npm publish'
 alias nr="npm run"
 alias nrd="npm run dev"
@@ -133,10 +91,12 @@ alias nra="npm run android"
 alias nri="npm run ios"
 alias nrg="npm run generate"
 alias ni="npm install"
-## Yarn
+
+### Yarn
 alias yd="yarn dev"
 alias ys="yarn start"
-## Bun
+
+### Bun
 alias br="bun run"
 alias bi="bun install"
 alias brd="bun run dev"
@@ -162,16 +122,40 @@ alias ac="adb connect 10.0.0.193:43405"
 alias aemulator="adb -s emulator-5554 shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 
-## Java
-alias jv='java --version'
-alias jv17='javahome 17.0.6'
-alias jvl='/usr/libexec/java_home -V'
-export JAVA_HOME=$(/usr/libexec/java_home -v "20");
-
 ## Netlify
 alias nb='netlify build'
 alias nd='netlify deploy --prod'
 alias nfb='netlify functions:build --src netlify/functions'
 
-echo "Time flies... Use it wisely..."
+# General - Miscellanous
+alias c="clear"
+alias vs="code ."
+alias g="google "
 
+alias cpd="copydir "
+alias rl="omz reload"
+alias nuxi='npx nuxi '
+
+alias home="cd ~/Desktop"
+alias dls="cd ~/Downloads"
+alias w="cd ~/Documents/work"
+alias docs="cd ~/Documents"
+alias pics="cd ~/Pictures"
+alias his="history | cut -c 8-"
+alias vimconfig="vi ~/.cfg/my_configs.vim"
+# alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport"
+
+alias coni="conda info --envs"
+alias cond="conda deactivate"
+alias cona="conda activate"
+alias cons="conda env export > environment.yml"
+alias conin="conda install"
+alias conexmac="conda env export > environment-macos.yml"
+alias concref="conda create -f environment-"
+
+alias pm="python main.py"
+
+alias systemspecs="sw_vers"
+alias systeminfo="system_profiler SPHardwareDataType SPSoftwareDataType SPSoftwareDataType"
+
+echo "Time flies... Use it wisely..."
