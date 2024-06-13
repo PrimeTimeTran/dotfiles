@@ -1,0 +1,4269 @@
+
+# 2024-05-08 20:38:46.319731
++.tables;
+
+# 2024-05-08 20:38:55.375396
++select * from movies
+
+# 2024-05-08 20:39:40.046160
++select * from movies -S;
+
+# 2024-05-08 20:39:41.990828
++exit
+
+# 2024-05-08 20:40:13.043043
++pager -S
+
+# 2024-05-08 20:40:15.145625
++select * from movies -S;
+
+# 2024-05-08 20:40:17.494591
++select * from movies;
+
+# 2024-05-08 20:40:22.934586
++c
+
+# 2024-05-08 20:40:26.971578
++.system clear
+
+# 2024-05-08 20:40:28.920896
++.system clear;
+
+# 2024-05-08 20:40:31.011458
++exit
+
+# 2024-05-08 20:40:38.338114
++select * from movies;
+
+# 2024-05-08 20:40:51.574199
++nopager
+
+# 2024-05-08 20:40:53.302534
++select * from movies;
+
+# 2024-05-08 20:41:12.471925
++pager less -S
+
+# 2024-05-08 20:41:14.552272
++select * from movies;
+
+# 2024-05-08 20:41:45.819196
++exit
+
+# 2024-05-08 20:42:02.062635
++pager less -S
+
+# 2024-05-08 20:42:07.284002
++select * from movies;
+
+# 2024-05-08 20:42:45.947064
++.system clear;
+
+# 2024-05-08 20:42:49.860405
++system clear;
+
+# 2024-05-08 20:42:51.656195
++clear
+
+# 2024-05-08 20:42:55.493097
++system clear;
+
+# 2024-05-08 20:43:00.815012
++.tables;
+
+# 2024-05-08 20:43:13.835858
++.albums;
+
+# 2024-05-08 20:43:16.355964
++albums;
+
+# 2024-05-08 20:43:17.641276
++.
+
+# 2024-05-08 20:43:25.662390
++.tables;
+
+# 2024-05-08 20:45:07.812041
++.exit
+
+# 2024-05-08 21:34:00.238195
++SELECT * FROM movies WHERE title ILIKE "%and%";
++
+
+# 2024-05-08 21:34:05.479641
++SELECT * FROM movies WHERE title LIKE "%and%";
++
+
+# 2024-05-08 23:10:11.678981
++select * from films;
+
+# 2024-05-08 23:10:21.110180
++.tables;
+
+# 2024-05-08 23:10:34.580811
++.exit
+
+# 2024-05-08 23:10:49.037088
++select * from films;
+
+# 2024-05-08 23:10:51.826995
++select * from movies;
+
+# 2024-05-08 23:10:54.428718
++.tables;
+
+# 2024-05-08 23:11:39.697648
++.exit
+
+# 2024-05-08 23:15:41.010609
++select * from films;
+
+# 2024-05-08 23:15:45.343465
++c
+
+# 2024-05-08 23:16:32.516106
++pager less -S
+
+# 2024-05-08 23:16:35.479556
++select * from films;
+
+# 2024-05-08 23:17:50.973810
++select * EXCEPT url_poster from films;
+
+# 2024-05-08 23:18:04.232776
++pragma table_info(films)
+
+# 2024-05-08 23:18:11.836496
++select * EXCEPT url_poster from films;
+
+# 2024-05-08 23:18:41.878241
++SELECT runtime, worldwide_gross, year, imdb_score, overview, metacritic_score
++FROM films;
++
+
+# 2024-05-08 23:19:00.639347
++:
+
+# 2024-05-08 23:23:36.035151
++drop table films;
+
+# 2024-05-08 23:26:31.359269
++select * from genres;
+
+# 2024-05-08 23:26:37.706636
++select * from movies;
+
+# 2024-05-08 23:26:40.501731
++select * from films;
+
+# 2024-05-08 23:26:48.959386
++select count(*) from films;
+
+# 2024-05-08 23:36:26.608538
++select * from films;
+
+# 2024-05-08 23:39:51.446598
++drop table films;
+
+# 2024-05-08 23:39:55.228297
++drop table genres;
+
+# 2024-05-08 23:41:24.035395
++drop table films;
+
+# 2024-05-08 23:42:12.754832
++drop table genres;
+
+# 2024-05-08 23:42:16.452083
++drop table films;
+
+# 2024-05-08 23:43:12.041660
++drop table genres;
+
+# 2024-05-08 23:43:51.614535
++drop table films;
+
+# 2024-05-08 23:44:34.625879
++drop table genres;
+
+# 2024-05-08 23:51:49.551629
++drop table films;
+
+# 2024-05-08 23:52:59.448912
++drop table genres;
+
+# 2024-05-08 23:54:08.046503
++drop table films;
+
+# 2024-05-08 23:55:37.079075
++drop table genres;
+
+# 2024-05-08 23:57:08.620057
++drop table films;
+
+# 2024-05-08 23:57:10.630311
++drop table genres;
+
+# 2024-05-08 23:59:21.655053
++drop table films;
+
+# 2024-05-08 23:59:23.662803
++drop table genres;
+
+# 2024-05-09 00:01:17.293128
++drop table films;
+
+# 2024-05-09 00:03:09.556801
++drop table genres;
+
+# 2024-05-09 00:05:19.970605
++drop table films;
+
+# 2024-05-09 00:07:39.060914
++drop table genres;
+
+# 2024-05-09 00:07:59.498916
++select * from films;
+
+# 2024-05-09 00:09:43.280394
++drop table films;
+
+# 2024-05-09 00:09:46.476738
++drop table genres;
+
+# 2024-05-09 00:11:31.373546
++drop table films;
+
+# 2024-05-09 00:11:56.489934
++drop table genres;
+
+# 2024-05-09 00:18:23.674281
++drop table films;
+
+# 2024-05-09 00:23:28.082247
++drop table genres;
+
+# 2024-05-09 00:24:01.417053
++drop table films;
+
+# 2024-05-09 00:24:17.869283
++select count * from films;
+
+# 2024-05-09 00:24:22.923057
++select count(*) from films;
+
+# 2024-05-09 00:24:40.992722
++drop table films;
+
+# 2024-05-09 00:24:47.907265
++drop table genres;
+
+# 2024-05-09 00:25:37.412513
++drop table films;
+
+# 2024-05-09 00:25:40.180877
++drop table genres;
+
+# 2024-05-09 00:26:33.855853
++drop table films;
+
+# 2024-05-09 00:27:22.951781
++drop table genres;
+
+# 2024-05-09 00:27:46.305214
++select * from genres;
+
+# 2024-05-09 00:27:49.588133
++select * from genre_films;
+
+# 2024-05-09 00:28:04.279357
++c
+
+# 2024-05-09 00:28:07.202712
++system clear
+
+# 2024-05-09 00:32:24.191055
++.exit
+
+# 2024-05-09 00:33:27.390352
++drop table film_directors;
+
+# 2024-05-09 00:33:52.336818
++select count(*) from directors;
+
+# 2024-05-09 00:35:23.809869
++.exit
+
+# 2024-05-09 00:35:35.474878
++select count(*) from directors;
+
+# 2024-05-09 00:36:31.787115
++select count(*) from films;
+
+# 2024-05-09 00:37:05.519515
++.exit
+
+# 2024-05-09 00:37:11.202480
++select count(*) from directors;
+
+# 2024-05-09 00:37:21.459311
++select count(*) from film_directors;
+
+# 2024-05-09 00:43:42.437437
++.reload
+
+# 2024-05-09 00:43:43.814559
++.exit
+
+# 2024-05-09 00:43:53.534309
++select count(*) from film_directors;
+
+# 2024-05-09 00:47:14.179648
++select * from directors;
+
+# 2024-05-09 01:06:05.591126
++.tables;
+
+# 2024-05-09 01:53:43.386767
++c
+
+# 2024-05-09 01:53:46.599796
++.exit
+
+# 2024-05-09 01:54:00.860609
++.tables;
+
+# 2024-05-09 01:54:09.096314
++select count(*) from directors;
+
+# 2024-05-09 01:54:12.802101
++select count(*) from film_directors;
+
+# 2024-05-09 01:54:15.497092
++select count(*) from genres;
+
+# 2024-05-09 01:54:23.012873
++select count(*) from genre_films;
+
+# 2024-05-09 01:54:29.539608
++select count(*) from studios;
+
+# 2024-05-09 01:54:47.576103
++select count(*) from films;
+
+# 2024-05-09 01:54:49.979915
++exit
+
+# 2024-05-09 02:29:20.070688
++.tables;
+
+# 2024-05-09 02:29:28.435821
++select * from films;
+
+# 2024-05-09 04:53:08.132900
++.exit
+
+# 2024-05-09 06:38:31.091296
++.tables;
+
+# 2024-05-09 06:38:34.720833
++.exit
+
+# 2024-05-09 12:54:40.916097
++.tables;
+
+# 2024-05-09 12:54:46.638728
++select * from films;
+
+# 2024-05-09 12:54:49.752841
++.exit
+
+# 2024-05-11 13:36:52.804433
++pragma table_info(employees);
+
+# 2024-05-11 13:38:39.370070
++ALTER TABLE employees RENAME COLUMN EmployeeId, Title TO employeeid, title;
+
+# 2024-05-11 13:38:49.961186
++y
+
+# 2024-05-11 13:38:53.748460
++ALTER TABLE employees RENAME COLUMN EmployeeId, Title TO employeeid, title;
+
+# 2024-05-11 13:39:05.022657
++ALTER TABLE employees RENAME COLUMN EmployeeId TO employeeid;
+
+# 2024-05-11 13:39:07.963976
++c
+
+# 2024-05-11 13:39:11.271735
++system clear
+
+# 2024-05-11 13:39:14.068736
++pragma table_info(employees);
+
+# 2024-05-11 13:40:29.873802
++ALTER TABLE employees RENAME COLUMN name TO Name;
+
+# 2024-05-11 13:40:34.333808
++ALTER TABLE employees RENAME COLUMN surname TO Surname;
+
+# 2024-05-11 13:40:38.255083
++ALTER TABLE employees RENAME COLUMN employeeid TO EmployeeId;
+
+# 2024-05-11 13:40:40.694197
++pragma table_info(employees);
+
+# 2024-05-11 13:40:58.215780
++select * from employees;
+
+# 2024-05-11 13:41:12.199522
++SELECT name FROM sqlite_master WHERE type='table';
++
+
+# 2024-05-11 13:41:57.873374
++select * movies;
+
+# 2024-05-11 13:42:02.445096
++select * FROM movies;
+
+# 2024-05-11 13:42:12.543207
++pragma table_info(films);
+
+# 2024-05-11 13:42:42.666362
++pragma table_info(employees);
+
+# 2024-05-11 13:42:57.467349
++ALTER TABLE employees RENAME COLUMN employeeid TO employeeid;
+
+# 2024-05-11 13:43:00.427714
++pragma table_info(employees);
+
+# 2024-05-11 13:44:13.214260
++ALTER TABLE employees RENAME COLUMN surname TO surname;
+
+# 2024-05-11 13:44:16.341573
++ALTER TABLE employees RENAME COLUMN name TO name;
+
+# 2024-05-11 13:44:19.253846
++ALTER TABLE employees RENAME COLUMN title TO title;
+
+# 2024-05-11 13:44:22.029906
++ALTER TABLE employees RENAME COLUMN reportsto TO reports_to;
+
+# 2024-05-11 13:44:24.772938
++ALTER TABLE employees RENAME COLUMN birthdate TO birth_date;
+
+# 2024-05-11 13:44:27.312184
++ALTER TABLE employees RENAME COLUMN hiredate TO hire_date;
+
+# 2024-05-11 13:44:29.682315
++ALTER TABLE employees RENAME COLUMN address TO address;
+
+# 2024-05-11 13:44:33.543684
++ALTER TABLE employees RENAME COLUMN city TO city;
+
+# 2024-05-11 13:44:36.027043
++ALTER TABLE employees RENAME COLUMN state TO state;
+
+# 2024-05-11 13:44:38.718061
++ALTER TABLE employees RENAME COLUMN country TO country;
+
+# 2024-05-11 13:44:41.310303
++ALTER TABLE employees RENAME COLUMN postalcode TO postal_code;
+
+# 2024-05-11 13:44:45.882335
++ALTER TABLE employees RENAME COLUMN phone TO phone;
+
+# 2024-05-11 13:44:48.516055
++ALTER TABLE employees RENAME COLUMN fax TO fax;
+
+# 2024-05-11 13:44:51.714317
++ALTER TABLE employees RENAME COLUMN email TO email;
+
+# 2024-05-11 13:44:54.629486
++pragma table_info(employees);
+
+# 2024-05-11 13:45:11.148089
++SELECT name FROM sqlite_master WHERE type='table';
+
+# 2024-05-11 13:45:25.379202
++select * from films;
+
+# 2024-05-11 13:45:28.775011
++SELECT name FROM sqlite_master WHERE type='table';
+
+# 2024-05-11 13:45:38.434588
++drop table movies, movie_directors;
+
+# 2024-05-11 13:45:44.353430
++drop table movies;
+
+# 2024-05-11 13:45:48.725873
++drop table movie_directors;
+
+# 2024-05-11 13:45:50.413131
++c
+
+# 2024-05-11 13:45:53.039877
++system clear
+
+# 2024-05-11 13:45:57.940522
++SELECT name FROM sqlite_master WHERE type='table';
+
+# 2024-05-11 13:46:16.222337
++select * from sqlite_stat1;
+
+# 2024-05-11 13:46:28.871779
++SELECT name FROM sqlite_master WHERE type='table';
+
+# 2024-05-11 13:46:44.727480
++select * from sqlite_sequence;
+
+# 2024-05-11 13:48:06.915123
++SELECT * FROM sqlite_sequence;
+
+# 2024-05-11 13:51:02.329584
++system clear
+
+# 2024-05-11 13:51:10.264863
++select name, surname from employees;
+
+# 2024-05-11 13:55:15.214020
++-- Step 1: Add a new column named "age" to the "employees" table
++ALTER TABLE employees ADD COLUMN age INTEGER;
++
++-- Step 2: Update the "age" column with the calculated age values
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birthdate)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birthdate));
++
+
+# 2024-05-11 13:56:02.678366
++ALTER TABLE employees ADD COLUMN age INTEGER;
++
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 13:56:17.002862
++select * from employees limit 5;
+
+# 2024-05-11 13:56:32.444816
++select age from employees limit 5;
+
+# 2024-05-11 13:57:13.671571
++ALTER TABLE employees DROP COLUMN age;
+
+# 2024-05-11 13:57:19.643182
++ALTER TABLE employees ADD COLUMN age INTEGER;
++
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 13:57:26.361250
++select age from employees;
+
+# 2024-05-11 13:57:32.236020
++system clear
+
+# 2024-05-11 13:58:18.419272
++select * from employees;
+
+# 2024-05-11 13:58:32.685876
++.exit
+
+# 2024-05-11 13:59:39.064111
++.tables;
+
+# 2024-05-11 14:00:50.089223
++select name, age - 21 as younger_age from employees;
+
+# 2024-05-11 14:01:35.128412
++select name, age, age - 21 as younger_age from employees;
+
+# 2024-05-11 14:02:46.486423
++.exit
+
+# 2024-05-11 14:07:05.085960
++SELECT name from employees where age > 30;
+
+# 2024-05-11 14:07:13.154664
++SELECT name from employees where age > 30;SELECT name, age from employees where age > 30;
+
+# 2024-05-11 14:07:15.381867
++SELECT name, age from employees where age > 30;
+
+# 2024-05-11 14:07:19.228638
++SELECT name, age from employees where age < 30;
+
+# 2024-05-11 14:10:46.835628
++pragma table_info(employees);
+
+# 2024-05-11 14:11:34.529989
++ALTER TABLE employees RENAME COLUMN employeeid TO employee_id;
+
+# 2024-05-11 14:11:41.333183
++system clear
+
+# 2024-05-11 14:11:58.184076
++select * from employees;
+
+# 2024-05-11 14:12:10.791832
++INSERT INTO employees name, surname, employee_id VALUES "Loi", "Tran", 1
+
+# 2024-05-11 14:12:31.194731
++INSERT INTO employees (name, surname, employee_id) VALUES ("Loi", "Tran", 1)
+
+# 2024-05-11 14:13:26.138759
++select * from employees;
+
+# 2024-05-11 14:13:37.684799
++UPDATE employees
++SET employee_id = 9
++WHERE employee_id = 1;
+
+# 2024-05-11 14:13:42.144751
++INSERT INTO employees (name, surname, employee_id) VALUES ("Loi", "Tran", 1)
+
+# 2024-05-11 14:13:47.161697
++select * from employees;
+
+# 2024-05-11 14:15:20.495201
++UPDATE employees
++SET
++title = "CEO",
++birth_date = DATE('now', '-21 years')
++WHERE employee_id = 1;
+
+# 2024-05-11 14:15:24.147722
++select * from employees;
+
+# 2024-05-11 14:16:44.215251
++UPDATE employees
++SET
++title = "CEO",
++birth_date = DATE('now', '-21 years')
++hire_date = DATE('now', '-21 days')
++city = "San Francisco"
++state = "Florida"
++country = "USA"
++postal = 94016
++email = "loi@seepdeep.com"
++WHERE employee_id = 1;
+
+# 2024-05-11 14:17:07.571716
++UPDATE employees
++SET
++title = "CEO",
++birth_date = DATE('now', '-21 years'),
++hire_date = DATE('now', '-21 days'),
++city = "San Francisco",
++state = "Florida",
++country = "USA",
++postal = 94016,
++email = "loi@seepdeep.com",
++WHERE employee_id = 1;
+
+# 2024-05-11 14:17:14.378320
++UPDATE employees
++SET
++title = "CEO",
++birth_date = DATE('now', '-21 years'),
++hire_date = DATE('now', '-21 days'),
++city = "San Francisco",
++state = "Florida",
++country = "USA",
++postal = 94016,
++email = "loi@seepdeep.com"
++WHERE employee_id = 1;
+
+# 2024-05-11 14:17:22.619172
++UPDATE employees
++SET
++title = "CEO",
++birth_date = DATE('now', '-21 years'),
++hire_date = DATE('now', '-21 days'),
++city = "San Francisco",
++state = "Florida",
++country = "USA",
++email = "loi@seepdeep.com"
++WHERE employee_id = 1;
+
+# 2024-05-11 14:17:25.482003
++select * from employees;
+
+# 2024-05-11 14:18:30.607877
++UPDATE employees
++SET email = REPLACE(email, SUBSTR(email, INSTR(email, '@')), '@seepdeep.com')
++WHERE email LIKE '%@chinookcorp.com';
+
+# 2024-05-11 14:18:33.154594
++select * from employees;
+
+# 2024-05-11 14:22:35.637286
++INSERT INTO employees (name, surname, hire_date)
++VALUES
++    ('Charles', 'Lee', DATE('now'), "charles@seepdeep.com"),
++    ('Michael', 'Do', DATE('now'), "michael@seepdeep.com"),
++    ('Ben', 'Dao', DATE('now'), "ben@seepdeep.com"),
++    ('Peter', 'Nguyen', DATE('now'), "peter@seepdeep.com"),
++    ('Thuy', 'Dao', DATE('now'), "thuy@seepdeep.com"),
++    ('Uyen', 'Nguyen', DATE('now'), "uyen@seepdeep.com"),
++    ('Thanh', 'Luu', DATE('now'), "thanh@seepdeep.com"),
++    ('Thuy', 'Linh', DATE('now'), "thanh@seepdeep.com"),
++    ('Sang', 'Nguyen', DATE('now'), "sang@seepdeep.com");
+
+# 2024-05-11 14:22:46.523498
++select * from employees;
+
+# 2024-05-11 14:23:00.548596
++INSERT INTO employees (name, surname, hire_date, email)
++VALUES
++    ('Charles', 'Lee', DATE('now'), "charles@seepdeep.com"),
++    ('Michael', 'Do', DATE('now'), "michael@seepdeep.com"),
++    ('Ben', 'Dao', DATE('now'), "ben@seepdeep.com"),
++    ('Peter', 'Nguyen', DATE('now'), "peter@seepdeep.com"),
++    ('Thuy', 'Dao', DATE('now'), "thuy@seepdeep.com"),
++    ('Uyen', 'Nguyen', DATE('now'), "uyen@seepdeep.com"),
++    ('Thanh', 'Luu', DATE('now'), "thanh@seepdeep.com"),
++    ('Thuy', 'Linh', DATE('now'), "thanh@seepdeep.com"),
++    ('Sang', 'Nguyen', DATE('now'), "sang@seepdeep.com")
+
+# 2024-05-11 14:23:03.442111
++select * from employees;
+
+# 2024-05-11 14:23:39.841050
++UPDATE employees
++SET reports_to = 1
++WHERE employee_id > 8;
+
+# 2024-05-11 14:23:42.488272
++select * from employees;
+
+# 2024-05-11 14:24:52.903307
++UPDATE employees
++SET birth_date = DATE('now', '-21 years')
++WHERE birth_date > DATE('now', '-21 years');
+
+# 2024-05-11 14:24:58.612488
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birthdate));
+
+# 2024-05-11 14:25:13.322918
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 14:25:16.056496
++select * from employees;
+
+# 2024-05-11 14:26:04.021275
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - 21 * 365 * 24 * 60 * 60, 'unixepoch', '+' || (ABS(RANDOM()) % (365 * 24 * 60 * 60)) || ' seconds')
++WHERE birth_date > DATE(strftime('%s', 'now') - 21 * 365 * 24 * 60 * 60);
++
+
+# 2024-05-11 14:26:19.254998
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - 21 * 365 * 24 * 60 * 60, 'unixepoch', '+' || (ABS(RANDOM()) % (21 * 365 * 24 * 60 * 60)) || ' seconds');
++
+
+# 2024-05-11 14:26:23.232840
++select * from employees;
+
+# 2024-05-11 14:26:51.303763
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birthdate));
+
+# 2024-05-11 14:26:55.491509
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 14:26:58.338300
++select * from employees;
+
+# 2024-05-11 14:27:28.376431
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - 21 * 365 * 24 * 60 * 60, 'unixepoch', '+' || (ABS(RANDOM()) % (21 * 365 * 24 * 60 * 60)) || ' seconds');
++
+
+# 2024-05-11 14:27:33.018910
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 14:27:35.528120
++select * from employees;
+
+# 2024-05-11 14:28:32.512396
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - 21 * 365 * 24 * 60 * 60, 'unixepoch', '+' || (ABS(RANDOM()) % (21 * 365 * 24 * 60 * 60)) || ' seconds');
++
+
+# 2024-05-11 14:28:38.412075
++select * from employees;
+
+# 2024-05-11 14:29:23.735854
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % (60 * 365 * 24 * 60 * 60)), 'unixepoch');
+
+# 2024-05-11 14:29:29.102885
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 14:29:31.513628
++select * from employees;
+
+# 2024-05-11 14:30:42.709166
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % ((60 - 21) * 365 * 24 * 60 * 60)), 'unixepoch')
++WHERE birth_date < DATE('now', '-21 years');
++
+
+# 2024-05-11 14:30:56.956187
++select * from employees;
+
+# 2024-05-11 14:31:16.153322
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % ((60 - 21) * 365 * 24 * 60 * 60)), 'unixepoch')
++WHERE birth_date < DATE('now', '-21 years');
+
+# 2024-05-11 14:31:58.575105
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 14:32:00.635366
++select * from employees;
+
+# 2024-05-11 14:32:20.638379
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % ((60 - 21) * 365 * 24 * 60 * 60)), 'unixepoch')
++WHERE birth_date < DATE('now', '-21 years');
+
+# 2024-05-11 14:32:24.242543
++select * from employees;
+
+# 2024-05-11 14:32:58.238408
++select name, birth_date, age from employees;
+
+# 2024-05-11 14:33:37.531243
++UPDATE employees
++SET birth_date = DATE('now', '-21 years')
++WHERE birth_date > DATE('now', '-21 years');
++
+
+# 2024-05-11 14:33:39.847950
++select name, birth_date, age from employees;
+
+# 2024-05-11 14:34:04.516050
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 14:34:06.283417
++select name, birth_date, age from employees;
+
+# 2024-05-11 14:34:12.341945
++UPDATE employees
++SET birth_date = DATE('now', '-' || (ABS(RANDOM()) % ((60 - 21) * 365)) || ' days')
++WHERE birth_date > DATE('now', '-21 years');
++
+
+# 2024-05-11 14:34:18.618212
++UPDATE employees
++SET birth_date = DATE('now', '-' || (ABS(RANDOM()) % ((60 - 21) * 365)) || ' days')
++WHERE birth_date < DATE('now', '-21 years');
++
+
+# 2024-05-11 14:34:22.858200
++select name, birth_date, age from employees;
+
+# 2024-05-11 14:34:40.430340
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % (60 * 365 * 24 * 60 * 60)), 'unixepoch')
++WHERE birth_date IS NULL;
++
+
+# 2024-05-11 14:34:46.919205
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % (60 * 365 * 24 * 60 * 60)), 'unixepoch');
++
+
+# 2024-05-11 14:35:14.922043
++select name, birth_date, age from employees;
+
+# 2024-05-11 14:35:30.641014
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % (60 * 365 * 24 * 60 * 60)), 'unixepoch');
+
+# 2024-05-11 14:35:38.548725
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 14:35:40.707265
++select name, birth_date, age from employees;
+
+# 2024-05-11 14:35:55.164037
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % ((60 - 21) * 365 * 24 * 60 * 60)), 'unixepoch')
++WHERE birth_date > DATE('now', '-21 years');
+
+# 2024-05-11 14:35:58.708772
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 14:36:04.631220
++select name, birth_date, age from employees;
+
+# 2024-05-11 14:36:26.951075
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % ((60 - 21) * 365 * 24 * 60 * 60)), 'unixepoch')
++WHERE birth_date > DATE('now', '-21 years');
+
+# 2024-05-11 14:36:32.993048
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 14:36:35.504687
++select name, birth_date, age from employees;
+
+# 2024-05-11 14:38:14.938927
++.exit
+
+# 2024-05-11 14:39:02.285585
++select name, birth_date, address, age from employees;
+
+# 2024-05-11 14:39:12.992785
++select * from employees;
+
+# 2024-05-11 14:51:36.888777
++ALTER TABLE employees
++MODIFY COLUMN postal_code TEXT;
+
+# 2024-05-11 14:52:12.465480
++-- Step 1: Rename the existing column
++ALTER TABLE employees RENAME COLUMN postal_code TO temp_postal_code;
++
++-- Step 2: Add a new column with the desired datatype
++ALTER TABLE employees ADD COLUMN postal_code TEXT;
++
++-- Step 3: Copy data from the old column to the new column
++UPDATE employees SET postal_code = temp_postal_code;
++
++-- Step 4: Drop the temporary column
++ALTER TABLE employees DROP COLUMN temp_postal_code;
++
+
+# 2024-05-11 14:52:40.673293
++select * from employees;
+
+# 2024-05-11 15:09:29.598784
++alter table employees remove fax;
+
+# 2024-05-11 15:09:35.760915
++alter table employees drop fax;
+
+# 2024-05-11 15:09:40.225024
++select * from employees;
+
+# 2024-05-11 15:11:08.461165
++.tables;
+
+# 2024-05-11 15:11:22.449252
++select * from films;
+
+# 2024-05-11 15:12:07.776597
++select title from films;
+
+# 2024-05-11 15:20:55.725051
++SELECT name, age from employees where age > 30;
+
+# 2024-05-11 15:25:29.754928
++CREATE TABLE departments (
++    id INTEGER PRIMARY KEY,
++    name TEXT
++);
+
+# 2024-05-11 15:25:40.804913
++INSERT INTO departments (name) VALUES 
++    ("Development"),
++    ("Product"),
++    ("Business Development"),
++    ("Human Resources"),
++    ("Finance"),
++    ("Marketing"),
++    ("Customer Support"),
++    ("Design"),
++    ("Accounting"),
++    ("System Admin");
+
+# 2024-05-11 15:25:50.526774
++select * from departments;
+
+# 2024-05-11 15:27:45.342170
++.tables;
+
+# 2024-05-11 15:27:58.631602
++pragma table_info(departments);
+
+# 2024-05-11 15:28:05.189386
++select * from departments;
+
+# 2024-05-11 15:34:32.799100
++SELECT name FROM employees WHERE age > 30 AND state = "FL"
+
+# 2024-05-11 15:34:35.890668
++SELECT name FROM employees WHERE age > 30
+
+# 2024-05-11 15:34:42.294033
++SELECT name, state FROM employees WHERE age > 30
+
+# 2024-05-11 15:35:25.529133
++SELECT name FROM employees WHERE age > 30 AND state = "RI"
+
+# 2024-05-11 15:39:13.895704
++alter table employees add salary INTEGER;
+
+# 2024-05-11 15:39:31.979935
++select * from employees;
+
+# 2024-05-11 15:48:08.161896
++SELECT name FROM employees WHERE age > 30 OR state = "CA"
+
+# 2024-05-11 15:48:10.917792
++SELECT name FROM employees WHERE age > 30
+
+# 2024-05-11 15:48:45.812029
++SELECT name FROM employees WHERE salary >= 75000
+
+# 2024-05-11 15:48:53.248506
++SELECT name FROM employees WHERE salary >= 100000
+
+# 2024-05-11 15:50:25.999671
++SELECT name FROM employees WHERE name LIKE 'L*';
+
+# 2024-05-11 15:50:29.292591
++SELECT name FROM employees WHERE name LIKE 'L%';
+
+# 2024-05-11 15:51:18.381632
++SELECT name FROM employees WHERE reports_to IS NULL;
+
+# 2024-05-11 15:53:51.292277
++SELECT name, age FROM employees ORDER BY age
+
+# 2024-05-11 15:54:11.429541
++SELECT name, age FROM employees ORDER BY age;
+
+# 2024-05-11 15:54:28.033007
++SELECT name, age, salary FROM employees ORDER BY salary DESC;
+
+# 2024-05-11 15:56:14.006475
++SELECT name, age FROM employees ORDER BY salary, age;
+
+# 2024-05-11 15:56:19.522055
++SELECT name, age,salary FROM employees ORDER BY salary, age;
+
+# 2024-05-11 15:57:26.678591
++SELECT name, age FROM employees ORDER BY salary, age;
+
+# 2024-05-11 15:57:31.404938
++SELECT name, age,salary FROM employees ORDER BY salary, age;
+
+# 2024-05-11 15:58:06.185348
++SELECT name, age,salary FROM employees ORDER BY salary, age, name DESC;
+
+# 2024-05-11 16:00:39.222379
++select name, hire_date as years from employees order by years DESC;
+
+# 2024-05-11 16:01:01.008245
++select name, hire_date AS years FROM employees ORDER BY years ASC;
+
+# 2024-05-11 16:01:03.876582
++select name, hire_date as years from employees order by years DESC;
+
+# 2024-05-11 16:01:08.230684
++select name, hire_date AS years FROM employees ORDER BY years ASC;
+
+# 2024-05-11 16:01:17.900988
++select name, hire_date AS years FROM employees ORDER BY years
+
+# 2024-05-11 16:02:10.215214
++SELECT name, 
++       DATEDIFF(CURRENT_DATE(), hire_date) AS years_at_company 
++FROM employees 
++ORDER BY years_at_company;
+
+# 2024-05-11 16:02:23.454740
++SELECT 
++    name, 
++    TIMESTAMPDIFF(YEAR, hire_date, CURRENT_DATE()) AS years_at_company 
++FROM 
++    employees 
++ORDER BY 
++    years_at_company;
++
+
+# 2024-05-11 16:02:33.932803
++SELECT 
++    name, 
++    (CAST(strftime('%Y', 'now') AS INTEGER) - CAST(strftime('%Y', hire_date) AS INTEGER)) AS years_at_company 
++FROM 
++    employees 
++ORDER BY 
++    years_at_company;
++
+
+# 2024-05-11 16:03:15.679790
++SELECT 
++    name, 
++    (CAST(strftime('%Y', 'now') AS INTEGER) - CAST(strftime('%Y', hire_date) AS INTEGER)) AS years_at_company 
++FROM 
++    employees 
++ORDER BY 
++    years_at_company;
+
+# 2024-05-11 16:05:49.980368
++select * from employees;
+
+# 2024-05-11 16:08:32.352221
++SELECT age, COUNT(*)
++FROM employees
++GROUP BY title;
+
+# 2024-05-11 16:08:42.191560
++SELECT age, title, COUNT(*)
++FROM employees
++GROUP BY title;
+
+# 2024-05-11 16:10:40.579083
++SELECT age, title, SUM(salary)
++FROM employees
++GROUP BY title;
+
+# 2024-05-11 16:10:57.260876
++SELECT age, title, SUM(salary), COUNT(*)
++FROM employees
++GROUP BY title;
+
+# 2024-05-11 16:12:01.272488
++select * from depa;
+
+# 2024-05-11 16:12:04.223651
++select * from departments';
+
+# 2024-05-11 16:12:06.377214
++select * from departments;
+
+# 2024-05-11 16:35:26.447762
++ALTER TABLE employees
++ADD COLUMN department_id INTEGER,
++ADD FOREIGN KEY (department_id) REFERENCES departments(id);
++
+
+# 2024-05-11 16:35:38.775424
++-- Add the 'salary' column to the 'employees' table
++ALTER TABLE employees
++ADD COLUMN salary INTEGER;
++
++-- Add a foreign key constraint on the 'department_id' column in the 'employees' table
++ALTER TABLE employees
++ADD COLUMN department_id INTEGER,
++ADD FOREIGN KEY (department_id) REFERENCES departments(id);
++
+
+# 2024-05-11 16:35:50.946263
++ALTER TABLE employees
++ADD COLUMN department_id INTEGER,
++ADD FOREIGN KEY (department_id) REFERENCES departments(id);
+
+# 2024-05-11 16:36:07.668216
++ALTER TABLE employees
++ADD COLUMN department_id INTEGER
++ADD FOREIGN KEY (department_id) REFERENCES departments(id);
+
+# 2024-05-11 16:36:19.831435
++select * from employees;
+
+# 2024-05-11 16:36:41.049921
++ALTER TABLE employees
++ADD COLUMN department_id INTEGER;
+
+# 2024-05-11 16:38:46.182201
++select * from employees;
+
+# 2024-05-11 16:45:34.532016
++alter table employees add sex TEXT;
+
+# 2024-05-11 16:46:54.446766
++select * from employees;
+
+# 2024-05-11 16:51:37.033917
++DELETE FROM employees
++WHERE id > 1;
+
+# 2024-05-11 16:51:46.977055
++DELETE FROM employees
++WHERE employee_id > 1;
++
+
+# 2024-05-11 16:57:05.235449
++select * from employees;
+
+# 2024-05-11 16:57:58.411135
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % ((60 - 21) * 365 * 24 * 60 * 60)), 'unixepoch')
++WHERE birth_date > DATE('now', '-21 years');
+
+# 2024-05-11 16:58:13.133425
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 16:58:15.413621
++select * from employees;
+
+# 2024-05-11 17:00:30.149887
++DELETE FROM employees
++WHERE id > 1;
++
+
+# 2024-05-11 17:00:38.381354
++DELETE FROM employees
++WHERE employee_id > 1;
++
+
+# 2024-05-11 17:02:54.356477
++select * from employees;
+
+# 2024-05-11 17:03:28.419175
++DELETE FROM employees
++WHERE employee_id > 1;
++
+
+# 2024-05-11 17:05:12.847785
++-- Create a temporary table to store the updated employee_id values
++CREATE TEMP TABLE temp_employees AS
++SELECT 
++    employee_id,
++    ROW_NUMBER() OVER (ORDER BY employee_id) AS new_employee_id
++FROM 
++    employees;
++
++-- Update the original employees table with the new employee_id values
++UPDATE employees
++SET employee_id = (
++    SELECT new_employee_id 
++    FROM temp_employees 
++    WHERE temp_employees.employee_id = employees.employee_id
++);
++
++-- Drop the temporary table
++DROP TABLE temp_employees;
++
+
+# 2024-05-11 17:05:18.967236
++select * from employees;
+
+# 2024-05-11 17:07:26.754255
++DELETE FROM employees
++WHERE employee_id > 1;
++
+
+# 2024-05-11 17:07:39.925467
++select * from employees;
+
+# 2024-05-11 17:07:52.098669
++-- Create a temporary table to store the updated employee_id values
++CREATE TEMP TABLE temp_employees AS
++SELECT
++    employee_id,
++    ROW_NUMBER() OVER (ORDER BY employee_id) AS new_employee_id
++FROM
++    employees;
++
++-- Update the original employees table with the new employee_id values
++UPDATE employees
++SET employee_id = (
++    SELECT new_employee_id
++    FROM temp_employees
++    WHERE temp_employees.employee_id = employees.employee_id
++);
++
++-- Drop the temporary table
++DROP TABLE temp_employees;
+
+# 2024-05-11 17:07:58.889542
++select * from employees;
+
+# 2024-05-11 17:22:10.178351
++DELETE * from employees if employee_id > 1;
+
+# 2024-05-11 17:22:14.958235
++DELETE from employees if employee_id > 1;
+
+# 2024-05-11 17:22:20.835315
++DELETE from employees WHERE employee_id > 1;
+
+# 2024-05-11 17:23:53.216788
++select * from employees;
+
+# 2024-05-11 17:24:21.244647
++CREATE TEMP TABLE temp_employees AS
++        SELECT
++            employee_id,
++            ROW_NUMBER() OVER (ORDER BY employee_id) AS new_employee_id
++        FROM
++            employees;
++
++        -- Update the original employees table with the new employee_id values
++        UPDATE employees
++        SET employee_id = (
++            SELECT new_employee_id
++            FROM temp_employees
++            WHERE temp_employees.employee_id = employees.employee_id
++        );
++
++        -- Drop the temporary table
++        DROP TABLE temp_employees;
+
+# 2024-05-11 17:26:10.864393
++select * from employees;
+
+# 2024-05-11 17:26:50.698912
++UPDATE employees
++SET birth_date = DATE(strftime('%s', 'now') - (ABS(RANDOM()) % ((60 - 21) * 365 * 24 * 60 * 60)), 'unixepoch')
++WHERE birth_date > DATE('now', '-21 years');
+
+# 2024-05-11 17:27:01.709651
++UPDATE employees
++SET age = (strftime('%Y', 'now') - strftime('%Y', birth_date)) - (strftime('%m-%d', 'now') < strftime('%m-%d', birth_date));
+
+# 2024-05-11 17:27:17.318950
++select * from employees;
+
+# 2024-05-11 17:27:32.563630
++:q
+
+# 2024-05-11 17:27:32.597796
++q
+
+# 2024-05-11 17:38:00.309095
++select * from employees group by title;
+
+# 2024-05-11 17:38:15.710656
++qq
+
+# 2024-05-11 17:38:15.768518
++q
+
+# 2024-05-11 17:38:18.310936
++c
+
+# 2024-05-11 17:38:20.556832
++.exit
+
+# 2024-05-11 17:38:25.017093
++select * from employees group by title;
+
+# 2024-05-11 18:31:23.687146
++ALTER TABLE employees RENAME COLUMN employee_id TO id;
+
+# 2024-05-11 18:31:38.816698
++select * from employees;
+
+# 2024-05-11 18:31:51.634536
++select * from films;
+
+# 2024-05-11 18:32:45.949669
++\f
+
+# 2024-05-11 18:33:45.517689
++pager less -S
+
+# 2024-05-11 18:33:47.603318
++select * from films;
+
+# 2024-05-11 18:34:35.434481
++qqq:qqq
+
+# 2024-05-11 18:34:43.989730
++current_date
+
+# 2024-05-11 18:34:46.504078
++current_date(0
+
+# 2024-05-11 18:34:49.422832
++current_date()
+
+# 2024-05-12 09:48:40.938014
++.exit
+
+# 2024-05-13 08:39:49.084017
++.tables;
+
+# 2024-05-13 08:43:11.049201
++select * from employees;
+
+# 2024-05-13 08:43:36.061098
++.exit
+
+# 2024-05-13 08:43:40.538528
++select * from employees;
+
+# 2024-05-13 08:45:21.364447
++c
+
+# 2024-05-13 08:45:26.949205
++select * from employees;
+
+# 2024-05-13 08:47:53.948151
++.tables;
+
+# 2024-05-13 08:48:19.954420
++select * from films;
+
+# 2024-05-13 08:49:30.353150
++select * from films where oscars_won >= 3;
+
+# 2024-05-13 08:49:32.240991
++select * from films where oscars_won >= 2;
+
+# 2024-05-13 08:50:32.808624
++select * from employees;
+
+# 2024-05-13 08:51:16.821322
++select * from employees group by title;
+
+# 2024-05-13 08:51:33.576363
++select count(id), * from employees group by title;
+
+# 2024-05-13 08:52:08.785576
++select (id) from employees group by title;
+
+# 2024-05-13 08:52:38.275130
++select (id) from employees e1 join employees e2 group by title;
+
+# 2024-05-13 08:52:43.850067
++select (e1.id) from employees e1 join employees e2 group by title;
+
+# 2024-05-13 08:52:48.894443
++select (e1.id) from employees e1 join employees e2 group by e1.title;
+
+# 2024-05-13 08:53:33.452068
++SELECT title, employee_id, name, other_columns
++FROM employees
++ORDER BY title;
++
+
+# 2024-05-13 08:53:40.406408
++SELECT title, id, name, other_columns
++FROM employees
++ORDER BY title;
++
+
+# 2024-05-13 08:53:47.820420
++SELECT title, id, name
++FROM employees
++ORDER BY title;
++
+
+# 2024-05-13 08:56:22.537595
++SELECT title, id, name
++FROM employees
++ORDER BY title, name
+
+# 2024-05-13 08:57:10.850920
++SELECT title, id, name, birth_date
++FROM employees
++ORDER BY title, name, birth_date
+
+# 2024-05-13 08:59:42.689142
++select studio from films;
+
+# 2024-05-13 08:59:46.791917
++select studioId from films;
+
+# 2024-05-13 08:59:53.045452
++select studio_id from films;
+
+# 2024-05-13 09:00:08.273779
++select studio_id from films group by studio_id;
+
+# 2024-05-13 09:00:19.319172
++select * from films limit 1;
+
+# 2024-05-13 09:01:51.113331
++select count(oscars_won) from films group by oscars_won;
+
+# 2024-05-13 09:02:01.976482
++select count(oscars_won), oscars_won from films group by oscars_won;
+
+# 2024-05-13 09:02:59.829948
++select title from films where title = 'Titantic'
+
+# 2024-05-13 09:06:44.425959
++SELECT title, name from films join studio on films.studio_id = studio.id;
+
+# 2024-05-13 09:06:56.676619
++SELECT title, name from films join studios on films.studio_id = studios.id;
+
+# 2024-05-13 09:08:08.436701
++SELECT employee.name as employee_name, department.name as department_name from employees join departments on employees.department_id = departments.id;
+
+# 2024-05-13 09:08:14.069594
++SELECT employees.name as employee_name, department.name as department_name from employees join departments on employees.department_id = departments.id;
+
+# 2024-05-13 09:08:19.547582
++SELECT employees.name as employee_name, departments.name as department_name from employees join departments on employees.department_id = departments.id;
+
+# 2024-05-13 09:11:56.660198
++.tables;
+
+# 2024-05-13 09:12:03.115442
++select * from genres;
+
+# 2024-05-13 09:12:49.892965
++select title, name from films join genre_films on films.id = genre_films.film_id;
+
+# 2024-05-13 09:12:58.025715
++select title from films join genre_films on films.id = genre_films.film_id;
+
+# 2024-05-13 09:13:11.573214
++select * from genres;
+
+# 2024-05-13 09:13:53.237205
++select title, name from films join genre_films on films.id = genre_films.film_id join genres on genre_films.genre_id = genres.id;
+
+# 2024-05-13 09:16:16.300130
++SELECT films.title, films.name, GROUP_CONCAT(genres.name) AS genres
++FROM films
++JOIN genre_films ON films.id = genre_films.film_id
++JOIN genres ON genre_films.genre_id = genres.id
++GROUP BY films.title, films.name;
++
+
+# 2024-05-13 09:16:26.362381
++SELECT films.title, films.name, GROUP_CONCAT(genres.name) AS genres
++FROM films
++JOIN genre_films ON films.id = genre_films.film_id
++JOIN genres ON genre_films.genre_id = genres.id
++GROUP BY films.title;
++
+
+# 2024-05-13 09:16:39.711717
++SELECT films.title, genres.name, GROUP_CONCAT(genres.name) AS genres
++FROM films
++JOIN genre_films ON films.id = genre_films.film_id
++JOIN genres ON genre_films.genre_id = genres.id
++GROUP BY films.title;
++
+
+# 2024-05-13 09:18:23.496099
++SELECT films.title, genres.name, GROUP_CONCAT(genres.name) AS genres
++  FROM films
++  JOIN genre_films ON films.id = genre_films.film_id
++  JOIN genres ON genre_films.genre_id = genres.id
++  GROUP BY films.title;
+
+# 2024-05-13 09:18:41.833406
++SELECT films.title, GROUP_CONCAT(genres.name) AS genres
++  FROM films
++  JOIN genre_films ON films.id = genre_films.film_id
++  JOIN genres ON genre_films.genre_id = genres.id
++  GROUP BY films.title
+
+# 2024-05-13 09:36:57.274201
++SELECT title, name from films join studios on films.studio_id = studios.id;
+
+# 2024-05-13 09:37:18.563218
++c
+
+# 2024-05-13 09:37:20.585786
++clear
+
+# 2024-05-13 09:40:32.209527
++select name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id
+
+# 2024-05-13 09:40:40.745877
++select title, name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id
+
+# 2024-05-13 09:42:41.407851
++select title, name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id join films.studio_id = studios.id
+
+# 2024-05-13 09:42:59.554418
++select title, name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id
+
+# 2024-05-13 09:43:19.489957
++select title, name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id join studios on studios.id = films.studio_id
+
+# 2024-05-13 09:43:26.219435
++select title, directors.name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id join studios on studios.id = films.studio_id
+
+# 2024-05-13 09:44:29.384780
++select worldwide_gross, title, directors.name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id join studios on studios.id = films.studio_id
+
+# 2024-05-13 09:45:33.854146
++select worldwide_gross, title, directors.name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id join studios on studios.id = films.studio_id group by directors.name
+
+# 2024-05-13 09:45:51.147292
++select worldwide_gross, title, directors.name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id join studios on studios.id = films.studio_id
+
+# 2024-05-13 09:46:31.635226
++select sum(worldwide_gross) as director_total_gross, worldwide_gross, title, directors.name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id join studios on studios.id = films.studio_id group by directors.name
+
+# 2024-05-13 09:47:58.209083
++select sum(worldwide_gross) as director_total_gross, worldwide_gross, title, directors.name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id join studios on studios.id = films.studio_id group by directors.id
+
+# 2024-05-13 09:48:21.909357
++select count(films.id), sum(worldwide_gross) as director_total_gross, worldwide_gross, title, directors.name, studios.name as studio_name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id join studios on studios.id = films.studio_id group by directors.id
+
+# 2024-05-13 09:49:32.989845
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  worldwide_gross, 
++  title, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id
+
+# 2024-05-13 09:49:52.857739
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  worldwide_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id
+
+# 2024-05-13 09:49:59.643215
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id
+
+# 2024-05-13 09:50:15.696609
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id
++order by director_total_gross
+
+# 2024-05-13 09:50:28.627891
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id
++order by director_total_gross desc
+
+# 2024-05-13 09:53:13.460021
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id
++order by director_total_gross desc limit on studio_name 3
+
+# 2024-05-13 09:53:17.899909
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id
++order by director_total_gross desc limit studio_name 3
+
+# 2024-05-13 09:54:30.316533
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id
++order by director_total_gross desc limit 3
+
+# 2024-05-13 09:54:42.715292
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id
++order by director_total_gross desc limit 3 group by studio_name
+
+# 2024-05-13 09:54:58.642562
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id, studio_name
++order by director_total_gross desc limit 3
+
+# 2024-05-13 09:55:01.908954
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id, studio_name
++order by director_total_gross desc limit 10
+
+# 2024-05-13 09:56:10.648030
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id, studio_name
++order by director_total_gross desc limit 2
+
+# 2024-05-13 09:56:15.375996
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id, studio_name
++order by director_total_gross desc limit 3
+
+# 2024-05-13 12:31:39.450514
++WITH DirectorRanks AS (
++    SELECT 
++        studios.name AS studio_name,
++        directors.name AS director_name, 
++        SUM(films.worldwide_gross) AS director_total_gross,
++        ROW_NUMBER() OVER(PARTITION BY studios.id ORDER BY SUM(films.worldwide_gross) DESC) AS rank
++    FROM 
++        directors 
++    JOIN 
++        film_directors ON directors.id = film_directors.director_id 
++    JOIN 
++        films ON films.id = film_directors.film_id 
++    JOIN 
++        studios ON studios.id = films.studio_id 
++    GROUP BY 
++        studios.id, directors.id
++)
++SELECT 
++    studio_name,
++    director_name,
++    director_total_gross
++FROM 
++    DirectorRanks
++WHERE 
++    rank <= 3
++ORDER BY 
++    studio_name, rank;
++
+
+# 2024-05-13 12:32:02.564132
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id, studio_name
++order by director_total_gross desc limit 3
+
+# 2024-05-13 12:32:07.856459
++select 
++  sum(worldwide_gross) as director_total_gross, 
++  directors.name, 
++  studios.name as studio_name 
++from directors 
++join film_directors on directors.id = film_directors.director_id 
++join films on films.id = film_directors.film_id 
++join studios on studios.id = films.studio_id 
++group by directors.id, studio_name
++order by director_total_gross desc
+
+# 2024-05-13 12:32:13.628507
++WITH DirectorRanks AS (
++    SELECT 
++        studios.name AS studio_name,
++        directors.name AS director_name, 
++        SUM(films.worldwide_gross) AS director_total_gross,
++        ROW_NUMBER() OVER(PARTITION BY studios.id ORDER BY SUM(films.worldwide_gross) DESC) AS rank
++    FROM 
++        directors 
++    JOIN 
++        film_directors ON directors.id = film_directors.director_id 
++    JOIN 
++        films ON films.id = film_directors.film_id 
++    JOIN 
++        studios ON studios.id = films.studio_id 
++    GROUP BY 
++        studios.id, directors.id
++)
++SELECT 
++    studio_name,
++    director_name,
++    director_total_gross
++FROM 
++    DirectorRanks
++WHERE 
++    rank <= 3
++ORDER BY 
++    studio_name, rank;
++
+
+# 2024-05-13 13:36:20.255796
++SELECT 
++        studios.name AS studio_name,
++        directors.name AS director_name, 
++        SUM(films.worldwide_gross) AS director_total_gross,
++        ROW_NUMBER() OVER(PARTITION BY studios.id ORDER BY SUM(films.worldwide_gross) DESC) AS rank
++    FROM 
++        directors 
++    JOIN 
++        film_directors ON directors.id = film_directors.director_id 
++    JOIN 
++        films ON films.id = film_directors.film_id 
++    JOIN 
++        studios ON studios.id = films.studio_id 
++    GROUP BY 
++        studios.id, directors.id
+
+# 2024-05-13 14:56:00.293086
++c
+
+# 2024-05-13 14:58:01.301868
++SELECT DISTINCT directors.name AS director_name, studios.name AS studio_name
++FROM movie_directors
++JOIN films ON films.id = movie_directors.movie_id
++JOIN directors ON directors.id = movie_directors.director_id
++JOIN studios ON studios.id = films.studio_id
++WHERE studios.name = 'Disney';
+
+# 2024-05-13 14:58:19.134173
++SELECT DISTINCT directors.name AS director_name, studios.name AS studio_name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++JOIN studios ON studios.id = films.studio_id
++WHERE studios.name = 'Disney';
+
+# 2024-05-13 14:58:39.710837
++SELECT DISTINCT directors.name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++WHERE films.studio_id = 1;
+
+# 2024-05-13 14:58:52.445241
++SELECT title, director_id FROM film_directors JOIN films ON films.id = film_directors.film_id;
+
+# 2024-05-13 14:59:04.405052
++SELECT films.title, directors.name AS director_name, film_directors.director_id
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id;
+
+# 2024-05-13 14:59:15.482505
++SELECT DISTINCT directors.name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++WHERE films.studio_id = 1;
+
+# 2024-05-13 15:01:17.799028
++SELECT DISTINCT directors.name, 
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++WHERE films.studio_id = 1;
+
+# 2024-05-13 15:01:25.230483
++SELECT DISTINCT directors.name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++WHERE films.studio_id = 1;
+
+# 2024-05-13 15:01:33.169741
++select * from studios;
+
+# 2024-05-13 15:03:05.011464
++select * from films limit 1;
+
+# 2024-05-13 15:04:02.379168
++.exit
+
+# 2024-05-13 15:15:57.125998
++select * from films limit 1;
+
+# 2024-05-13 15:16:07.833081
++c
+
+# 2024-05-13 15:16:20.525865
++select * from film_directors;
+
+# 2024-05-13 15:16:57.013589
++select * from films order by desc
+
+# 2024-05-13 15:16:58.277913
++;
+
+# 2024-05-13 15:17:08.288049
++select * from films order by id desc
+
+# 2024-05-13 15:17:29.070216
++select * from studios
+
+# 2024-05-13 15:17:38.770119
++select * from films order by desc limit 50
+
+# 2024-05-13 15:17:43.793761
++select * from films order by id desc limit 50
+
+# 2024-05-13 15:18:05.423509
++update films where id > 1034 stud
+
+# 2024-05-13 15:18:12.866014
++update films where id > 1034 studio_id = 4
+
+# 2024-05-13 15:18:27.474626
++UPDATE films
++SET studio_id = 4
++WHERE id > 1034;
++
+
+# 2024-05-13 15:18:29.319107
++c
+
+# 2024-05-13 15:18:34.442218
++system clear
+
+# 2024-05-13 15:18:44.261155
++select * from films order by id desc limit 25
+
+# 2024-05-13 15:20:04.781899
++WITH DirectorRanks AS (
++    SELECT 
++        studios.name AS studio_name,
++        directors.name AS director_name, 
++        SUM(films.worldwide_gross) AS director_total_gross,
++        ROW_NUMBER() OVER(PARTITION BY studios.id ORDER BY SUM(films.worldwide_gross) DESC) AS rank
++    FROM 
++        directors 
++    JOIN 
++        film_directors ON directors.id = film_directors.director_id 
++    JOIN 
++        films ON films.id = film_directors.film_id 
++    JOIN 
++        studios ON studios.id = films.studio_id 
++    GROUP BY 
++        studios.id, directors.id
++)
++SELECT 
++    studio_name,
++    director_name,
++    director_total_gross
++FROM 
++    DirectorRanks
++WHERE 
++    rank <= 3
++ORDER BY 
++    studio_name, rank;
+
+# 2024-05-13 15:21:52.670777
++SELECT title, name from films join studios on films.studio_id = studios.id;
+
+# 2024-05-13 15:22:27.896725
++SELECT DISTINCT directors.name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++WHERE films.studio_id = 1;
+
+# 2024-05-13 15:23:23.011658
++SELECT DISTINCT directors.name, studios.name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++JOIN studios on studios.id = film_directors.studio_id
++WHERE films.studio_id = 1;
+
+# 2024-05-13 15:23:33.250353
++SELECT DISTINCT directors.name, studios.name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++JOIN studios on studios.id = films.studio_id
++WHERE films.studio_id = 1;
+
+# 2024-05-13 15:24:18.216115
++SELECT employees.name as employee_name, departments.name as department_name from employees join departments on employees.department_id = departments.id;
+
+# 2024-05-13 15:24:54.699315
++select title, name from films join genre_films on films.id = genre_films.film_id join genres on genre_films.genre_id = genres.id;
+
+# 2024-05-13 15:26:02.165383
++SELECT films.title, GROUP_CONCAT(genres.name) AS genres
++  FROM films
++  JOIN genre_films ON films.id = genre_films.film_id
++  JOIN genres ON genre_films.genre_id = genres.id
++  GROUP BY films.title;
+
+# 2024-05-13 15:26:49.557610
++select title, name from films join genre_films on films.id = genre_films.film_id join genres on genre_films.genre_id = genres.id join studios on studios.id = films.studio_id where studios.id = 1;
+
+# 2024-05-13 15:26:55.108887
++select title, studios.name from films join genre_films on films.id = genre_films.film_id join genres on genre_films.genre_id = genres.id join studios on studios.id = films.studio_id where studios.id = 1;
+
+# 2024-05-13 15:27:04.029383
++select title, studios.name, genres.name from films join genre_films on films.id = genre_films.film_id join genres on genre_films.genre_id = genres.id join studios on studios.id = films.studio_id where studios.id = 1;
+
+# 2024-05-13 15:27:28.799286
++select title, studios.name, genres.name from films join genre_films on films.id = genre_films.film_id join genres on genre_films.genre_id = genres.id join studios on studios.id = films.studio_id where studios.id = 1 group by genres.name;
+
+# 2024-05-13 15:32:08.349085
++select oscars_nominated from films limit 1;
+
+# 2024-05-13 15:32:13.552395
++select oscars_nominated, oscars won from films limit 1;
+
+# 2024-05-13 15:32:17.945595
++select oscars_nominated, oscars_won from films limit 1;
+
+# 2024-05-13 15:32:52.862516
++update films SET oscars_nominated = 0, oscars_won = 0;
+
+# 2024-05-13 15:35:58.447633
++select * from films limit 5 order by id desc;
+
+# 2024-05-13 15:36:05.948605
++select * from films order by id desc limit 5;
+
+# 2024-05-13 15:36:10.982871
++select * from films order by id desc limit 50;
+
+# 2024-05-13 15:53:22.324445
++select title from films order by oscars_won;
+
+# 2024-05-13 15:53:32.373635
++select title, oscars_won from films order by oscars_won;
+
+# 2024-05-13 15:53:36.650209
++select title, oscars_won from films order by oscars_won desc;
+
+# 2024-05-13 15:54:24.169462
++select title, oscars_won from films order by oscars_won desc where title = 'Titanic';
+
+# 2024-05-13 15:54:32.835548
++select * from films where title = 'Titanic';
+
+# 2024-05-13 15:55:00.339534
++select title, oscars_won from films order by oscars_won desc;
+
+# 2024-05-13 15:55:16.783688
++select * from films where title = 'Titanic';
+
+# 2024-05-13 15:55:25.549161
++select title, oscars_won from films where title = 'Titanic';
+
+# 2024-05-13 15:55:41.180141
++select title, oscars_won from films order by oscars_won desc;
+
+# 2024-05-13 15:55:48.174935
++select title, oscars_won from films order by oscars_won desc limit 10;
+
+# 2024-05-13 15:56:28.137538
++select title, oscars_won from films where title = 'Titanic';
+
+# 2024-05-13 15:56:38.835383
++select title, oscars_won from films order by oscars_won desc limit 10;
+
+# 2024-05-13 15:57:09.040893
++SELECT title, oscars_won FROM films WHERE lower(title) = 'titanic';
++
+
+# 2024-05-13 15:58:04.161780
++select title, oscars_nominated from films order by oscars_nominated desc;
+
+# 2024-05-13 15:58:20.851520
++qqq
+
+# 2024-05-13 15:58:25.377220
++select title, oscars_nominated from films order by oscars_nominated desc limit 10;
+
+# 2024-05-13 15:58:55.847955
++select oscars_nominated, oscars_won from films where title = 'Titanic';
+
+# 2024-05-13 15:59:50.390631
++select title, oscars_nominated, oscars_won from films where title = 'Titanic';
+
+# 2024-05-13 16:01:03.196151
++select title from films order by oscars_win desc limit 5;
+
+# 2024-05-13 16:01:09.728858
++select title from films order by oscars_won desc limit 5;
+
+# 2024-05-13 16:01:15.687169
++select title, oscars_won from films order by oscars_won desc limit 5;
+
+# 2024-05-13 16:01:34.564336
++select id from films where title = 'Title'
+
+# 2024-05-13 16:01:39.587442
++select id from films where title = 'Titanic'
+
+# 2024-05-13 16:02:00.541847
++update films SET oscars_nominated = 14, oscars_won = 11 where id = 691;
+
+# 2024-05-13 16:02:09.553103
++select title, oscars_won from films order by oscars_won desc limit 5;
+
+# 2024-05-13 16:02:27.192220
++select title, oscars_won from films where oscars_won > 9order by oscars_won desc limit 5;
+
+# 2024-05-13 16:02:31.301849
++select title, oscars_won from films where oscars_won > 9 order by oscars_won desc limit 5;
+
+# 2024-05-13 16:02:44.310681
++select title from films where oscars_won > 9;
+
+# 2024-05-13 16:02:55.854644
++select title from films where oscars_won >= 9;
+
+# 2024-05-13 16:03:05.890494
++select max(oscars_won) from films;
+
+# 2024-05-13 16:03:35.210621
++select title from films where id = 691;
+
+# 2024-05-13 16:03:59.011702
++INSERT INTO films
++SELECT * FROM your_table WHERE id = 691;
+
+# 2024-05-13 16:04:05.301508
++INSERT INTO films
++SELECT * FROM films WHERE id = 691;
+
+# 2024-05-13 16:05:04.095773
++c
+
+# 2024-05-13 16:05:08.988117
++system clear
+
+# 2024-05-13 16:05:13.275338
++.exit
+
+# 2024-05-13 16:05:31.467471
++c
+
+# 2024-05-13 16:05:34.677722
++system clear
+
+# 2024-05-13 16:07:28.823844
++select title, oscars_won, oscars_nominated from films where title = 'Titanic';
+
+# 2024-05-13 16:07:52.713142
++select title, oscars_won from films order by oscars_won desc limit 5;
+
+# 2024-05-13 16:10:36.368016
++update films SET oscars_nominated = 0, oscars_won = 0;
+
+# 2024-05-13 16:10:48.871728
++select title, oscars_won from films order by oscars_won desc limit 5;
+
+# 2024-05-13 16:10:51.351101
++c
+
+# 2024-05-13 16:11:16.139741
++.tables;
+
+# 2024-05-13 16:11:53.773492
++select title, oscars_won from films order by oscars_won desc limit 5;
+
+# 2024-05-13 16:12:08.337827
++select oscars_won, title from films where id = 691;
+
+# 2024-05-13 16:12:16.836396
++select oscars_won, oscars_title from films where id = 691;
+
+# 2024-05-13 16:12:23.824678
++select oscars_won, oscars_nominated, title from films where id = 691;
+
+# 2024-05-13 16:14:54.011829
++SELECT title, year, oscars_won 
++FROM films 
++ORDER BY oscars_won DESC, title, year 
++LIMIT 5;
++
+
+# 2024-05-13 16:15:50.360817
++select title from films where title ="The Lord of the Rings: The Return of the King"
+
+# 2024-05-13 16:15:54.015223
++select * from films where title ="The Lord of the Rings: The Return of the King"
+
+# 2024-05-13 16:16:46.821962
++pragma table_info(films);
+
+# 2024-05-13 16:17:19.802462
++ALTER TABLE films
++MODIFY COLUMN oscars_won INTEGER;
+
+# 2024-05-13 16:17:52.483837
++-- Step 1: Create a new table with the desired schema
++CREATE TABLE films_new (
++    id INTEGER PRIMARY KEY,
++    year INTEGER,
++    title TEXT,
++    runtime INTEGER,
++    rt_score REAL,
++    imdb_score REAL,
++    metacritic_score REAL,
++    budget REAL,
++    worldwide_gross REAL,
++    domestic_gross REAL,
++    international_gross REAL,
++    oscars_won INTEGER,
++    oscars_nominated INTEGER,
++    overview TEXT,
++    url_poster TEXT,
++    studio_id INTEGER
++);
++
++-- Step 2: Copy data from the old table to the new table
++INSERT INTO films_new
++SELECT * FROM films;
++
++-- Step 3: Drop the old table
++DROP TABLE films;
++
++-- Step 4: Rename the new table to the original table name
++ALTER TABLE films_new RENAME TO films;
++
+
+# 2024-05-13 16:18:06.314045
++pragma table_info(films);
+
+# 2024-05-13 16:18:35.788624
++select oscars_nominated, oscars_won from films order by oscars_won desc;
+
+# 2024-05-13 16:18:43.421082
++select oscars_nominated, oscars_won, title from films order by oscars_won desc;
+
+# 2024-05-13 16:20:51.555500
++DELETE FROM films WHERE title = '';
++
+
+# 2024-05-13 16:20:56.191316
++select oscars_nominated, oscars_won, title from films order by oscars_won desc;
+
+# 2024-05-13 16:21:09.260805
++select count(*) from films;
+
+# 2024-05-13 16:21:16.776421
++c
+
+# 2024-05-13 16:21:27.228849
++select oscars_nominated, oscars_won, title from films order by oscars_won desc;
+
+# 2024-05-13 16:21:40.672792
++select oscars_nominated, oscars_won, title, year from films order by oscars_won desc;
+
+# 2024-05-13 16:21:59.960234
++select oscars_nominated, oscars_won, title, year from films group by id order by oscars_won desc;
+
+# 2024-05-13 16:24:48.589524
++DELETE FROM films WHERE title = '';
+
+# 2024-05-13 16:24:56.809405
++select oscars_nominated, oscars_won, title, year from films group by id order by oscars_won desc;
+
+# 2024-05-13 16:26:19.768825
++.exit
+
+# 2024-05-13 16:41:47.226661
++.tables;
+
+# 2024-05-13 16:42:10.041460
++.exit
+
+# 2024-05-13 16:42:22.472394
++.tables;
+
+# 2024-05-13 16:42:27.548653
++select title from films;
+
+# 2024-05-13 16:42:47.473708
++.exit
+
+# 2024-05-13 16:46:23.161764
++select oscars_nominated, oscars_won, title,  from films order by oscars_won desc limit 25;
+
+# 2024-05-13 16:46:29.381088
++select oscars_nominated, oscars_won, title  from films order by oscars_won desc limit 25;
+
+# 2024-05-13 17:08:22.992135
++.tables;
+
+# 2024-05-13 17:08:33.559584
++select * from employees;
+
+# 2024-05-13 17:18:33.445509
++SELECT year,
++title,
++oscars_won,
++oscars_nominated
++FROM films
++ORDER BY oscars_nominated, oscars_won DESC limit 25;
+
+# 2024-05-13 17:18:39.690064
++SELECT year,
++title,
++oscars_won,
++oscars_nominated
++FROM films
++ORDER BY oscars_won DESC limit 25;
+
+# 2024-05-13 17:19:04.865521
++SELECT year,
++title,
++oscars_won,
++oscars_nominated
++FROM films
++ORDER BY oscars_won, title DESC limit 25;
+
+# 2024-05-13 17:28:37.229383
++.exit
+
+# 2024-05-13 17:29:10.200461
++select title, oscars_won from films order by oscars_won desc limit 5;
+
+# 2024-05-14 12:41:17.746287
++pragma table_info(films);
+
+# 2024-05-14 12:41:30.705019
++SELECT year, title, oscars_nominated, oscars_won 
++FROM films 
++ORDER BY oscars_nominated, oscars_won DESC 
++LIMIT 25;
++
+
+# 2024-05-14 12:41:37.972665
++SELECT year, title, oscars_nominated, oscars_won 
++FROM films 
++ORDER BY oscars_nominated DESC 
++LIMIT 25;
++
+
+# 2024-05-14 12:42:59.415951
++SELECT year, title, oscars_nominated, oscars_won 
++FROM films 
++ORDER BY oscars_nominated DESC, oscars_won DESC 
++LIMIT 25;
++
+
+# 2024-05-14 13:25:28.635656
++SELECT name, surname FROM employees;
+
+# 2024-05-14 13:56:14.085175
++SELECT title, id, name
++FROM employees
++ORDER BY title;
+
+# 2024-05-14 13:57:30.458344
++SELECT title, id, name
++FROM employees
++ORDER BY title, name;
+
+# 2024-05-14 13:57:42.665718
++SELECT title, id, name
++FROM employees
++ORDER BY title;
+
+# 2024-05-14 13:57:56.925109
++SELECT title, id, name
++FROM employees
++ORDER BY title, name;
+
+# 2024-05-14 13:58:24.949167
++SELECT title, id, name
++FROM employees
++ORDER BY title;
+
+# 2024-05-14 13:58:30.423716
++SELECT title, id, name
++FROM employees
++ORDER BY title, id;
+
+# 2024-05-14 13:58:57.596776
++SELECT id, title, name
++FROM employees
++ORDER BY title;
+
+# 2024-05-14 13:59:08.438848
++SELECT id, title, name
++FROM employees
++ORDER BY title, name;
+
+# 2024-05-14 13:59:37.919211
++SELECT id, title, name
++FROM employees
++ORDER BY title;
+
+# 2024-05-14 14:00:57.324240
++SELECT id, title, worldwide_gross from films order by worldwide_gross limit 50;
+
+# 2024-05-14 14:01:05.963472
++SELECT id, title, worldwide_gross from films order by worldwide_gross DESC limit 50;
+
+# 2024-05-14 14:01:38.388623
++SELECT id,
++       title,
++       worldwide_gross
++FROM   films
++ORDER  BY worldwide_gross DESC
++LIMIT  50;
+
+# 2024-05-14 14:02:36.802666
++SELECT id,
++       year,
++       title,
++       worldwide_gross
++FROM   films
++ORDER  BY worldwide_gross DESC
++LIMIT  50;
+
+# 2024-05-14 14:04:12.540030
++SELECT id,
++       year,
++       title,
++       worldwide_gross
++FROM   films
++LIMIT  50;
+
+# 2024-05-14 14:05:33.988378
++
++SELECT id,
++       year,
++       title,
++       worldwide_gross, 
++       studio_id
++FROM   films
++where studio_id IS NOT null
++LIMIT  50;
+
+# 2024-05-14 14:05:44.473136
++
++SELECT id,
++       year,
++       title,
++       worldwide_gross, 
++       studio_id
++FROM   films
++where studio_id IS null
++LIMIT  50;
+
+# 2024-05-14 14:06:03.293159
++
++SELECT id,
++       year,
++       title,
++       worldwide_gross, 
++       studio_id
++FROM   films
++where id > 1000
+
+# 2024-05-14 14:06:38.891308
++SELECT title, COUNT(*) AS count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
++
+
+# 2024-05-14 14:08:25.356398
++SELECT id, title, COUNT(*) AS count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
++
+
+# 2024-05-14 14:08:37.179012
++SELECT COUNT(*) AS total_duplicates
++FROM (
++    SELECT id, title, COUNT(*) AS count
++    FROM films
++    GROUP BY title
++    HAVING COUNT(*) > 1
++) AS duplicates;
++
+
+# 2024-05-14 14:08:51.363304
++SELECT title, COUNT(*) AS count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
+
+# 2024-05-14 14:09:49.019647
++SELECT title, year, COUNT(*) AS count
++FROM films
++GROUP BY title, year
++HAVING COUNT(*) > 1;
++
+
+# 2024-05-14 14:10:05.941619
++SELECT id, title, year, COUNT(*) AS count
++FROM films
++GROUP BY title, year
++HAVING COUNT(*) > 1;
++
+
+# 2024-05-14 14:10:27.680332
++SELECT id, title, year
++FROM films
++GROUP BY title, year
++HAVING COUNT(*) > 1;
++
+
+# 2024-05-14 14:10:32.465336
++SELECT title, year, COUNT(*) AS count
++FROM films
++GROUP BY title, year
++HAVING COUNT(*) > 1;
++
+
+# 2024-05-14 14:10:40.319933
++SELECT title, COUNT(*) AS count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
++
+
+# 2024-05-14 14:11:06.479574
++SELECT id, year, title
++FROM films
++WHERE title = 'True Grit'
+
+# 2024-05-14 14:11:22.114695
++SELECT title, COUNT(*) AS count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
++
+
+# 2024-05-14 14:12:18.570600
++SELECT id, year, title
++FROM films
++WHERE title = 'The Lion King'
+
+# 2024-05-14 14:12:23.267091
++SELECT id, year, title
++FROM films
++WHERE title = 'True Grit'
+
+# 2024-05-14 14:12:28.964646
++SELECT id, year, title
++FROM films
++WHERE title = ' How to Train Your Dragon'
+
+# 2024-05-14 14:12:38.017423
++SELECT id, year, title
++FROM films
++WHERE title = 'How to Train Your Dragon'
+
+# 2024-05-14 14:12:55.894088
++delete from films where id = 1051;
+
+# 2024-05-14 14:13:01.218827
++SELECT id, year, title
++FROM films
++WHERE title = 'How to Train Your Dragon 2'
+
+# 2024-05-14 14:13:08.525638
++SELECT *
++FROM films
++WHERE title = 'How to Train Your Dragon 2'
+
+# 2024-05-14 14:13:29.556064
++SELECT id, year, title
++FROM films
++WHERE title = 'How to Train Your Dragon'
+
+# 2024-05-14 14:13:33.727728
++SELECT id, year, title
++FROM films
++WHERE title = 'How to Train Your Dragon 2'
+
+# 2024-05-14 14:13:44.530234
++SELECT *
++FROM films
++WHERE title = 'How to Train Your Dragon 2'
+
+# 2024-05-14 14:13:57.288837
++DELETE from films where id = 1061;
+
+# 2024-05-14 14:14:02.343140
++SELECT id, year, title
++FROM films
++WHERE title = 'Kung Fu Panda 2'
+
+# 2024-05-14 14:14:36.352916
++select title from films where id between 1000 and 1100;
+
+# 2024-05-14 14:14:53.785803
++select title from films where id < 50;
+
+# 2024-05-14 14:14:59.409591
++c
+
+# 2024-05-14 14:15:04.206194
++system clear;
+
+# 2024-05-14 14:15:10.395105
++SELECT title, COUNT(*) AS count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
+
+# 2024-05-14 14:15:22.182929
++SELECT id, year, title
++FROM films
++WHERE title = ' West Side Story'
+
+# 2024-05-14 14:15:33.370300
++SELECT id, year, title
++FROM films
++WHERE title = 'West Side Story'
+
+# 2024-05-14 14:15:49.515684
++select count(unique(title)) from films;
+
+# 2024-05-14 14:15:58.262262
++select count(title) from films;
+
+# 2024-05-14 14:16:22.738637
++SELECT title, COUNT(*) AS count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
+
+# 2024-05-14 14:17:00.457218
++SELECT id, title, year
++FROM films
++WHERE title IN (
++    SELECT title
++    FROM films
++    GROUP BY title
++    HAVING COUNT(*) > 1
++);
++
+
+# 2024-05-14 14:17:41.707202
++SELECT id, title, year
++FROM films
++WHERE title IN (
++    SELECT title
++    FROM films
++    GROUP BY title
++    ORDER BY title
++    HAVING COUNT(*) > 1
++);
+
+# 2024-05-14 14:17:56.496682
++SELECT id, title, year
++FROM films
++WHERE title IN (
++    SELECT title
++    FROM films
++    GROUP BY title
++    HAVING COUNT(*) > 1
++)
++ORDER BY title;
+
+# 2024-05-14 14:20:06.164877
++SELECT id, title, year
++FROM films
++  WHERE title IN (
++      SELECT title
++      FROM films
++      GROUP BY title
++      HAVING COUNT(*) > 1
++  )
++ORDER BY title;
+
+# 2024-05-14 14:24:28.019783
++SELECT id, year, title from films where id < 50
+
+# 2024-05-14 14:24:50.817458
++SELECT id, title, year
++FROM films
++  WHERE title IN (
++      SELECT title
++      FROM films
++      GROUP BY title
++      HAVING COUNT(*) > 1
++  )
++ORDER BY title;
+
+# 2024-05-14 14:29:48.627019
++DELETE FROM films
++WHERE id IN (5686, 5711, 5714, 1002, 5641, 5634, 5788, 5731,
++5710,
++5826,
++5809,
++34,
++5784,
++1048,
++1054,
++1064,
++5685,
++5779,
++1038,
++5820,
++5680,
++5695,
++5805,
++5706,
++5681,
++5662,
++5647,
++5688,
++5686,
++5677,
++);
+
+# 2024-05-14 14:29:57.927780
++q
+
+# 2024-05-14 14:29:58.899671
++DELETE FROM films
++WHERE id IN (5686, 5711, 5714, 1002, 5641, 5634, 5788, 5731,
++5710,
++5826,
++5809,
++34,
++5784,
++1048,
++1054,
++1064,
++5685,
++5779,
++1038,
++5820,
++5680,
++5695,
++5805,
++5706,
++5681,
++5662,
++5647,
++5688,
++5686,
++5677
++);
+
+# 2024-05-14 14:30:34.012798
++SELECT id, title, year
++FROM films
++  WHERE title IN (
++      SELECT title
++      FROM films
++      GROUP BY title
++      HAVING COUNT(*) > 1
++  )
++ORDER BY title;
+
+# 2024-05-14 14:30:41.650401
++c
+
+# 2024-05-14 14:30:45.806314
++SELECT title, COUNT(*) AS count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
+
+# 2024-05-14 14:31:18.646505
++SELECT id,
++       year,
++       title,
++       worldwide_gross
++FROM   films
++ORDER  BY worldwide_gross DESC
++LIMIT  50;
+
+# 2024-05-14 14:31:56.878785
++select year, title, worldwide_gross from films where id > 1000 limit 250
+
+# 2024-05-14 14:32:13.141338
++select id, year, title, worldwide_gross from films where id > 1000 limit 250
+
+# 2024-05-14 14:33:04.579773
++select id, year, title, worldwide_gross from films where id > 2000 limit 250
+
+# 2024-05-14 14:33:14.727118
++select id, year, title, worldwide_gross from films where id > 3000 limit 250
+
+# 2024-05-14 14:33:24.432973
++select id, year, title, worldwide_gross from films where id > 4000 limit 250
+
+# 2024-05-14 14:33:36.862220
++select id, year, title, worldwide_gross from films where id > 5000 limit 250
+
+# 2024-05-14 14:33:46.809292
++select id, year, title, worldwide_gross from films where id > 4000 limit 250
+
+# 2024-05-14 14:33:53.190319
++select * from films where id > 4000 limit 250
+
+# 2024-05-14 14:34:16.228660
++select id, year, title, worldwide_gross  from films where id > 4000 limit 250
+
+# 2024-05-14 14:34:21.403403
++select id, year, title, worldwide_gross  from films where id > 4000 limit 250q
+
+# 2024-05-14 14:34:27.607131
++select id, year, title, worldwide_gross  from films where id > 1000 limit 250
+
+# 2024-05-14 14:35:04.968618
++select id, year, title, worldwide_gross  from films where id > 1000 and worldwide_gross is not null
+
+# 2024-05-14 14:36:16.098308
++select id, year, title from films order by worldwide_gross desc;
+
+# 2024-05-14 14:36:42.035151
++select id, year, title, count(*) from films order by worldwide_gross desc where worldwide_gross is not null;
+
+# 2024-05-14 14:36:52.814770
++select id, year, title, count(*) from films where worldwide_gross is not null order by worldwide_gross desc;
+
+# 2024-05-14 14:36:58.841373
++select id, year, title from films where worldwide_gross is not null order by worldwide_gross desc;
+
+# 2024-05-14 14:37:13.979799
++q
+
+# 2024-05-14 14:37:21.292752
++select id, year, title, worldwide_gross from films where worldwide_gross is not null order by worldwide_gross desc;
+
+# 2024-05-14 14:39:56.733850
++UPDATE films
++SET worldwide_gross = 
++    CASE 
++        WHEN id = 1040 THEN 928.76
++        WHEN id = 1046 THEN 798.96
++        WHEN id = 1052 THEN 752.60
++        WHEN id = 1056 THEN 746.92
++        WHEN id = 1049 THEN 604.33
++        WHEN id = 1058 THEN 587.20
++        WHEN id = 1055 THEN 554.99
++        WHEN id = 1042 THEN 532.68
++        WHEN id = 1066 THEN 528.00
++        WHEN id = 1063 THEN 386.07
++        WHEN id = 1050 THEN 381.69
++        WHEN id = 1062 THEN 373.55
++        WHEN id = 1041 THEN 367.28
++        WHEN id = 1065 THEN 346.86
++        WHEN id = 1044 THEN 336.00
++        WHEN id = 1053 THEN 321.89
++        WHEN id = 1057 THEN 306.94
++        WHEN id = 1047 THEN 287.59
++        WHEN id = 1059 THEN 282.57
++        WHEN id = 1060 THEN 275.70
++        WHEN id = 1068 THEN 245.29
++        WHEN id = 1037 THEN 224.83
++        WHEN id = 1035 THEN 218.61
++        WHEN id = 1043 THEN 192.61
++        WHEN id = 1045 THEN 178.12
++        WHEN id = 1034 THEN 171.76
++        WHEN id = 1067 THEN 125.51
++        WHEN id = 1039 THEN 122.56
++        WHEN id = 1036 THEN 76.46
++        WHEN id = 1069 THEN 22.20
++        ELSE worldwide_gross
++    END
++WHERE id IN (1040, 1046, 1052, 1056, 1049, 1058, 1055, 1042, 1066, 1063, 1050, 1062, 1041, 1065, 1044, 1053, 1057, 1047, 1059, 1060, 1068, 1037, 1035, 1043, 1045, 1034, 1067, 1039, 1036, 1069);
++
+
+# 2024-05-14 14:40:06.009178
++SELECT id,
++       year,
++       title,
++       worldwide_gross
++FROM   films
++ORDER  BY worldwide_gross DESC
++LIMIT  50;
+
+# 2024-05-14 14:41:35.855182
++SELECT id, name, surname, salary FROM employees ORDER BY salary DESC;
+
+# 2024-05-14 14:43:09.990308
++SELECT id, name, surname FROM employees ORDER BY birth_date ASC;
+
+# 2024-05-14 14:43:19.712553
++SELECT id, name, surname, birth_date FROM employees ORDER BY birth_date ASC;
+
+# 2024-05-14 14:43:42.736395
++SELECT id, name, surname, birth_date FROM employees ORDER BY birth_date DESC;
+
+# 2024-05-14 14:43:56.693838
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY birth_date DESC;
+
+# 2024-05-14 14:44:49.073894
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY birth_date ASC;
+
+# 2024-05-14 14:46:42.139762
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age ASC;
+
+# 2024-05-14 14:46:48.813497
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age DESC;
+
+# 2024-05-14 14:47:15.175069
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age ASC;
+
+# 2024-05-14 14:47:25.351678
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age DESC;
+
+# 2024-05-14 14:47:51.773657
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age DESC, id;
+
+# 2024-05-14 14:48:52.759524
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age DESC;
+
+# 2024-05-14 14:49:20.005162
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age DESC, id;
+
+# 2024-05-14 14:49:27.480556
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age DESC, id DESC;
+
+# 2024-05-14 14:50:43.451999
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age ASC;
+
+# 2024-05-14 14:50:47.959173
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age DESC;
+
+# 2024-05-14 14:50:59.308921
++SELECT id, name, surname, birth_date, age FROM employees ORDER BY age DESC, id DESC;
+
+# 2024-05-14 14:51:07.984914
++SELECT id, name, surname, salary FROM employees ORDER BY salary DESC;
+
+# 2024-05-14 14:51:50.004815
++SELECT id, name, surname, salary FROM employees ORDER BY salary DESC LIMIT 25;
+
+# 2024-05-14 14:52:05.751846
++SELECT id,
++       year,
++       title,
++       worldwide_gross
++FROM   films
++ORDER  BY worldwide_gross DESC
++LIMIT  50;
+
+# 2024-05-14 14:53:03.821909
++SELECT id, title, name
++FROM employees
++ORDER BY title;
+
+# 2024-05-14 14:53:29.675404
++SELECT id, title, name
++FROM employees
++ORDER BY title, name;
+
+# 2024-05-14 14:53:39.862739
++SELECT id, title, name
++FROM employees
++ORDER BY title;
+
+# 2024-05-14 14:54:26.415801
++SELECT id, title, name, age
++FROM employees
++ORDER BY title;
+
+# 2024-05-14 14:54:53.529918
++SELECT id, title, name, age
++FROM employees
++ORDER BY title, age;
+
+# 2024-05-14 14:57:08.699398
++SELECT id, title, name, age
++FROM employees
++ORDER BY title, age DESC;
+
+# 2024-05-14 14:57:59.999615
++SELECT year, title, oscars_nominated
++FROM films 
++ORDER BY oscars_nominated DESC
++LIMIT 25;
+
+# 2024-05-14 14:58:36.725616
++SELECT id, year, title, oscars_nominated
++FROM films 
++ORDER BY oscars_nominated DESC
++LIMIT 25;
+
+# 2024-05-14 14:59:17.578836
++SELECT year, title, oscars_nominated, oscars_won 
++FROM films 
++ORDER BY oscars_nominated DESC, oscars_won DESC 
++LIMIT 25;
+
+# 2024-05-14 15:00:31.194294
++SELECT year, title, oscars_nominated, oscars_won 
++FROM films 
++ORDER BY oscars_won DESC, oscars_nominated DESC
++LIMIT 25;
+
+# 2024-05-14 15:01:31.800559
++SELECT id, year, title, oscars_nominated, oscars_won
++FROM films 
++ORDER BY oscars_nominated DESC
++LIMIT 50;
+
+# 2024-05-14 15:03:03.417929
++SELECT year, title, oscars_nominated, oscars_won 
++FROM films 
++ORDER BY oscars_won DESC, oscars_nominated DESC
++LIMIT 50;
+
+# 2024-05-14 15:04:25.986979
++SELECT count(*) FROM employees GROUP BY state;
+
+# 2024-05-14 15:04:35.980312
++SELECT name, count(*) FROM employees GROUP BY state;
+
+# 2024-05-14 15:04:43.688385
++SELECT state, count(*) FROM employees GROUP BY state;
+
+# 2024-05-14 15:06:40.217907
++SELECT count(*) FROM films where oscars_won = 1;
+
+# 2024-05-14 15:07:24.698671
++SELECT count(*) FROM films GROUP BY oscars_won;
+
+# 2024-05-14 15:08:03.322594
++SELECT count(*), oscars_won FROM films GROUP BY oscars_won WHERE oscars_won >= 1;
+
+# 2024-05-14 15:08:12.552978
++SELECT count(*), oscars_won FROM films WHERE oscars_won >= 1 GROUP BY oscars_won ;
+
+# 2024-05-14 15:08:39.789727
++SELECT count(*) as oscar_winners, oscars_won FROM films WHERE oscars_won >= 1 GROUP BY oscars_won ;
+
+# 2024-05-14 15:09:10.482656
++SELECT count(*) as oscar_winners, oscars_won FROM films WHERE oscars_won >= 1 GROUP BY oscars_won;
+
+# 2024-05-14 15:09:51.937668
++SELECT state, count(*) FROM employees GROUP BY state;
+
+# 2024-05-14 15:11:13.881318
++.tables;
+
+# 2024-05-14 15:12:06.601106
++SELECT title, name from films join studios on films.studio_id = studios.id;
+
+# 2024-05-14 15:12:54.857617
++SELECT DISTINCT directors.name, studios.name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++JOIN studios on studios.id = films.studio_id
++WHERE films.studio_id = 1;
+
+# 2024-05-14 15:13:06.235272
++SELECT title, name from films join studios on films.studio_id = studios.id;
+
+# 2024-05-14 15:13:29.791908
++SELECT title, name 
++FROM films 
++JOIN studios 
++ON films.studio_id = studios.id;
+
+# 2024-05-14 15:13:41.112789
++SELECT DISTINCT directors.name, studios.name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++JOIN studios on studios.id = films.studio_id
++WHERE films.studio_id = 1;
+
+# 2024-05-14 15:13:59.942639
++select * from employees;
+
+# 2024-05-14 15:14:14.934006
++.tables;
+
+# 2024-05-14 15:15:41.474948
++SELECT id, employees.name, department.name
++FROM employees
++JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:15:49.419112
++SELECT employees.id, employees.name, department.name
++FROM employees
++JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:15:55.835244
++SELECT employees.id, employees.name, departments.name
++FROM employees
++JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:16:59.496656
++SELECT employees.id as employee_id, employees.name employee_name, departments.name department_name
++FROM employees
++JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:17:25.731182
++SELECT employees.id, employees.name, departments.name
++FROM employees
++JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:17:30.510493
++SELECT employees.id as employee_id, employees.name employee_name, departments.name department_name
++FROM employees
++JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:17:41.308455
++SELECT title, name 
++FROM films 
++JOIN studios 
++ON films.studio_id = studios.id;
+
+# 2024-05-14 15:17:49.616912
++SELECT DISTINCT directors.name, studios.name
++FROM film_directors
++JOIN films ON films.id = film_directors.film_id
++JOIN directors ON directors.id = film_directors.director_id
++JOIN studios on studios.id = films.studio_id
++WHERE films.studio_id = 1;
+
+# 2024-05-14 15:18:28.713218
++SELECT employees.name as employee_name, departments.name as department_name from employees join departments on employees.department_id = departments.id;
+
+# 2024-05-14 15:18:58.347699
++select title, name from films join genre_films on films.id = genre_films.film_id join genres on genre_films.genre_id = genres.id;
+
+# 2024-05-14 15:20:31.775738
++SELECT title, 
++       NAME 
++FROM   films 
++       JOIN genre_films 
++         ON films.id = genre_films.film_id 
++       JOIN genres 
++         ON genre_films.genre_id = genres.id; 
+
+# 2024-05-14 15:20:55.925630
++SELECT title, 
++       NAME 
++FROM   films 
++       JOIN genre_films 
++         ON films.id = genre_films.film_id 
++       JOIN genres 
++         ON genre_films.genre_id = genres.id
++ORDER BY name;
+
+# 2024-05-14 15:22:25.017032
++SELECT films.title, GROUP_CONCAT(genres.name) AS genres
++  FROM films
++  JOIN genre_films ON films.id = genre_films.film_id
++  JOIN genres ON genre_films.genre_id = genres.id
++  GROUP BY films.title;
+
+# 2024-05-14 15:24:54.254706
++SELECT title, 
++       studios.NAME, 
++       genres.NAME 
++FROM   films 
++       JOIN genre_films 
++         ON films.id = genre_films.film_id 
++       JOIN genres 
++         ON genre_films.genre_id = genres.id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
++WHERE  studios.id = 1 
++GROUP  BY genres.NAME; 
+
+# 2024-05-14 15:25:54.850841
++SELECT 
++       genres.NAME as genre_name
++FROM   films 
++       JOIN genre_films 
++         ON films.id = genre_films.film_id 
++       JOIN genres 
++         ON genre_films.genre_id = genres.id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
++WHERE  studios.id = 1 
++GROUP  BY genres.NAME; 
+
+# 2024-05-14 15:26:12.482073
++SELECT genres.id as genre_id,
++       genres.NAME as genre_name
++FROM   films 
++       JOIN genre_films 
++         ON films.id = genre_films.film_id 
++       JOIN genres 
++         ON genre_films.genre_id = genres.id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
++WHERE  studios.id = 1 
++GROUP  BY genres.NAME; 
+
+# 2024-05-14 15:27:27.319144
++select title, name from directors join film_directors on directors.id = film_directors.director_id join films on films.id = film_directors.film_id
+
+# 2024-05-14 15:28:23.392376
++SELECT title, 
++       NAME 
++FROM   directors 
++       JOIN film_directors 
++         ON directors.id = film_directors.director_id 
++       JOIN films 
++         ON films.id = film_directors.film_id;
+
+# 2024-05-14 15:29:59.472923
++SELECT films.title, GROUP_CONCAT(genres.name) AS genres
++  FROM films
++  JOIN genre_films ON films.id = genre_films.film_id
++  JOIN genres ON genre_films.genre_id = genres.id
++  GROUP BY films.title;
+
+# 2024-05-14 15:30:30.409394
++system clear
+
+# 2024-05-14 15:30:31.576780
++SELECT films.title, GROUP_CONCAT(genres.name) AS genres
++  FROM films
++  JOIN genre_films ON films.id = genre_films.film_id
++  JOIN genres ON genre_films.genre_id = genres.id
++  GROUP BY films.title;
+
+# 2024-05-14 15:30:58.956734
++SELECT employees.id, employees.name, departments.name
++FROM employees
++JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:31:09.226196
++SELECT employees.id as employee_id, employees.name employee_name, departments.name department_name
++FROM employees
++JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:31:34.147014
++SELECT employees.id as employee_id, employees.name employee_name, departments.name department_name
++FROM employees
++OUTER JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:31:41.605073
++SELECT employees.id as employee_id, employees.name employee_name, departments.name department_name
++FROM employees
++OUT JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:31:48.351926
++SELECT employees.id as employee_id, employees.name employee_name, departments.name department_name
++FROM employees
++FULL JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:33:00.210556
++SELECT employees.id as employee_id, employees.name employee_name, departments.name department_name
++FROM employees
++JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 15:33:26.153420
++SELECT genres.id as genre_id,
++       genres.NAME as genre_name
++FROM   films 
++       JOIN genre_films 
++         ON films.id = genre_films.film_id 
++       JOIN genres 
++         ON genre_films.genre_id = genres.id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
++WHERE  studios.id = 1 
++GROUP  BY genres.NAME; 
+
+# 2024-05-14 15:33:49.931368
++SELECT genres.id as genre_id,
++       genres.name as genre_name
++FROM   films 
++       JOIN genre_films 
++         ON films.id = genre_films.film_id 
++       JOIN genres 
++         ON genre_films.genre_id = genres.id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
++WHERE  studios.id = 1 
++GROUP  BY genres.name; 
+
+# 2024-05-14 15:34:20.740129
++SELECT genres.id as genre_id,
++       genres.name as genre_name,
++       studios.name
++FROM   films 
++       JOIN genre_films 
++         ON films.id = genre_films.film_id 
++       JOIN genres 
++         ON genre_films.genre_id = genres.id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
++WHERE  studios.id = 1 
++GROUP  BY genres.name; 
+
+# 2024-05-14 15:35:23.519379
++SELECT worldwide_gross, 
++       title, 
++       directors.NAME, 
++       studios.NAME AS studio_name 
++FROM   directors 
++       JOIN film_directors 
++         ON directors.id = film_directors.director_id 
++       JOIN films 
++         ON films.id = film_directors.film_id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
+
+# 2024-05-14 15:37:33.206142
++SELECT worldwide_gross, 
++       title, 
++       GROUP_CONCAT(directors.NAME) AS directors
++       studios.NAME AS studio_name 
++FROM   directors 
++       JOIN film_directors 
++         ON directors.id = film_directors.director_id 
++       JOIN films 
++         ON films.id = film_directors.film_id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
+
+# 2024-05-14 15:37:40.465171
++SELECT worldwide_gross, 
++       title, 
++       GROUP_CONCAT(directors.NAME) AS directors,
++       studios.NAME AS studio_name 
++FROM   directors 
++       JOIN film_directors 
++         ON directors.id = film_directors.director_id 
++       JOIN films 
++         ON films.id = film_directors.film_id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
+
+# 2024-05-14 15:38:10.711154
++SELECT worldwide_gross, 
++       title, 
++       GROUP_CONCAT(directors.NAME) AS directors,
++       studios.NAME AS studio_name 
++FROM   directors 
++       JOIN film_directors 
++         ON directors.id = film_directors.director_id 
++       JOIN films 
++         ON films.id = film_directors.film_id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
++GROUP BY films.title;
+
+# 2024-05-14 15:39:35.809059
++WITH DirectorRanks AS (
++              SELECT 
++                  studios.name AS studio_name,
++                  directors.name AS director_name, 
++                  SUM(films.worldwide_gross) AS director_total_gross,
++                  ROW_NUMBER() OVER(PARTITION BY studios.id ORDER BY SUM(films.worldwide_gross) DESC) AS rank
++              FROM 
++                  directors 
++              JOIN 
++                  film_directors ON directors.id = film_directors.director_id 
++              JOIN 
++                  films ON films.id = film_directors.film_id 
++              JOIN 
++                  studios ON studios.id = films.studio_id 
++              GROUP BY 
++                  studios.id, directors.id
++          )
++          SELECT 
++              studio_name,
++              director_name,
++              director_total_gross
++          FROM 
++              DirectorRanks
++          WHERE 
++              rank <= 3
++          ORDER BY 
++              studio_name, rank;
+
+# 2024-05-14 15:41:09.904101
++select * from directors;
+
+# 2024-05-14 15:41:16.805616
++select * from directors where name = 'Jennifer Yuh Nelson';
+
+# 2024-05-14 15:42:13.978808
++select title from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:42:28.402997
++select title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:43:19.136627
++select films.id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:43:36.475512
++select films.id, film_directors.id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:44:16.797222
++select films.id film_id, film_directors.id as film_directors_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:46:02.578400
++.exit
+
+# 2024-05-14 15:46:35.503046
++select films.id film_id, film_directors.id as film_directors_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:47:07.564073
++select films.id as film_id, film_directors.id as film_directors_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:47:32.396900
++select film_directors.id as film_directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:48:03.557313
++select film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:50:15.498316
++DELETE FROM film_directors AS fd1
++WHERE EXISTS (
++    SELECT 1
++    FROM film_directors AS fd2
++    WHERE fd1.film_id = fd2.film_id
++    AND fd1.director_id = fd2.director_id
++    AND fd1.id > fd2.id -- Ensure we keep only the later records
++);
++
+
+# 2024-05-14 15:50:26.677291
++select film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:50:40.649129
++DELETE FROM film_directors AS fd1
++WHERE EXISTS (
++    SELECT 1
++    FROM film_directors AS fd2
++    WHERE fd1.film_id = fd2.film_id
++    AND fd1.director_id = fd2.director_id
++    AND fd1.id > fd2.id -- Ensure we keep only the later records
++);
++
+
+# 2024-05-14 15:50:50.188948
++select film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:51:17.387446
++DELETE FROM film_directors
++WHERE film_directors_id NOT IN (
++    SELECT MAX(fd.film_directors_id)
++    FROM film_directors AS fd
++    GROUP BY fd.film_id, fd.director_id
++);
++
+
+# 2024-05-14 15:51:43.908856
++select count(*), film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:51:52.309792
++DELETE FROM film_directors
++WHERE film_directors.id NOT IN (
++    SELECT MAX(fd.id)
++    FROM film_directors AS fd
++    GROUP BY fd.film_id, fd.director_id
++);
++
+
+# 2024-05-14 15:51:59.013013
++select count(*), film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:52:21.646545
++select film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:52:53.075920
++DELETE FROM film_directors
++WHERE film_directors.id NOT IN (
++    SELECT MAX(fd.id)
++    FROM film_directors AS fd
++    GROUP BY fd.film_id, fd.director_id
++);
++
+
+# 2024-05-14 15:53:19.096321
++DELETE FROM film_directors AS fd1
++WHERE EXISTS (
++    SELECT 1
++    FROM film_directors AS fd2
++    WHERE fd1.film_id = fd2.film_id
++    AND fd1.director_id = fd2.director_id
++    AND fd1.id < fd2.id -- Keep only the record with the lowest id
++);
++
+
+# 2024-05-14 15:53:35.212744
++SELECT *
++FROM film_directors AS fd1
++WHERE EXISTS (
++    SELECT 1
++    FROM film_directors AS fd2
++    WHERE fd1.film_id = fd2.film_id
++    AND fd1.director_id = fd2.director_id
++    AND fd1.id < fd2.id -- Keep only the record with the lowest id
++);
++
+
+# 2024-05-14 15:53:40.865460
++select film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "Jennifer Yuh Nelson"
+
+# 2024-05-14 15:53:57.083820
++select * from film_directors
+
+# 2024-05-14 15:54:16.576292
++select * from directors;
+
+# 2024-05-14 15:55:32.020286
++UPDATE directors
++SET name = UPPER(name);
++
+
+# 2024-05-14 15:55:39.702296
++select * from directors;
+
+# 2024-05-14 15:55:58.046923
++UPDATE directors
++SET name = 
++    -- Uppercase the first letter of each word
++    INITCAP(name);
++
+
+# 2024-05-14 15:56:11.793180
++UPDATE directors
++SET name = 
++    -- Capitalize the first letter of each word
++    UPPER(SUBSTR(name, 1, 1)) || LOWER(SUBSTR(name, 2));
++
+
+# 2024-05-14 15:56:14.536942
++select * from directors;
+
+# 2024-05-14 15:56:35.013191
++UPDATE directors
++SET name = 
++    -- Capitalize the first letter of each word
++    REPLACE(
++        LOWER(name),
++        ' ',
++        ' '
++    );
++
+
+# 2024-05-14 15:56:38.203382
++select * from directors;
+
+# 2024-05-14 15:56:52.550571
++UPDATE directors
++SET name = 
++    -- Capitalize the first letter of each word
++    UPPER(SUBSTR(name, 1, 1)) || LOWER(SUBSTR(name, 2));
++
+
+# 2024-05-14 15:56:55.012720
++select * from directors;
+
+# 2024-05-14 15:57:07.627207
++UPDATE directors
++SET name = UPPER(name);
++
+
+# 2024-05-14 15:57:11.330679
++select * from directors;
+
+# 2024-05-14 15:57:47.156161
++select film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "JENNIFER YUH NELSON"
+
+# 2024-05-14 15:58:56.087013
++DELETE FROM film_directors AS fd1
++WHERE EXISTS (
++    SELECT 1
++    FROM film_directors AS fd2
++    WHERE fd1.film_id = fd2.film_id
++    AND fd1.director_id = fd2.director_id
++    AND fd1.film_directors_id > fd2.film_directors_id -- Keep only the record with the lowest film_directors_id
++);
++
+
+# 2024-05-14 16:00:15.007106
++DELETE FROM film_directors AS fd1
++WHERE EXISTS (
++    SELECT 1
++    FROM film_directors AS fd2
++    WHERE fd1.film_id = fd2.film_id
++    AND fd1.director_id = fd2.director_id
++    AND fd1.id > fd2.id -- Keep only the record with the lowest id
++);
++
+
+# 2024-05-14 16:00:49.061333
++DELETE FROM film_directors AS fd1
++WHERE EXISTS (
++    SELECT 1
++    FROM film_directors AS fd2
++    WHERE fd1.film_id = fd2.film_id
++    AND fd1.director_id = fd2.director_id
++    AND fd1.id > fd2.id
++);
+
+# 2024-05-14 16:00:55.601025
++select film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "JENNIFER YUH NELSON"
+
+# 2024-05-14 16:01:37.319011
++select directors.name from directors join film_directors = film_directors.director_id = directors.id
+
+# 2024-05-14 16:01:44.258259
++select directors.name from directors join film_directors on film_directors.director_id = directors.id
+
+# 2024-05-14 16:02:19.405787
++select directors.name, title from directors join film_directors on film_directors.director_id = directors.id join films on films.id = film_directors.film_id
+
+# 2024-05-14 16:02:56.027000
++select directors.name, title from directors join film_directors on film_directors.director_id = directors.id join films on films.id = film_directors.film_id where directors.name = 'JENNIFER YUH NELSON'
+
+# 2024-05-14 16:03:14.604998
++select film_directors.id as film_directors_id, directors.id as directors_id, films.id as film_id, title, directors.name from films join film_directors on films.id = film_directors.film_id join directors on film_directors.director_id where directors.name = "JENNIFER YUH NELSON"
+
+# 2024-05-14 16:03:20.211597
++select directors.name, title from directors join film_directors on film_directors.director_id = directors.id join films on films.id = film_directors.film_id where directors.name = 'JENNIFER YUH NELSON'
+
+# 2024-05-14 16:03:31.916002
++select directors.name, title from directors join film_directors on film_directors.director_id = directors.id join films on films.id = film_directors.film_id
+
+# 2024-05-14 16:04:07.771055
++select films.id, title, directors.name, from directors join film_directors on film_directors.director_id = directors.id join films on films.id = film_directors.film_id
+
+# 2024-05-14 16:04:17.011634
++select films.id, title, directors.name from directors join film_directors on film_directors.director_id = directors.id join films on films.id = film_directors.film_id
+
+# 2024-05-14 16:05:30.532202
++SELECT worldwide_gross, 
++       title, 
++       GROUP_CONCAT(directors.NAME) AS directors,
++       studios.NAME AS studio_name 
++FROM   directors 
++       JOIN film_directors 
++         ON directors.id = film_directors.director_id 
++       JOIN films 
++         ON films.id = film_directors.film_id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
++GROUP BY films.title;
+
+# 2024-05-14 16:06:08.058968
++SELECT employees.id as employee_id, employees.name employee_name, departments.name department_name
++FROM employees
++FULL JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 16:06:50.627445
++SELECT films.id, 
++       title, 
++       directors.NAME 
++FROM   directors 
++       JOIN film_directors 
++         ON film_directors.director_id = directors.id 
++       JOIN films 
++         ON films.id = film_directors.film_id 
+
+# 2024-05-14 16:07:36.485539
++SELECT worldwide_gross, 
++       title, 
++       GROUP_CONCAT(directors.NAME) AS directors,
++       studios.NAME AS studio_name 
++FROM   directors 
++       JOIN film_directors 
++         ON directors.id = film_directors.director_id 
++       JOIN films 
++         ON films.id = film_directors.film_id 
++       JOIN studios 
++         ON studios.id = films.studio_id 
++GROUP BY films.title;
+
+# 2024-05-14 16:07:57.237257
++SELECT employees.id as employee_id, employees.name employee_name, departments.name department_name
++FROM employees
++FULL JOIN departments
++ON employees.department_id = departments.id
+
+# 2024-05-14 16:09:29.878995
++SELECT title, COUNT(*) AS count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
+
+# 2024-05-14 16:10:49.922754
++SELECT title, COUNT(*) AS title_use_count
++FROM films
++GROUP BY title
++HAVING COUNT(*) > 1;
+
+# 2024-05-14 16:11:48.014371
++SELECT id, title, year
++FROM films
++  WHERE title IN (
++      SELECT title
++      FROM films
++      GROUP BY title
++      HAVING COUNT(*) > 1
++  )
++ORDER BY title;
+
+# 2024-05-14 16:13:24.381608
++SELECT id, title, year
++FROM films
++  WHERE title IN (
++      SELECT title
++      FROM films
++      GROUP BY title
++      HAVING COUNT(*) > 1
++  )
+
+# 2024-05-14 16:13:45.330860
++SELECT id, title, year
++FROM films
++  WHERE title IN (
++      SELECT title
++      FROM films
++      GROUP BY title
++      HAVING COUNT(*) > 1
++  )
++ORDER BY title;
+
+# 2024-05-14 16:15:44.057479
++select * from departments;
+
+# 2024-05-14 16:16:26.872017
++SELECT age FROM employees WHERE department_id = 1;
++UNION
++SELECT age FROM employees WHERE department_id = 2;
+
+# 2024-05-14 16:17:00.400223
++SELECT name, age FROM employees WHERE department_id = 1;
++UNION
++SELECT name, age FROM employees WHERE department_id = 2;
+
+# 2024-05-14 16:17:37.902284
++SELECT name, age FROM employees WHERE department_id = 1;
++UNION ALL
++SELECT name, age FROM employees WHERE department_id = 2;
+
+# 2024-05-14 16:18:45.352656
++pragma table_info(employees)
+
+# 2024-05-14 16:19:58.066916
++ALTER TABLE employees
++ADD CONSTRAINT fk_department
++FOREIGN KEY (department_id)
++REFERENCES departments(id);
+
+# 2024-05-14 16:20:31.573434
++-- Step 1: Create a new table with the foreign key constraint
++CREATE TABLE employees_new (
++    id INTEGER PRIMARY KEY,
++    surname NVARCHAR(20),
++    name NVARCHAR(20),
++    title NVARCHAR(30),
++    reports_to INTEGER,
++    birth_date DATETIME,
++    hire_date DATETIME,
++    address NVARCHAR(70),
++    city NVARCHAR(40),
++    state NVARCHAR(40),
++    country NVARCHAR(40),
++    phone NVARCHAR(24),
++    email NVARCHAR(60),
++    age INTEGER,
++    postal_code TEXT,
++    salary INTEGER,
++    department_id INTEGER,
++    sex TEXT,
++    FOREIGN KEY (department_id) REFERENCES departments(id)
++);
++
++-- Step 2: Copy data from the old table to the new one
++INSERT INTO employees_new SELECT * FROM employees;
++
++-- Step 3: Drop the old table
++DROP TABLE employees;
++
++-- Step 4: Rename the new table to the original table name
++ALTER TABLE employees_new RENAME TO employees;
++
+
+# 2024-05-14 16:20:39.519294
++pragma table_info(employees)
+
+# 2024-05-14 16:21:02.321407
++c
+
+# 2024-05-14 16:21:04.524222
++.tables;
+
+# 2024-05-14 16:21:07.095913
++CREATE TABLE employees_new (
++    id INTEGER PRIMARY KEY,
++    surname NVARCHAR(20),
++    name NVARCHAR(20),
++    title NVARCHAR(30),
++    reports_to INTEGER,
++    birth_date DATETIME,
++    hire_date DATETIME,
++    address NVARCHAR(70),
++    city NVARCHAR(40),
++    state NVARCHAR(40),
++    country NVARCHAR(40),
++    phone NVARCHAR(24),
++    email NVARCHAR(60),
++    age INTEGER,
++    postal_code TEXT,
++    salary INTEGER,
++    department_id INTEGER,
++    sex TEXT,
++    FOREIGN KEY (department_id) REFERENCES departments(id)
++);
+
+# 2024-05-14 16:21:13.082167
++.tables;
+
+# 2024-05-14 16:21:17.569983
++INSERT INTO employees_new SELECT * FROM employees;
++
+
+# 2024-05-14 16:21:26.737863
++DROP TABLE employees;
++
+
+# 2024-05-14 16:21:30.729607
++ALTER TABLE employees_new RENAME TO employees;
++
+
+# 2024-05-14 16:21:34.409072
++.tables;
+
+# 2024-05-14 16:21:36.630436
++pragma table_info(employees)
+
+# 2024-05-14 16:22:07.306287
++PRAGMA foreign_keys = ON;
++
+
+# 2024-05-14 16:22:13.358545
++ALTER TABLE employees
++ADD CONSTRAINT fk_department
++FOREIGN KEY (department_id) REFERENCES departments(id);
+
+# 2024-05-14 16:23:54.426453
++CREATE TABLE new_employees (
++    id INTEGER PRIMARY KEY,
++    surname NVARCHAR(20),
++    name NVARCHAR(20),
++    title NVARCHAR(30),
++    reports_to INTEGER,
++    birth_date DATETIME,
++    hire_date DATETIME,
++    address NVARCHAR(70),
++    city NVARCHAR(40),
++    state NVARCHAR(40),
++    country NVARCHAR(40),
++    phone NVARCHAR(24),
++    email NVARCHAR(60),
++    age INTEGER,
++    postal_code TEXT,
++    salary INTEGER,
++    department_id INTEGER,
++    sex TEXT,
++    FOREIGN KEY (department_id) REFERENCES departments(id)
++);
++
+
+# 2024-05-14 16:24:07.140428
++INSERT INTO new_employees (id, surname, name, title, reports_to, birth_date, hire_date, address, city, state, country, phone, email, age, postal_code, salary, department_id, sex)
++SELECT id, surname, name, title, reports_to, birth_date, hire_date, address, city, state, country, phone, email, age, postal_code, salary, department_id, sex
++FROM employees;
+
+# 2024-05-14 16:24:21.129855
++pragma table_info(new_employees)
+
+# 2024-05-14 16:24:35.900119
++drop table new_employees;
+
+# 2024-05-14 16:24:39.147392
++.tables;
+
+# 2024-05-14 16:24:44.641736
++select * from employees;
+
+# 2024-05-14 16:25:05.189392
++pragma table_info(employees)
+
+# 2024-05-14 16:42:20.214881
++.exit
+
+# 2024-05-14 18:49:42.539978
++UPDATE directors
++SET name = CONCAT(
++               UPPER(SUBSTRING(name, 1, 1)), -- Capitalize first letter of first name
++               LOWER(SUBSTRING(name, 2, CHARINDEX(' ', name) - 1)), -- Lowercase rest of first name
++               ' ', -- Add space
++               UPPER(SUBSTRING(name, CHARINDEX(' ', name) + 1, 1)), -- Capitalize first letter of middle name
++               LOWER(SUBSTRING(name, CHARINDEX(' ', name) + 2, CHARINDEX(' ', name, CHARINDEX(' ', name) + 1) - CHARINDEX(' ', name) - 1)), -- Lowercase rest of middle name
++               ' ', -- Add space
++               UPPER(SUBSTRING(name, CHARINDEX(' ', name, CHARINDEX(' ', name) + 1) + 1, 1)), -- Capitalize first letter of last name
++               LOWER(SUBSTRING(name, CHARINDEX(' ', name, CHARINDEX(' ', name) + 1) + 2, LEN(name) - CHARINDEX(' ', name, CHARINDEX(' ', name) + 1))) -- Lowercase rest of last name
++           )
++
+
+# 2024-05-14 18:49:58.901151
++-- Define a custom function to capitalize the first letter of each word
++CREATE FUNCTION capitalizeWords(input TEXT) RETURNS TEXT
++BEGIN
++    RETURN (
++        SELECT REPLACE(UPPER(SUBSTR(input, 1, 1)) || LOWER(SUBSTR(input, 2)), ' ', '')
++    );
++END;
++
+
+# 2024-05-14 18:50:13.670331
++UPDATE directors
++SET name = (
++    SELECT GROUP_CONCAT(UPPER(SUBSTR(word, 1, 1)) || LOWER(SUBSTR(word, 2)), ' ')
++    FROM (
++        SELECT DISTINCT word
++        FROM directors, json_each('["' || REPLACE(name, ' ', '","') || '"]')
++    )
++);
++
+
+# 2024-05-14 18:50:37.243391
++UPDATE directors
++SET name = (
++    SELECT GROUP_CONCAT(UPPER(SUBSTR(word, 1, 1)) || LOWER(SUBSTR(word, 2)), ' ')
++    FROM (
++        SELECT DISTINCT SUBSTR(name, start, length) AS word
++        FROM (
++            SELECT name,
++                   (SELECT SUM(CASE WHEN SUBSTR(name, x, 1) = ' ' THEN 1 ELSE 0 END) + 1
++                    FROM generate_series(1, LENGTH(name)) AS x
++                    WHERE SUBSTR(name, x, 1) = ' ' OR x = LENGTH(name) + 1) AS word_count,
++                   generate_series(1, LENGTH(name)) AS start,
++                   (SELECT CASE WHEN INSTR(name || ' ', ' ', start) = 0 THEN LENGTH(name) + 1
++                                ELSE INSTR(name || ' ', ' ', start) END - start) AS length
++            FROM directors
++        ) AS words
++    ) AS name
++);
++
+
+# 2024-05-14 18:50:55.923138
++select name from directors;
+
+# 2024-05-14 18:52:06.830127
++UPDATE directors
++SET name = (
++    SELECT GROUP_CONCAT(UPPER(SUBSTR(word, 1, 1)) || LOWER(SUBSTR(word, 2)), ' ')
++    FROM (
++        SELECT DISTINCT SUBSTR(t.name, m.start + 1, m.length) AS word
++        FROM directors AS t
++        JOIN (
++            SELECT ROWID,
++                   LENGTH(name) - LENGTH(REPLACE(name, ' ', '')) + 1 AS word_count
++            FROM directors
++        ) AS wc ON t.ROWID = wc.ROWID
++        JOIN (
++            SELECT ROWID,
++                   LENGTH(SUBSTR(name, 0, INSTR(name || ' ', ' ') + 1)) AS start,
++                   INSTR(name || ' ', ' ', 1, m.n) - INSTR(name || ' ', ' ') AS length
++            FROM directors,
++                 generate_series(1, (SELECT MAX(word_count) FROM directors)) AS m
++        ) AS m ON t.ROWID = m.ROWID
++    )
++);
++
+
+# 2024-05-14 18:52:20.495723
++WITH RECURSIVE SplitNames AS (
++    SELECT
++        name,
++        SUBSTR(name, 1, INSTR(name || ' ', ' ') - 1) AS word,
++        SUBSTR(name, INSTR(name || ' ', ' ') + 1) AS remaining
++    FROM directors
++    WHERE name LIKE '% %'
++    UNION ALL
++    SELECT
++        name,
++        SUBSTR(remaining, 1, INSTR(remaining || ' ', ' ') - 1) AS word,
++        SUBSTR(remaining, INSTR(remaining || ' ', ' ') + 1) AS remaining
++    FROM SplitNames
++    WHERE remaining LIKE '% %'
++    UNION ALL
++    SELECT
++        name,
++        remaining AS word,
++        NULL AS remaining
++    FROM SplitNames
++    WHERE remaining NOT LIKE '% %'
++)
++UPDATE directors
++SET name = (
++    SELECT GROUP_CONCAT(UPPER(SUBSTR(word, 1, 1)) || LOWER(SUBSTR(word, 2)), ' ')
++    FROM SplitNames
++    WHERE name = directors.name
++);
++
+
+# 2024-05-14 18:52:45.223028
++WITH RECURSIVE SplitNames AS (
++    SELECT
++        ROWID,
++        name,
++        SUBSTR(name, 1, INSTR(name || ' ', ' ') - 1) AS word,
++        SUBSTR(name, INSTR(name || ' ', ' ') + 1) AS remaining
++    FROM directors
++    WHERE name LIKE '% %'
++    UNION ALL
++    SELECT
++        ROWID,
++        name,
++        SUBSTR(remaining, 1, INSTR(remaining || ' ', ' ') - 1) AS word,
++        SUBSTR(remaining, INSTR(remaining || ' ', ' ') + 1) AS remaining
++    FROM SplitNames
++    WHERE remaining LIKE '% %'
++    UNION ALL
++    SELECT
++        ROWID,
++        name,
++        remaining AS word,
++        NULL AS remaining
++    FROM SplitNames
++    WHERE remaining NOT LIKE '% %'
++)
++UPDATE directors
++SET name = (
++    SELECT GROUP_CONCAT(UPPER(SUBSTR(word, 1, 1)) || LOWER(SUBSTR(word, 2)), ' ')
++    FROM SplitNames
++    WHERE directors.ROWID = SplitNames.ROWID
++);
++
+
+# 2024-05-14 18:54:04.957911
++select name from directors;
+
+# 2024-05-14 18:58:42.548939
++select name from directors
+
+# 2024-05-14 18:58:46.714837
++select title from films;
+
+# 2024-05-14 18:58:51.898916
++select title from films limit 500;
+
+# 2024-05-14 19:00:54.595298
++select id from employees;
+
+# 2024-05-14 19:00:59.780066
++select id, employee_id from employees;
+
+# 2024-05-14 19:48:12.484952
++select title, worldwide_gross from films order by worldwide_gross desc limit 25;
+
+# 2024-05-14 20:00:43.846660
++.exit
+
+# 2024-05-14 20:01:01.783421
++select * from films limit 10;
+
+# 2024-05-14 20:01:44.897476
++select * from films limit 10 where id > 1034 and id < 1070;
+
+# 2024-05-14 20:01:48.995618
++select * from films where id > 1034 and id < 1070;
+
+# 2024-05-14 20:03:21.650712
++select * from films limit 10 where id > 1034 and id < 1070;
+
+# 2024-05-14 20:03:27.321374
++select * from films where id > 1034 and id < 1070;
+
+# 2024-05-14 20:03:44.918792
++select title, worldwide_gross, budget from films where id > 1034 and id < 1070;
+
+# 2024-05-14 20:05:16.585625
++select id, title, worldwide_gross, budget from films where id > 1034 and id < 1070;
+
+# 2024-05-14 20:06:18.696892
++update films SET worldwide_gross = 30 where id = 1043
+
+# 2024-05-14 20:06:27.890244
++update films SET worldwide_gross = 82 where id = 1068
+
+# 2024-05-14 20:06:50.031109
++select id, title, budget, worldwide_gross from films order by worldwide_gross desc limit 250
+
+# 2024-05-14 20:07:32.969694
++select * from studios
+
+# 2024-05-14 20:08:53.469342
++.tables;
+
+# 2024-05-14 20:14:44.080978
++.exit
+
+# 2024-05-14 20:14:47.190580
++.tables;
+
+# 2024-05-14 20:15:07.299174
++select id from films where id > 1030 and id < 110
+
+# 2024-05-14 20:15:09.553895
++select id from films where id > 1030 and id < 1100
+
+# 2024-05-14 20:15:20.505469
++select id, title, worldwide_gross, oscars_won, oscars_nominated from films where id > 1030 and id < 1100
+
+# 2024-05-14 20:15:31.154201
++select id, year, title, worldwide_gross, oscars_won, oscars_nominated from films where id > 1030 and id < 1100
+
+# 2024-05-14 20:16:26.812451
++select id, name, surname from employees;
+
+# 2024-05-14 20:31:01.214945
++CREATE TABLE IF NOT EXISTS oscars (
++    id INTEGER PRIMARY KEY AUTOINCREMENT,
++    name TEXT,
++    year_ceremony INTEGER,
++    category TEXT,
++    film_id INTEGER,
++    winner BOOL,
++    FOREIGN KEY (film_id) REFERENCES films(id)
++);
+
+# 2024-05-14 20:31:03.988067
++.tables;
+
+# 2024-05-14 20:43:17.493391
++drop table oscars;
+
+# 2024-05-14 20:44:31.850346
++select id, title from films where name = 'Maestro'
+
+# 2024-05-14 20:44:36.991147
++select id, title from films where title = 'Maestro'
+
+# 2024-05-14 20:44:41.466258
++select year, id, title from films where title = 'Maestro'
+
+# 2024-05-14 20:46:57.118031
++drop table oscars;
+
+# 2024-05-14 20:47:51.786351
++select count(*) from oscars;
+
+# 2024-05-14 20:48:20.590181
++select * from oscars where year > 2023
+
+# 2024-05-14 20:48:25.519059
++select * from oscars where year_ceremony > 2023
+
+# 2024-05-14 20:48:39.330678
++.exit
+
+# 2024-05-14 20:49:18.970374
++gs
+
+# 2024-05-14 20:49:23.641141
++select * from oscars where year_ceremony > 2023
+
+# 2024-05-14 20:49:54.678449
++.exit
+
+# 2024-05-14 21:14:47.717940
++SELECT films.id, 
++       title, 
++       directors.NAME 
++FROM   directors 
++       JOIN film_directors 
++         ON film_directors.director_id = directors.id 
++       JOIN films 
++         ON films.id = film_directors.film_id 
+
+# 2024-05-14 21:14:53.634614
++.exit
+
+# 2024-05-14 21:14:57.232699
++SELECT films.id, 
++       title, 
++       directors.NAME 
++FROM   directors 
++       JOIN film_directors 
++         ON film_directors.director_id = directors.id 
++       JOIN films 
++         ON films.id = film_directors.film_id 
+
+# 2024-05-14 21:59:52.907436
++.exit
+
+# 2024-05-14 22:55:52.112948
++select id, title, worldwide_gross from films order by worldwide_gross desc limit 5;
+
+# 2024-05-15 03:44:13.614938
++.exit

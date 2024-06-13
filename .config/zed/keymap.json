@@ -1,0 +1,17 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-'": "terminal_panel::ToggleFocus",
+      "cmd-alt-1": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-'": "terminal_panel::ToggleFocus",
+      "cmd-alt-1": "workspace::ToggleZoom",
+      "cmd-shift-'": "workspace::ToggleZoom" // doesn't work
+    }
+  }
+]
