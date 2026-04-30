@@ -1,5 +1,16 @@
 # Yabai
 
+ctrl + fn - p : yabai -m space --layout stack
+ctrl + fn - b : yabai -m space --layout bsp
+
+
+### Stop/start/restart yabai
+
+ctrl + alt - r : yabai --restart-service
+ctrl + alt - q : yabai --stop-service
+ctrl + alt - s : yabai --start-service
+ctrl + alt - n : yabai -m window --insert stack
+
 ### Focus within space
 
 alt - j : yabai -m window --focus south
@@ -16,26 +27,26 @@ alt - s: yabai -m display --focus south
 
 ### Rotate layout clockwise
 
-shift + alt - r : yabai -m space --balance && yabai -m space --rotate 90
+# alt + shift - r : yabai -m space --balance && yabai -m space --rotate 90
 
 ### Toggle window float
 
-shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+alt + shift - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 ### Maximize a window(works when tiled, not floating)
 
-shift + alt - m : yabai -m window --toggle zoom-fullscreen
+alt + shift - m : yabai -m window --toggle zoom-fullscreen
 
 ### Resize windows evenly within space
 
-shift + alt - e : yabai -m space --balance
+alt + shift - e : yabai -m space --balance
 
 ### Swap Windows
 
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-shift + alt - h : yabai -m window --swap west
-shift + alt - l : yabai -m window --swap east
+alt + shift - j : yabai -m window --swap south
+alt + shift - k : yabai -m window --swap north
+alt + shift - h : yabai -m window --swap west
+alt + shift - l : yabai -m window --swap east
 
 ### Grow/Shrink Window
 
@@ -46,24 +57,18 @@ ctrl + cmd - l : yabai -m window east --resize left:40:0 2> /dev/null || yabai -
 
 ### Move window to prev and next space
 
-shift + alt - p : yabai -m window --space prev;
-shift + alt - n : yabai -m window --space next;
+alt + shift - p : yabai -m window --space prev;
+alt + shift - n : yabai -m window --space next;
 
 ### Move window to space
 
-shift + alt - 1 : yabai -m window --space 1;
-shift + alt - 2 : yabai -m window --space 2;
-shift + alt - 3 : yabai -m window --space 3;
-shift + alt - 4 : yabai -m window --space 4;
-shift + alt - 5 : yabai -m window --space 5;
-shift + alt - 6 : yabai -m window --space 6;
-shift + alt - 7 : yabai -m window --space 7;
-
-### Stop/start/restart yabai
-
-ctrl + alt - r : yabai --restart-service
-ctrl + alt - q : yabai --stop-service
-ctrl + alt - s : yabai --start-service
+alt + shift - 1 : yabai -m window --space 1;
+alt + shift - 2 : yabai -m window --space 2;
+alt + shift - 3 : yabai -m window --space 3;
+alt + shift - 4 : yabai -m window --space 4;
+alt + shift - 5 : yabai -m window --space 5;
+alt + shift - 6 : yabai -m window --space 6;
+alt + shift - 7 : yabai -m window --space 7;
 
 ### Unsure
 
@@ -71,18 +76,18 @@ ctrl + alt - s : yabai --start-service
 
 ### flip along y-axis
 
-shift + alt - y : yabai -m space --mirror y-axis
+alt + shift - y : yabai -m space --mirror y-axis
 
 ### This one sometimes works
 
 ## flip along x-axis
 
-shift + alt - x : yabai -m space --mirror x-axis
+alt + shift - x : yabai -m space --mirror x-axis
 
 ## Move window to display left and right
 
-shift + alt - s : yabai -m window --display west; yabai -m display --focus west;
-shift + alt - g : yabai -m window --display east; yabai -m display --focus east;
+alt + shift - s : yabai -m window --display west; yabai -m display --focus west;
+alt + shift - g : yabai -m window --display east; yabai -m display --focus east;
 
 ## Move window and split
 
@@ -93,35 +98,40 @@ ctrl + alt - l : yabai -m window --warp east
 
 # Resize
 
-shift + alt + ctrl + cmd - j : yabai -m window north --resize bottom:0:40 2> /dev/null || yabai -m window --resize bottom:0:40
-shift + alt + ctrl + cmd - k : yabai -m window south --resize top:0:-40 2> /dev/null || yabai -m window --resize top:0:-40
-shift + alt + ctrl + cmd - h : yabai -m window west --resize right:-40:0 2> /dev/null || yabai -m window --resize right:-40:0
-shift + alt + ctrl + cmd - l : yabai -m window east --resize left:40:0 2> /dev/null || yabai -m window --resize left:40:0
+alt + shift + ctrl + cmd - j : yabai -m window north --resize bottom:0:40 2> /dev/null || yabai -m window --resize bottom:0:40
+alt + shift + ctrl + cmd - k : yabai -m window south --resize top:0:-40 2> /dev/null || yabai -m window --resize top:0:-40
+alt + shift + ctrl + cmd - h : yabai -m window west --resize right:-40:0 2> /dev/null || yabai -m window --resize right:-40:0
+alt + shift + ctrl + cmd - l : yabai -m window east --resize left:40:0 2> /dev/null || yabai -m window --resize left:40:0
 
 
 ### Toggle Window Height in Column
 
-shift + alt - z : yabai -m window --toggle zoom-parent
+alt + shift - z : yabai -m window --toggle zoom-parent
 
 # Full
 
-shift + alt + ctrl + cmd - i: yabai -m window --toggle zoom-parent
+alt + shift + ctrl + cmd - i: yabai -m window --toggle zoom-parent
 
 # Full window
 
-shift + alt + ctrl + cmd - u: yabai -m window --toggle zoom-fullscreen
+alt + shift + ctrl + cmd - u: yabai -m window --toggle zoom-fullscreen
 
 # Maximize window(pressing the green full screen)
 
-shift + alt + ctrl + cmd - y: yabai -m window --toggle native-fullscreen
+alt + shift + ctrl + cmd - y: yabai -m window --toggle native-fullscreen
 
 # If shortcuts aren't working, sometimes need to restart Hyperkey
 
 # General
 
 # move spaces + follow
-ctrl + cmd + alt - right : yabai -m window --space next --focus
-ctrl + cmd + alt - left  : yabai -m window --space prev --focus
+# ctrl + cmd + alt - right : yabai -m window --space next --focus
+# ctrl + cmd + alt - left  : yabai -m window --space prev --focus
 
+# Insert
 
+cmd + ctrl + alt - j  : yabai -m window --insert south
+cmd + ctrl + alt - k  : yabai -m window --insert north
+cmd + ctrl + alt - h  : yabai -m window --insert west
+cmd + ctrl + alt - l  : yabai -m window --insert east
 

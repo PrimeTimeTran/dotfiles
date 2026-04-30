@@ -20,23 +20,30 @@ ZSH_FAST_ALIAS_TIPS_PREFIX="🚀"
 ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
 
 source $ZSH/oh-my-zsh.sh
-source ~/.secrets.zsh
-source ~/.functions.zsh
 
-alias bpro="code ~/.zshrc"
-alias zp="code ~/.zshrc"
-alias bp="code ~/.zshrc"
-alias bcrets="code ~/.secrets.zsh"
-alias bfun="code ~/.functions.zsh"
+source ~/.sh-paths.zsh
+source ~/.sh-secrets.zsh
+source ~/.sh-functions.zsh
+
+alias sh_file="code ~/.zshrc"
+alias sh_aths="code ~/.sh-paths.zsh"
+alias sh_crets="code ~/.sh-secrets.zsh"
+alias sh_tions="code ~/.sh-functions.zsh"
+
+alias kb="cd ~/KB"
+alias blog="cd ~/blog"
+alias home="cd ~/Desktop"
+alias dls="cd ~/Downloads"
+alias docs="cd ~/Documents"
+
+alias pics="cd ~/Pictures"
+alias w="cd ~/Documents/work"
 
 alias bcut="code ~/.config/skhd/skhdrc"
 alias ycut="code ~/.config/yabai/yabairc "
 alias zcut="code ~/.config/zed/keymap.json"
+
 alias vimconfig="vi ~/.cfg/my_configs.vim"
-
-alias bpath="code ~/.paths.zsh"
-
-alias hs="zed ~/.hammerspoon/init.lua"
 
 alias db="docker build ."
 alias dcu="docker compose up"
@@ -148,12 +155,6 @@ alias g="google "
 alias cpd="copydir "
 alias rl="omz reload"
 alias nuxi='npx nuxi '
-
-alias home="cd ~/Desktop"
-alias dls="cd ~/Downloads"
-alias w="cd ~/Documents/work"
-alias docs="cd ~/Documents"
-alias pics="cd ~/Pictures"
 alias his="history | cut -c 8-"
 
 alias coni="conda info --envs"
@@ -164,9 +165,13 @@ alias conin="conda install"
 alias conexmac="conda env export > environment-macos.yml"
 alias concref="conda create -f environment-"
 
+
+# Python
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
 alias pm="python main.py"
 alias psetup="python /Users/future/Documents/Work/_Main/CS/'Software Engineering'/Scripts/setup.py"
-# alias rsetup="cargo /Users/future/Documents/Work/_Main/CS/'Software Engineering'/Scripts/setup.rs"
 
 alias architecture='arch'
 alias systeminfo="uname -m"
@@ -196,38 +201,20 @@ export NVM_DIR="$HOME/.nvm"
 # Flutter
 export PATH="/opt/homebrew/bin:$PATH"
 
-# Python
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-
 . "$HOME/.local/bin/env"
 . "/Users/future/.deno/env"
 
-# Attach tmux to previous session
 alias tattach='tmux a'
 
 alias k='kubectl'
-
-# Inject host 3000 to cluster 3000
-alias kproxymp='kubectl port-forward svc/marketplace 3000:3000'
-
-# Make a token for K8s dashboard
-alias kstartdashboard='kubectl proxy http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login'
-
-# Make a token for K8s dashboard
-alias kmaketoken='kubectl -n kubernetes-dashboard create token dashboard-admin'
-
-# Show pods of cluster
 alias kall='kubectl get all'
 alias kpods='kubectl get pods'
 alias kpodsdetail='kubectl get pods -o wide'
-
 alias kjobmake='kubectl apply -f k8s/agent-job.yaml'
-
-
+alias kproxymp='kubectl port-forward svc/marketplace 3000:3000'
+alias kstartdashboard='kubectl proxy http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login'
+alias kmaketoken='kubectl -n kubernetes-dashboard create token dashboard-admin'
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-
 
 stty -ixon
