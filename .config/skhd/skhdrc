@@ -135,3 +135,5 @@ cmd + ctrl + alt - k  : yabai -m window --insert north
 cmd + ctrl + alt - h  : yabai -m window --insert west
 cmd + ctrl + alt - l  : yabai -m window --insert east
 
+# Disable Cmd + H
+cmd - h : true

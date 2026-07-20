@@ -1,0 +1,13 @@
+echo "1. 🧧 loading..."
+export ZSH="$HOME/.oh-my-zsh"
+export NVM_DIR="$HOME/.nvm"
+export VOLTA_HOME="$HOME/.volta"
+export BUN_INSTALL="$HOME/.bun"
+export PNPM_HOME="$HOME/Library/pnpm"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export MODULAR_HOME="$HOME/.modular"
+export HELIX_RUNTIME="$HOME/src/helix/runtime"
+export DOTNET_ROOT="$HOME/dotnet"
+
+export EDITOR="zed --wait"
+export VISUAL="zed --wait"

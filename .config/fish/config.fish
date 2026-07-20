@@ -14,3 +14,12 @@ end
 
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/Users/future/.local/bin" $PATH
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/future/.lmstudio/bin
+# End of LM Studio CLI section
+
