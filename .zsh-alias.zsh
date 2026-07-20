@@ -61,34 +61,35 @@ dotrepo() {
     git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
 }
 
+alias dr="dotrepo "
+alias dr-amend="dr commit --amend "
+alias dr-d="dr diff"
+alias dr-l="dr log -v"
+alias dr-p="dr push"
+alias dr-pf="dr push --force"
+alias dr-r="dr remote -v"
+
 dr-a() {
     dotrepo add "$@"
 }
-
 # dotrepo add -u .
 dr-au() {
     # -u (--update) → only update files Git already tracks
     # . → start from the current work tree location ($HOME in your dotfiles setup)
     dotrepo add -u "$@"
 }
+alias dr-aa="dotrepo add -u"
 
 dr-s() {
-    dotrepo status "$@"
+    dr status "$@"
 }
 
 dr-c() {
-    dotrepo commit "$@"
+    dr commit "$@"
 }
-
-alias dr-p="dotrepo push"
-alias dr-amend="dotrepo commit --amend "
-
-alias cond="dotrepo diff"
-alias cl="dotrepo log -v"
-alias caa="dotrepo add -u"
-alias con="dotrepo "
-alias cr="dotrepo remote -v"
-alias dr-p-f="dotrepo push --force"
+dr-cm() {
+    dr commit -m "$@"
+}
 
 ## Conda
 alias coni="conda info --envs"
