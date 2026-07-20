@@ -70,13 +70,13 @@ alias dr-pf="dr push --force"
 alias dr-r="dr remote -v"
 
 dr-a() {
-    dotrepo add "$@"
+    dr add "$@"
 }
 # dotrepo add -u .
 dr-au() {
     # -u (--update) → only update files Git already tracks
     # . → start from the current work tree location ($HOME in your dotfiles setup)
-    dotrepo add -u "$@"
+    dr add -u "$@"
 }
 alias dr-aa="dotrepo add -u"
 
@@ -105,9 +105,9 @@ alias carc='cargo clean'
 alias carf='cargo fix --bin "setup_utility"'
 alias carr='cargo run --bin main'
 
-alias db="docker build ."
-alias dcu="docker compose up"
-alias dr="docker run --platform=linux/amd64"
+alias dkr-b="docker build ."
+alias dkr-cu="docker compose up"
+alias dkr-r="docker run --platform=linux/amd64"
 
 alias jv='java --version'
 alias jv17='javahome 17.0.6'
