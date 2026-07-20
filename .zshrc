@@ -35,7 +35,8 @@ source "$ZSH/custom/themes/primetimetran.zsh-theme"
 source "$ZSH/oh-my-zsh.sh"
 
 load_nvm() {
-  unset -f load_nvm
+  unset -f load_nvm node npm npx yarn
+
   [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
   nvm use default >/dev/null
 }

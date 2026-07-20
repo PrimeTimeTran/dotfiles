@@ -37,9 +37,7 @@ path_add "$ANDROID_HOME/platform-tools"
 # path_add "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 # path_add "$HOME/.modular/pkg/packages.modular.com_nightly_mojo/bin"
 
-export PYENV_ROOT="$HOME/.pyenv"
-path_add "$PYENV_ROOT/bin"
-
+path_add "$HOME/.pyenv/bin"
 path_add "$HOME/.lmstudio/bin"
 
 # 5. Compiler Flags
