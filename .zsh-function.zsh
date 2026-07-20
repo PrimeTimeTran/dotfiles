@@ -101,14 +101,6 @@ javahome() {
     java -version
 }
 
-dotrepo() {
-    git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
-}
-
-# dr-a() {
-#     dotrepo add "$@"
-# }
-
 copydir() {
   pwd | tr -d "\r\n" | pbcopy
 }

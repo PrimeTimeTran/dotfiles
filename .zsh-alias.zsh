@@ -54,10 +54,32 @@ alias ac="adb connect 10.0.0.193:43405"
 alias aemulator="adb -s emulator-5554 shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell setprop debug.firebase.analytics.app com.adapthealth.myapp.dev"
 
+# #############################################
 # Dotfiles/Bare Repo
-# alias dr-a="dotrepo add "
-alias dr-s="dotrepo status"
-alias dr-c="dotrepo commit -m "
+# ─────────────────────────────────────────────
+dotrepo() {
+    git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
+}
+
+dr-a() {
+    dotrepo add "$@"
+}
+
+# dotrepo add -u .
+dr-au() {
+    # -u (--update) → only update files Git already tracks
+    # . → start from the current work tree location ($HOME in your dotfiles setup)
+    dotrepo add -u "$@"
+}
+
+dr-s() {
+    dotrepo status "$@"
+}
+
+dr-c() {
+    dotrepo commit "$@"
+}
+
 alias dr-p="dotrepo push"
 alias dr-amend="dotrepo commit --amend "
 
