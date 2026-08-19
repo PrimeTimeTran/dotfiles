@@ -1,4 +1,4 @@
-echo "2. 🛣️  Paths loading..."
+echo "02. 🛣️  paths loading..."
 
 # Helper to prevent duplicate PATH entries and export immediately
 path_add() {
@@ -72,9 +72,9 @@ function ra-custom() {
     ra-ck
 }
 # 5. Compiler Flags
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-export LLVM_SYS_180_PREFIX="/opt/homebrew/opt/llvm@17"
+# export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+# export LLVM_SYS_180_PREFIX="/opt/homebrew/opt/llvm@17"
 
 # 1. Executes command
 # export JAVA_HOME=$(/usr/libexec/java_home -v "20")

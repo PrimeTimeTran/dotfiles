@@ -1,3 +1,4 @@
+echo "99. 🧪 wip loading..."
 # WIP Scripts/Tools
 
 # Build and run Rust
@@ -72,3 +73,30 @@ alias cg-b='cg build'
 alias cg-b-b='cg-b --bin '
 
 alias cg-ir='cargo insta review'
+
+
+
+cg-w-test() {
+    local cmd_base="nextest run"
+    local filters=""
+    if [ "$#" -gt 0 ]; then
+        for t in "$@"; do
+            filters="$filters --test $t"
+        done
+    fi
+    # local cmd_options="--test-threads 1 --no-fail-fast --features snapshotting"
+    # local cmd_options="--test-threads 1"
+    local cmd_options="--test-threads 1 --no-fail-fast"
+    cargo watch -x "$cmd_base $filters $cmd_options"
+}
+
+function car-w-test-s() {
+    local tests=("$@")
+    local test_args=()
+    for t in "${tests[@]}"; do
+        test_args+=(--test "$t")
+    done
+
+    # cargo nextest run --test-threads 1 --no-fail-fast --features snapshotting "${test_args[@]}"
+    cargo nextest run --test-threads 1 --no-fail-fast "${test_args[@]}"
+}

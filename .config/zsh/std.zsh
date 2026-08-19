@@ -1,4 +1,4 @@
-echo "4. 🎨 std lib loading..."
+echo "04. 🎨 std lib loading..."
 # ============================================================
 # Color Formatting
 # ============================================================
@@ -470,5 +470,10 @@ _foo_manual_parser() {
         '-d+[Directories to search]:directory:_foo_manual_parser_directories' \
         '-t+[File extension]:extension:(.md .svg .json .ts .tsx .rs .py)'
 }
-
 compdef _foo_manual_parser foo-manual-parser
+
+# Troubleshooting FPath
+## Prints the plugins
+# env -u FPATH zsh
+## Should have 1's next to every file
+# print -l $fpath | sort | uniq -c | sort -nr

@@ -1,4 +1,4 @@
-echo "4. 🔢 functions loading..."
+echo "05. 🔢 functions loading..."
 
 # printf "%-20s %-10s\n" "MOUNT POINT" "STATUS"
 # printf "%-20s %-10s\n" "--------------------" "----------"

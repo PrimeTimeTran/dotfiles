@@ -1,3 +1,4 @@
+# 0. Shell Init
 # 0. Performance
 # 1. Environment
 # 2. PATH
@@ -10,6 +11,18 @@
 # 0. Performance: Tool for bash loading metrics
 # ============================================================
 # zmodload zsh/zprof
+# ============================================================
+# 0. Shell initialization, Zsh completion state
+# ============================================================
+# FPATH/fpath is Zsh-internal state. Never inherit it from
+# terminal hosts such as Zed.
+typeset +x FPATH
+
+fpath=(
+  /usr/local/share/zsh/site-functions
+  /opt/homebrew/share/zsh/site-functions
+  /opt/homebrew/Cellar/zsh/5.9/share/zsh/functions
+)
 
 # ============================================================
 # 1. Environment
@@ -17,7 +30,6 @@
 ## [-f ~/.zsh-env.zsh]: Compact shell conditional.
 ## [...]: Test
 ## -f: "Does this path exist and is it a regular file?"
-# ============================================================
 [ -f ~/.config/zsh/env.zsh ] && source ~/.config/zsh/env.zsh
 
 # -d path     # directory exists
@@ -27,7 +39,7 @@
 # -x path     # executable
 
 # ============================================================
-# 2. Paths: PATH LOADING (Externalized)
+# 2. Paths
 # ============================================================
 [ -f ~/.config/zsh/path.zsh ] && source ~/.config/zsh/path.zsh
 
@@ -39,19 +51,16 @@
 # ============================================================
 # 4. Oh My Zsh / Plugins
 # ============================================================
-# plugins=(history git flutter last-working-dir colored-man-pages alias-tips web-search  jsontools macos ls cd-ls)
 plugins=(zsh-autosuggestions cd-ls alias-tips)
-# plugins=(git flutter zsh-autosuggestions last-working-dir colored-man-pages alias-tips web-search history jsontools macos ls cd-ls)
-# Applies custom theme
-source "$ZSH/custom/themes/primetimetran.zsh-theme"
+
 source "$ZSH/oh-my-zsh.sh"
+source "$ZSH/custom/themes/primetimetran.zsh-theme"
 
 # ============================================================
 # 5. Tool initialization
 # ============================================================
 load_nvm() {
   unset -f load_nvm node npm npx yarn
-
   [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
   nvm use default >/dev/null
 }
@@ -93,7 +102,7 @@ eval "$(pyenv init -)"
 [ -f ~/.config/zsh/completion.zsh ] && source ~/.config/zsh/completion.zsh
 [ -f ~/.config/zsh/wip.zsh ] && source ~/.config/zsh/wip.zsh
 
-echo "5. ⌛️ Time flies..."
+echo "💯 ⌛️ Time flies..."
 
 # ============================================================
 # 0. Used with start of this file.
