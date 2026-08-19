@@ -68,7 +68,7 @@ alias adevice="adb -s adb-0B031FDD4000WF-E42dcm._adb-tls-connect._tcp. shell set
 # Dotfiles/Bare Repo
 # ─────────────────────────────────────────────
 dotrepo() {
-    git --git-dir="$HOME/.cfg" --work-tree="$HOME" "$@"
+    git --git-dir="$HOME/.dotrepo" --work-tree="$HOME" "$@"
 }
 
 alias dr="dotrepo "
