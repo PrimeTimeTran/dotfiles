@@ -1,62 +1,8 @@
-echo "4. 🔢 loading..."
+echo "4. 🔢 functions loading..."
 
-BOLD='\033[1m'
-GREEN='\033[32m'
-RED='\033[31m'
-NC='\033[0m'
 # printf "%-20s %-10s\n" "MOUNT POINT" "STATUS"
 # printf "%-20s %-10s\n" "--------------------" "----------"
 # printf "%-20s %-10s\n" "~/KB/project/app/loi/crates/leviticus/fuse_fs" "ACTIVE"
-
-foo-args() {
-    echo -e "${GREEN}${BOLD} Title: ${NC} foo-args"
-    local first_arg="$1"
-    local total_args="$#"
-    local all_args=("$@")
-    echo -e "${GREEN}✔ Total Args #:${NC} $total_args"
-    echo -e "${GREEN}  Arg 1:${NC} $first_arg"
-    echo "Processing all arguments:"
-    for item in "${all_args[@]}"; do
-        echo -e "${GREEN}  - Found:${NC} $item"
-    done
-}
-
-foo-repeat() {
-    if [ -z "$1" ]; then
-        echo "Usage: foo-repeat <number>"
-        return 1
-    fi
-    local n=$1
-    for (( i=1; i<=n; i++ )); do
-        echo "This is iteration $i of $n"
-    done
-}
-
-foo-pipe() {
-    if [ -z "$1" ]; then
-        echo "Usage: foo-pipe <string_with_pipes>"
-        return 1
-    fi
-    local input="$1"
-    local items=("${(@s/|/)input}")
-    echo "Processing pipe-delimited list:"
-    for item in "${items[@]}"; do
-        echo "  - Found: $item"
-    done
-}
-
-foo-manual-parser() {
-    local target="."
-    local type="svg"
-    while [ "$#" -gt 0 ]; do
-        case "$1" in
-            -d) target="$2"; shift 2 ;;
-            -t) type="$2"; shift 2 ;;
-            *)  echo "Unknown flag: $1"; return 1 ;;
-        esac
-    done
-    echo "Target: $target, Type: $type"
-}
 
 alias dls="downloadStream"
 downloadStream() {
@@ -67,9 +13,9 @@ alias sc="searchCommand"
 searchCommand() {
     fc -ln 0 | tac | grep "$@" | yank -l
 }
+
 # echo "In-memory limit: $HISTSIZE"
 # echo "On-disk limit: $HISTFILESIZE"
-# 
 alias sf="searchDirRecursivelyForFilesByText"
 alias sdfs="searchDirRecursivelyForFilesByText"
 searchDirRecursivelyForFilesByText() {
@@ -160,7 +106,7 @@ set-finder-ext-icons() {
     items=(
       "gitignore" "prettierrc" "eslintrc" "editorconfig" "env" "dockerignore"
     )
-    
+
     for item in "${items[@]}"; do
         echo "Setting $item to $EDITOR_ID..."
       duti -s "$EDITOR_ID" "$item" all
@@ -177,37 +123,6 @@ clean-spotlight() {
   find ~/Documents ~/KB -maxdepth 4 -type d \( -name "node_modules" -o -name ".venv" -o -name "venv" -o -name "target" \) -exec touch {}/.noindex \;
   echo "Done. Spotlight will only focus on your active work."
 }
-# # Cache the current icon to avoid re-running logic
-# # typeset -g _LAST_ICON=""
-
-# set_terminal_icon() {
-#   local ICON_DIR="$HOME/.icon/png"
-#   local ICON=""
-
-#   if [[ -f "Cargo.toml" ]]; then
-#     ICON="$ICON_DIR/rust.png"
-#   elif [[ "$PWD" == *"/blog"* ]]; then
-#     ICON="$ICON_DIR/blog.png"
-#   fi
-
-#   # Only update if the icon actually changed
-#   if [[ "$ICON" != "$_LAST_ICON" ]]; then
-#     _LAST_ICON="$ICON"
-    
-#     # Send sequences
-#     echo -ne "\e]1337;SetTerminalIcon=$ICON\a"
-    
-#     if [[ -n "$KITTY_WINDOW_ID" ]]; then
-#       # If icon is empty, clear the logo
-#       [[ -z "$ICON" ]] && kitty @ set-window-logo --full --position center "" 2>/dev/null || \
-#                           kitty @ set-window-logo --full --position center "$ICON" 2>/dev/null
-#     fi
-#   fi
-# }
-
-# autoload -U add-zsh-hook
-# add-zsh-hook chpwd set_terminal_icon
-# set_terminal_icon
 
 build() {
     local name="${1%.c}"
@@ -265,7 +180,6 @@ build() {
 
     echo "Exit status: $exit_code"
 }
-
 build_sanitize() {
     local name="${1%.c}"
     shift
@@ -288,7 +202,6 @@ build_sanitize() {
 
     "$out"
 }
-
 _build_examples() {
     local -a files
     local file
@@ -317,3 +230,7 @@ build_pthread() {
     gcc -pthread "$src" -o "$out" &&
     "$out"
 }
+compdef _build_examples build
+compdef _build_examples build_rust
+compdef _build_examples build_sanitize
+compdef _build_examples build_pthread

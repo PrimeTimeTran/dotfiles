@@ -1,16 +1,24 @@
-# #############################################
-# 0. Tool for bash loading metrics
-# ─────────────────────────────────────────────
+# 0. Performance
+# 1. Environment
+# 2. PATH
+# 3. User State
+# 4. Oh My Zsh / Plugins
+# 5. Tool initialization
+# 6. User scripts
+
+# ============================================================
+# 0. Performance: Tool for bash loading metrics
+# ============================================================
 # zmodload zsh/zprof
 
-# #############################################
-# 1. ENVIRONMENT VARIABLES
-# ─────────────────────────────────────────────
+# ============================================================
+# 1. Environment
+# ============================================================
 ## [-f ~/.zsh-env.zsh]: Compact shell conditional.
 ## [...]: Test
 ## -f: "Does this path exist and is it a regular file?"
-# ─────────────────────────────────────────────
-[ -f ~/.zsh-env.zsh ] && source ~/.zsh-env.zsh
+# ============================================================
+[ -f ~/.config/zsh/env.zsh ] && source ~/.config/zsh/env.zsh
 
 # -d path     # directory exists
 # -e path     # anything exists
@@ -18,15 +26,19 @@
 # -w path     # writable
 # -x path     # executable
 
-# #############################################
-# 2. PATH LOADING (Externalized)
-# ─────────────────────────────────────────────
-[ -f ~/.zsh-path.zsh ] && source ~/.zsh-path.zsh
+# ============================================================
+# 2. Paths: PATH LOADING (Externalized)
+# ============================================================
+[ -f ~/.config/zsh/path.zsh ] && source ~/.config/zsh/path.zsh
 
-# #############################################
-# 3. OH-MY-ZSH & PLUGINS
-# ─────────────────────────────────────────────
+# ============================================================
+# 3. User State
+# ============================================================
+[[ -f ~/.config/zsh/state.zsh ]] && source ~/.config/zsh/state.zsh
 
+# ============================================================
+# 4. Oh My Zsh / Plugins
+# ============================================================
 # plugins=(history git flutter last-working-dir colored-man-pages alias-tips web-search  jsontools macos ls cd-ls)
 plugins=(zsh-autosuggestions cd-ls alias-tips)
 # plugins=(git flutter zsh-autosuggestions last-working-dir colored-man-pages alias-tips web-search history jsontools macos ls cd-ls)
@@ -34,6 +46,9 @@ plugins=(zsh-autosuggestions cd-ls alias-tips)
 source "$ZSH/custom/themes/primetimetran.zsh-theme"
 source "$ZSH/oh-my-zsh.sh"
 
+# ============================================================
+# 5. Tool initialization
+# ============================================================
 load_nvm() {
   unset -f load_nvm node npm npx yarn
 
@@ -66,18 +81,71 @@ eval "$(pyenv init -)"
 # Vite+
 [ -f "$HOME/.vite-plus/env" ] && . "$HOME/.vite-plus/env"
 
-# #############################################
-# 5. USER SCRIPTS & aliases
-# ─────────────────────────────────────────────
-[ -f ~/.zsh-secret.zsh ] && source ~/.zsh-secret.zsh
-[ -f ~/.zsh-function.zsh ] && source ~/.zsh-function.zsh
-[ -f ~/.zsh-alias.zsh ] && source ~/.zsh-alias.zsh
-[ -f ~/.zsh-alias-git.zsh ] && source ~/.zsh-alias-git.zsh
-[ -f ~/.zsh-completion.zsh ] && source ~/.zsh-completion.zsh
+# ============================================================
+# 6. User scripts & aliases
+# ============================================================
+[ -f ~/.config/zsh/secret.zsh ] && source ~/.config/zsh/secret.zsh
+[ -f ~/.config/zsh/color.zsh ] && source ~/.config/zsh/color.zsh
+[ -f ~/.config/zsh/std.zsh ] && source ~/.config/zsh/std.zsh
+[ -f ~/.config/zsh/function.zsh ] && source ~/.config/zsh/function.zsh
+[ -f ~/.config/zsh/alias.zsh ] && source ~/.config/zsh/alias.zsh
+[ -f ~/.config/zsh/alias-git.zsh ] && source ~/.config/zsh/alias-git.zsh
+[ -f ~/.config/zsh/completion.zsh ] && source ~/.config/zsh/completion.zsh
+[ -f ~/.config/zsh/wip.zsh ] && source ~/.config/zsh/wip.zsh
 
 echo "5. ⌛️ Time flies..."
 
-# #############################################
+# ============================================================
 # 0. Used with start of this file.
-# ─────────────────────────────────────────────
+# ============================================================
 # zprof
+
+# # Point to the official one (adjust if yours is Homebrew or rustup)
+# # If using rustup:
+# export OFFICIAL_RA="$HOME/.cargo/bin/rust-analyzer"
+# # Or if using Homebrew on Apple Silicon:
+# # export OFFICIAL_RA="/opt/homebrew/bin/rust-analyzer"
+
+# # Alias to explicitly run the official release
+# alias ra-official="$OFFICIAL_RA"
+
+# # Alias to explicitly run your custom build
+# alias ra-custom="$HOME/bin/rust-analyzer"
+# function ra-build-and-deploy() {
+#     echo "1. Killing active rust-analyzer instances to release file locks..."
+#     pkill -9 rust-analyzer 2>/dev/null
+#     echo "2. Building custom rust-analyzer..."
+#     # (Run your cargo build command here, e.g.:)
+#     cargo build --release --manifest-path /path/to/rust-analyzer/Cargo.toml
+#     echo "3. Copying to bin..."
+#     cp /path/to/target/release/rust-analyzer ~/bin/rust-analyzer
+#     echo "4. Clearing Zsh path cache..."
+#     hash -r
+#     echo "Done! Custom rust-analyzer is live."
+# }
+# Run your update script quickly
+# alias ra-up="/Users/future/KB/update-rust-analyzer.sh"
+
+# # Check which binary is currently executing
+# function ra-check() {
+#     echo "Active binary path: $(which rust-analyzer)"
+#     echo "Version info: $(rust-analyzer --version)"
+# }
+
+# # Temporarily force fallback to the official toolchain rust-analyzer version
+# function ra-use-official() {
+#     # Point directly to the toolchain bin directory where rust-analyzer actually lives
+#     export PATH="$HOME/.rustup/toolchains/nightly-2025-08-20-aarch64-apple-darwin/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+#     hash -r
+#     echo "Switched current shell session to OFFICIAL rust-analyzer."
+#     ra-check
+# }
+
+# # Force back to your custom ~/bin version
+# function ra-use-custom() {
+#     export PATH="$HOME/bin:$HOME/.rustup/toolchains/nightly-2025-08-20-aarch64-apple-darwin/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+#     hash -r
+#     echo "Switched current shell session to CUSTOM rust-analyzer."
+#     ra-check
+# }
+# Path to the official toolchain binary discovered earlier

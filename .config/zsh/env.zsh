@@ -1,4 +1,6 @@
-echo "1. 🧧 loading..."
+
+echo "1. 🧧 Env loading..."
+
 export ZSH="$HOME/.oh-my-zsh"
 export NVM_DIR="$HOME/.nvm"
 export VOLTA_HOME="$HOME/.volta"
@@ -8,6 +10,8 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export MODULAR_HOME="$HOME/.modular"
 export HELIX_RUNTIME="$HOME/src/helix/runtime"
 export DOTNET_ROOT="$HOME/dotnet"
+export DOTNET_ROOT="$HOME/dotnet"
+export NEOVIM="$HOME/bin/nvim-macos-arm64"
 
 export EDITOR="zed --wait"
 export VISUAL="zed --wait"

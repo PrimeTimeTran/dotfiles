@@ -1,35 +1,45 @@
 # ZSH Behavior
-## Git branch 
-alias gitprompt-on='export SHOW_GIT_PROMPT=1 && rl'
-alias gitprompt-off='export SHOW_GIT_PROMPT=0 && rl'
+# ============================================================
+# Shell Prompt
+# ============================================================
 
-alias toggle-git-prompt='export SHOW_GIT_PROMPT=$((SHOW_GIT_PROMPT ^ 1)) && rl'
+save-zsh-state() {
+    {
+        echo "export SHOW_GIT_PROMPT=${SHOW_GIT_PROMPT:-1}"
+        echo "export PROMPT_PATH='${PROMPT_PATH:-%1~}'"
+    } > ~/.config/zsh/state.zsh
+}
 
-## Path
-alias path-full='export PROMPT_PATH="%~"'
-alias path-short='export PROMPT_PATH="%1~"'
-alias path-medium='export PROMPT_PATH="%2~"'
+alias gitprompt-on='export SHOW_GIT_PROMPT=1 && save-zsh-state && rl'
+alias gitprompt-off='export SHOW_GIT_PROMPT=0 && save-zsh-state && rl'
+alias toggle-git-prompt='export SHOW_GIT_PROMPT=$((SHOW_GIT_PROMPT ^ 1)) && save-zsh-state && rl'
 
-export PROMPT_PATH="%1~"
+alias path-short='export PROMPT_PATH="%1~" && save-zsh-state && rl'
+alias path-medium='export PROMPT_PATH="%2~" && save-zsh-state && rl'
+alias path-full='export PROMPT_PATH="%~" && save-zsh-state && rl'
 
 # ZSH Configuration files
 alias zsh-file="zed ~/.zshrc"
-alias zsh-env="zed ~/.zsh-env.zsh"
-alias zsh-path="zed ~/.zsh-path.zsh"
-alias zsh-secret="zed ~/.zsh-secret.zsh"
-alias zsh-function="zed ~/.zsh-function.zsh"
-alias zsh-alias="zed ~/.zsh-alias.zsh"
-alias zsh-alias-git="zed ~/.zsh-alias-git.zsh"
-alias zsh-completion="zed ~/.zsh-completion.zsh"
+alias zsh-env="zed ~/.config/zsh/env.zsh"
+alias zsh-path="zed ~/.config/zsh/path.zsh"
+alias zsh-state="zed ~/.config/zsh/state.zsh"
+alias zsh-secret="zed ~/.config/zsh/secret.zsh"
+alias zsh-color="zed ~/.config/zsh/color.zsh"
+alias zsh-std="zed ~/.config/zsh/std.zsh"
+alias zsh-function="zed ~/.config/zsh/function.zsh"
+alias zsh-alias="zed ~/.config/zsh/alias.zsh"
+alias zsh-alias-git="zed ~/.config/zsh/alias-git.zsh"
+alias zsh-completion="zed ~/.config/zsh/completion.zsh"
+alias zsh-wip="zed ~/.config/zsh/wip.zsh"
 
 # Dirs
-alias mv-kb="cd ~/KB"
-alias mv-blog="cd ~/blog"
-alias mv-home="cd ~/Desktop"
-alias mv-dls="cd ~/Downloads"
-alias mv-docs="cd ~/Documents"
-alias mv-kb-project="cd ~/KB/project"
-alias mv-kb-project-app="cd ~/KB/project/app"
+alias cd-kb="cd ~/KB"
+alias cd-blog="cd ~/KB/project/app/blog"
+alias cd-home="cd ~/Desktop"
+alias cd-dls="cd ~/Downloads"
+alias cd-docs="cd ~/Documents"
+alias cd-kb-project="cd ~/KB/project"
+alias cd-kb-project-app="cd ~/KB/project/app"
 
 # HTOP
 # - CPU usage
@@ -62,12 +72,17 @@ dotrepo() {
 }
 
 alias dr="dotrepo "
+alias dr-s="dr status"
+alias dr-cm="dr commit -m "
+alias dr-p="dr push"
 alias dr-amend="dr commit --amend "
 alias dr-d="dr diff"
 alias dr-l="dr log -v"
-alias dr-p="dr push"
 alias dr-pf="dr push --force"
 alias dr-r="dr remote -v"
+
+# Like "git add ." but doesn't pick up untracked files.
+alias dr-aa="dotrepo add -u"
 
 dr-a() {
     dr add "$@"
@@ -78,18 +93,18 @@ dr-au() {
     # . → start from the current work tree location ($HOME in your dotfiles setup)
     dr add -u "$@"
 }
-alias dr-aa="dotrepo add -u"
 
-dr-s() {
-    dr status "$@"
-}
 
-dr-c() {
-    dr commit "$@"
-}
-dr-cm() {
-    dr commit -m "$@"
-}
+# dr-s() {
+#     dr status "$@"
+# }
+
+# dr-c() {
+#     dr commit "$@"
+# }
+# dr-cm() {
+#     dr commit -m "$@"
+# }
 
 ## Conda
 alias coni="conda info --envs"
@@ -163,11 +178,10 @@ alias kproxymp='kubectl port-forward svc/marketplace 3000:3000'
 alias kstartdashboard='kubectl proxy http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login'
 alias kmaketoken='kubectl -n kubernetes-dashboard create token dashboard-admin'
 
-
 # General - Miscellaneous
 alias architecture='arch'
-alias cl="clear"
 alias c="clear"
+alias cl="clear"
 
 alias cpd="copydir "
 alias die="kill -9"
@@ -202,26 +216,13 @@ alias pr-hmr='pr dev:blog:hmr'
 alias pr-dist='pr dev:blog:dist'
 alias pr-release='pr dev:blog:release'
 
-alias cg='cargo '
-alias cg-r='cg run '
-alias cg-ck='cg check '
-
-alias cg-t='cg test'
-alias cg-t-nc='cg-t -- --nocapture'
-alias cg-t-nff='cg-t --no-fail-fast'
-alias cg-t-nc-nff='cg-t-nc'
-alias cg-t-pkg='cg-t --package '
-alias cg-t-doc='cg-t --doc '
-alias cg-nextest='cg nextest run'
-alias cg-nt='cg-nextest --test-threads 1 --no-fail-fast'
-
-alias cg-ir='cargo insta review'
-
+alias nvim="$NEOVIM/bin/nvim"
 alias h='herdr'
+
+alias link-vs-tasks"mkdir -p .vscode && ln -sf ~/.dotfiles/tasks.json .vscode/tasks.json"
 
 cg-w-test() {
     local cmd_base="nextest run"
-
     local filters=""
     if [ "$#" -gt 0 ]; then
         for t in "$@"; do
@@ -258,7 +259,7 @@ fix-extensions() {
     items=(
       "gitignore" "prettierrc" "eslintrc" "editorconfig" "env" "dockerignore"
     )
-    
+
     for item in "${items[@]}"; do
         echo "Setting $item to $EDITOR_ID..."
       duti -s "$EDITOR_ID" "$item" all

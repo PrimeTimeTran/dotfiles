@@ -1,4 +1,4 @@
-echo "2. 🛣️  loading..."
+echo "2. 🛣️  Paths loading..."
 
 # Helper to prevent duplicate PATH entries and export immediately
 path_add() {
@@ -40,6 +40,37 @@ path_add "$ANDROID_HOME/platform-tools"
 path_add "$HOME/.pyenv/bin"
 path_add "$HOME/.lmstudio/bin"
 
+# export PATH="$HOME/bin:$PATH"
+
+OFFICIAL_RA_BIN="$HOME/.rustup/toolchains/nightly-2026-06-30-aarch64-apple-darwin/bin/rust-analyzer"
+# echo $OFFICIAL_RA_BIN
+CUSTOM_RA_BIN="$HOME/KB/project/app/rust-analyzer/target/release/rust-analyzer"
+# echo $CUSTOM_RA_BIN
+# $ ls -la "$OFFICIAL_RA_BIN"
+# $ ls -la "$CUSTOM_RA_BIN"
+
+# Install again
+# $ rustup component add rust-analyzer --toolchain nightly-2026-06-30-aarch64-apple-darwin
+
+function ra-ck() {
+    echo "Active binary path: $(which rust-analyzer)"
+    echo "Version info: $(rust-analyzer --version)"
+}
+function ra-official() {
+    mkdir -p "$HOME/bin"
+    ln -sf "$OFFICIAL_RA_BIN" "$HOME/bin/rust-analyzer"
+    hash -r
+    echo "Switched to OFFICIAL rust-analyzer."
+    ra-ck
+}
+
+function ra-custom() {
+    mkdir -p "$HOME/bin"
+    ln -sf "$CUSTOM_RA_BIN" "$HOME/bin/rust-analyzer"
+    hash -r
+    echo "Switched to CUSTOM rust-analyzer."
+    ra-ck
+}
 # 5. Compiler Flags
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
@@ -51,3 +82,20 @@ export LLVM_SYS_180_PREFIX="/opt/homebrew/opt/llvm@17"
 # if [[ -z "$JAVA_HOME" ]]; then
 #   export JAVA_HOME=$(/usr/libexec/java_home -v "20")
 # fi
+
+# Rust Analyzer local
+# export PATH="$HOME/bin:$PATH"
+# Note:
+#   Zed: Assumes this LSP config
+# {
+#   "lsp": {
+#     "rust-analyzer": {
+#       "binary": {
+#         "path": "/Users/future/bin/rust-analyzer"
+#         // "arguments": [],
+#         // "env": {},
+#         // "ignore_system_version": ,
+#       }
+#     }
+#   }
+# }
